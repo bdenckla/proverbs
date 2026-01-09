@@ -17,25 +17,43 @@ def gen_html_file(tdm_ch):
     author.help_gen_html_file(tdm_ch, _FNAME, _TITLE, _CBODY)
 
 
-def _highlight(record, key, color):
-    if hl := record.get("highlight"):
-        zbhli = hl - 1  # convert to 0-based index
-        rk = record[key]
-        clusters = re.findall(r"[א-ת][^א-ת]*", rk)
-        jc = "".join(clusters)
-        assert jc == rk
-        out = [cl if i != zbhli else _color(cl, color) for i, cl in enumerate(clusters)]
-        return out
-    return record[key]
+def _highlight(record, key):
+    zbhls = _zb_highlights(record)  # zero-based highlights
+    rk = record[key]
+    clusters = re.findall(r"[א-ת][^א-ת]*", rk)
+    jc = "".join(clusters)
+    assert jc == rk
+    color = _RK_COLOR[key]
+    out = [cl if i not in zbhls else _color(cl, color) for i, cl in enumerate(clusters)]
+    return out
+
+
+def _zb_highlights(record, key):
+    hl_both = record.get("highlight")
+    hl_spec = record.get(_RK_HL_SPECIFIC[key])
+    assert (hl_both is None) or (hl_spec is None)
+    hl = hl_both or hl_spec
+    if isinstance(hl, int):
+        return [hl-1]
+    assert isinstance(hl, list)
+    return [obi-1 for obi in hl]
 
 
 def _color(text, color):
     return my_html.span(text, {"style": f"color: {color}"})
 
+_RK_COLOR = {
+    "bhla": "red",
+    "mam": "green",
+}
+_RK_HL_SPECIFIC = {
+    "bhla": "highlight-bhla",
+    "mam": "highlight-mam",
+}
 
 def _make_row(record):
-    hbhla = _highlight(record, "bhla", "red")
-    hmam = _highlight(record, "mam", "green")
+    hbhla = _highlight(record, "bhla")
+    hmam = _highlight(record, "mam")
     if blha_q := record["bhla-q"]:
         assert blha_q == "(?)"
         bhla_and_q = [hbhla, " (?)"]

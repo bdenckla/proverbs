@@ -87,6 +87,7 @@ TABLE = [
         "what-is-weird": "סילוק is missing",
         "mam": "עִמּֽוֹ׃",
         "comment": "",
+        "highlight": 2,
     },
     {
         "bhla-i": 10,
@@ -96,6 +97,7 @@ TABLE = [
         "what-is-weird": "סילוק is missing",
         "mam": "כַּפָּֽי׃",
         "comment": "",
+        "highlight": 2,
     },
     {
         "bhla-i": 11,
@@ -105,6 +107,7 @@ TABLE = [
         "what-is-weird": "פתח on א is not חטף",
         "mam": "אֲֽ֭דַבְּרָה",
         "comment": "",
+        "highlight": 1,
     },
     {
         "bhla-i": 12,
@@ -114,6 +117,7 @@ TABLE = [
         "what-is-weird": "רביע is on ה not ר",
         "mam": "אֲ֝דַבְּרָ֗ה",
         "comment": "",
+        "highlight": 4,
     },
     {
         "bhla-i": 13,
@@ -123,6 +127,7 @@ TABLE = [
         "what-is-weird": "סילוק precedes חיריק",
         "mam": "עׇנְיִֽי׃",
         "comment": "",
+        "highlight": 3,
     },
     {
         "bhla-i": 14,
@@ -132,6 +137,7 @@ TABLE = [
         "what-is-weird": "שורוק dot is missing",
         "mam": "יַחֲרִ֑ישׁוּ",
         "comment": "",
+        "highlight": 6,
     },
     {
         "bhla-i": 15,
@@ -141,6 +147,7 @@ TABLE = [
         "what-is-weird": "ה has no מפיק",
         "mam": "אֱ֝ל֗וֹהַּ",
         "comment": "",
+        "highlight": 4,
     },
     {
         "bhla-i": 16,
@@ -150,6 +157,7 @@ TABLE = [
         "what-is-weird": "ה has no מפיק",
         "mam": "אֱל֣וֹהַּ",
         "comment": "",
+        "highlight": 4,
     },
     {
         "bhla-i": 17,
@@ -159,6 +167,7 @@ TABLE = [
         "what-is-weird": "מקף is missing",
         "mam": "וְאֶת־",
         "comment": "",
+        "highlight": 3,
     },
     {
         "bhla-i": 18,
@@ -168,6 +177,7 @@ TABLE = [
         "what-is-weird": "י (yod) has דגש",
         "mam": "מֵרֵ֣יחַ",
         "comment": "",
+        "highlight": 3,
     },
     {
         "bhla-i": 19,
@@ -177,6 +187,7 @@ TABLE = [
         "what-is-weird": "ה has no מפיק",
         "mam": "אֱל֣וֹהַּ",
         "comment": "",
+        "highlight": 4,
     },
     {
         "bhla-i": 20,
@@ -186,6 +197,7 @@ TABLE = [
         "what-is-weird": "מרכא fights סילוק",
         "mam": "שֹֽׁחַד׃",
         "comment": "",
+        "highlight": 1,
     },
     {
         "bhla-i": 21,
@@ -195,6 +207,7 @@ TABLE = [
         "what-is-weird": "מקף is present",
         "mam": "ל֤וּ_",
         "comment": "",
+        "highlight": 2,
     },
     {
         "bhla-i": 22,
@@ -204,6 +217,7 @@ TABLE = [
         "what-is-weird": "סילוק is on 2nd ר not ת",
         "mam": "מְרֵרָתִֽי׃",
         "comment": "",
+        "highlight": 3,
     },
     {
         "bhla-i": 23,
@@ -213,6 +227,7 @@ TABLE = [
         "what-is-weird": "ה has no מפיק",
         "mam": "אֱ֝ל֗וֹהַּ",
         "comment": "",
+        "highlight": 4,
     },
     {
         "bhla-i": 24,
@@ -222,6 +237,7 @@ TABLE = [
         "what-is-weird": "פתח on ח is חטף",
         "mam": "הַֽ֭לְמַעַנְךָ",
         "comment": "",
+        "highlight": 1,
     },
     {
         "bhla-i": 25,
@@ -231,6 +247,7 @@ TABLE = [
         "what-is-weird": "דחי is placed like a טרחא",
         "mam": "א֭וֹר",
         "comment": "",
+        "highlight": 1,
     },
     {
         "bhla-i": 26,
@@ -240,6 +257,7 @@ TABLE = [
         "what-is-weird": "דגש may fight with רפה",
         "mam": "חֶרְפָּתִֽי׃",
         "comment": "Color photos show דגש to be unlikely.",
+        "highlight": 4,
     },
     {
         "bhla-i": 27,
@@ -249,6 +267,7 @@ TABLE = [
         "what-is-weird": "ק may have דגש",
         "mam": "קָ֭רָאתִי",
         "comment": "",
+        "highlight": 1,
     },
     {
         "bhla-i": 28,
@@ -258,7 +277,8 @@ TABLE = [
         "what-is-weird": "ו has חיריק not שווא",
         "mam": "וְלֹֽא־",
         "comment": "",
-    },
+        "highlight": 1,
+},
     {
         "bhla-i": 29,
         "cv": "22:21",
@@ -267,6 +287,7 @@ TABLE = [
         "what-is-weird": "אתנח and ∅ not מונח and קמץ־אתנח",
         "mam": "עִמּ֣וֹ וּשְׁלָ֑ם",
         "comment": "Typical sloppy re-inking. Perhaps some super-faint remains of the אתנח under ל can be seen. Various dots not mentioned are, based on consensus expectations, either generously transcribed despite having only super-faint remains or generously ignored despite being fairly clear.",
+        "highlight": 2,
     },
     {
         "bhla-i": 30,
@@ -276,6 +297,7 @@ TABLE = [
         "what-is-weird": "דחי is placed like a טרחא",
         "mam": "אֹ֭מֶר",
         "comment": "The מלא/חסר spelling difference is not important to us here.",
+        "highlight": 1,
     },
     {
         "bhla-i": 31,
@@ -285,6 +307,7 @@ TABLE = [
         "what-is-weird": "ע may have צירה not סגול",
         "mam": "רֹעֶ֣ה",
         "comment": "",
+        "highlight": 2,
     },
     {
         "bhla-i": 32,
@@ -294,6 +317,7 @@ TABLE = [
         "what-is-weird": "מקף is missing",
         "mam": "חַי־",
         "comment": "",
+        "highlight": 2,
     },
     {
         "bhla-i": 33,
@@ -303,6 +327,7 @@ TABLE = [
         "what-is-weird": "חיריק is missing",
         "mam": "הִדְרִיכ֥וּהוּ",
         "comment": "The מלא/חסר spelling difference is not important to us here.",
+        "highlight": 3,
     },
     {
         "bhla-i": 34,
@@ -312,6 +337,7 @@ TABLE = [
         "what-is-weird": "חיריק is missing",
         "mam": "וְעַ֥יִן",
         "comment": "",
+        "highlight": 3,
     },
     {
         "bhla-i": 35,
@@ -321,6 +347,7 @@ TABLE = [
         "what-is-weird": "סילוק precedes חיריק",
         "mam": "בִּקְצִירִֽי׃",
         "comment": "",
+        "highlight": 5,
     },
     {
         "bhla-i": 36,
@@ -330,15 +357,17 @@ TABLE = [
         "what-is-weird": "סילוק precedes חיריק",
         "mam": "רַגְלִֽי׃",
         "comment": "",
+        "highlight": 3,
     },
     {
         "bhla-i": 37,
         "cv": "31:7",
         "bhla-q": "",
         "bhla": "מֻאֿוּֽם׃",
-        "what-is-weird": "סילוק is on ו not מ מ has קבוץ",
+        "what-is-weird": "קבוץ and סילוק not סילוק and ∅",
         "mam": "מֽאֿוּם׃",
         "comment": "",
+        "highlight": [1, 3],
     },
     {
         "bhla-i": 38,
@@ -348,6 +377,8 @@ TABLE = [
         "what-is-weird": "סילוק is on ו not נ",
         "mam": "עֲוֺנִֽי׃",
         "comment": "",
+        "highlight-bhla": 2,
+        "highlight-mam": 3,
     },
     {
         "bhla-i": 39,
@@ -357,6 +388,7 @@ TABLE = [
         "what-is-weird": "אתנח precedes חיריק",
         "mam": "יְשִׁישִׁ֑ים",
         "comment": "",
+        "highlight": 4,
     },
     {
         "bhla-i": 40,
@@ -366,6 +398,7 @@ TABLE = [
         "what-is-weird": "ה has no מפיק",
         "mam": "אֱ֝ל֗וֹהַּ",
         "comment": "",
+        "highlight": 4,
     },
     {
         "bhla-i": 41,
@@ -375,6 +408,8 @@ TABLE = [
         "what-is-weird": "סילוק is on syl. 1 not 3",
         "mam": "הַחַיִּֽים׃",
         "comment": "",
+        "highlight-bhla": 1,
+        "highlight-mam": 3,
     },
     {
         "bhla-i": 42,
@@ -384,6 +419,7 @@ TABLE = [
         "what-is-weird": "נ has דגש",
         "mam": "נִכַּר־",
         "comment": "",
+        "highlight": 1,
     },
     {
         "bhla-i": 43,
@@ -393,15 +429,17 @@ TABLE = [
         "what-is-weird": "כ has געיה",
         "mam": "סֻכָּתֽוֹ׃",
         "comment": "right next to סילוק!",
+        "highlight": 2,
     },
     {
         "bhla-i": 44,
         "cv": "37:6",
         "bhla-q": "",
         "bhla": "לַשֶּׁ֨לַג׀",
-        "what-is-weird": "ל has פתח not סגול",
+        "what-is-weird": "2nd ל has פתח not סגול",
         "mam": "לַשֶּׁ֨לֶג׀",
         "comment": "",
+        "highlight": 3,
     },
     {
         "bhla-i": 45,
@@ -411,6 +449,7 @@ TABLE = [
         "what-is-weird": "simple שווא not חטף פתח",
         "mam": "הֲֽ֭מִיָּמֶיךָ",
         "comment": "39:20 is similar",
+        "highlight": 1,
     },
     {
         "bhla-i": 46,
@@ -420,6 +459,7 @@ TABLE = [
         "what-is-weird": "גרש not רביע",
         "mam": "וְ֝יָדַעְתָּ֗",
         "comment": "",
+        "highlight": 5,
     },
     {
         "bhla-i": 47,
@@ -429,6 +469,8 @@ TABLE = [
         "what-is-weird": "סילוק is on ל not ח",
         "mam": "מְלֵחָֽה׃",
         "comment": "",
+        "highlight-bhla": 2,
+        "highlight-mam": 3,
     },
     {
         "bhla-i": 48,
@@ -438,6 +480,7 @@ TABLE = [
         "what-is-weird": "רביע מגרש without רביע",
         "mam": "אֶ֝בְרָ֗ה",
         "comment": "",
+        "highlight": 3,
     },
     {
         "bhla-i": 49,
@@ -447,6 +490,7 @@ TABLE = [
         "what-is-weird": "simple שווא not חטף פתח",
         "mam": "הֲֽ֭תַרְעִישֶׁנּוּ",
         "comment": "38:12 is similar",
+        "highlight": 1,
     },
     {
         "bhla-i": 50,
@@ -456,6 +500,7 @@ TABLE = [
         "what-is-weird": "געיה on ג",
         "mam": "גָא֣וֹן",
         "comment": "right next to מונח!",
+        "highlight": 1,
     },
     {
         "bhla-i": 51,
@@ -465,6 +510,8 @@ TABLE = [
         "what-is-weird": "סילוק on ל not י (yod)",
         "mam": "לֶחֱיֽוֹ׃",
         "comment": "",
+        "highlight-bhla": 1,
+        "highlight-mam": 3,
     },
     {
         "bhla-i": 52,
@@ -474,5 +521,6 @@ TABLE = [
         "what-is-weird": "סילוק missing",
         "mam": "לִבְלִי־חָֽת׃",
         "comment": "",
+        "highlight": 5,
     },
 ]
