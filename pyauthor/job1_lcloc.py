@@ -26,7 +26,8 @@ def _lc_full_page_anc(page):
 
 def _maybe_sp_ibl(lcloc):
     if ibl := lcloc.get("including-blank-lines"):
-        return f" (including {ibl} blank line{'s' if ibl != 1 else ''})"
+        sq = "s" if ibl != 1 else ""
+        return f" (including {ibl} blank line{sq} in the count)"
     return ""
 
 

@@ -396,10 +396,11 @@ RECORDS = [
         "bhla": "חַי_",
         "what-is-weird": "מקף is missing",
         "mam": "חַי־",
-        "comment": "Perhaps there is some super-faint evidence of a מקף that was ignored during re-inking. By they way, the evidence for the דחי on א is super-faint.",
+        "comment": "Perhaps there is some super-faint evidence of a מקף that was ignored during re-inking. By the way, the evidence for the דחי on the א of the next word is super-faint.",
         "highlight": 2,
         "lcloc": {'page': '404A', 'column': 2, 'line': -2},
         "img": "2702.png",
+        "bhq-comment": "BHQ silently supplies the מקף that is the consensus expectation, despite little or no manuscript evidence for it.",
     },
     {
         "bhla-i": 33,
@@ -412,6 +413,7 @@ RECORDS = [
         "highlight": 3,
         "lcloc": {'page': '404B', 'column': 2, 'line': 5},
         "img": "2808.png",
+        "bhq-comment": "BHQ silently supplies the חיריק that is the consensus expectation, despite no manuscript evidence for it.",
     },
     {
         "bhla-i": 34,
@@ -424,6 +426,7 @@ RECORDS = [
         "highlight": 3,
         "lcloc": {'page': '405A', 'column': 1, 'line': -12},
         "img": "2911.png",
+        "bhq-comment": "BHQ silently supplies the חיריק that is the consensus expectation, despite no manuscript evidence for it.",
     },
     {
         "bhla-i": 35,
@@ -448,6 +451,7 @@ RECORDS = [
         "highlight": 3,
         "lcloc": {'page': '405B', 'column': 1, 'line': -9, 'including-blank-lines': 1},
         "img": "3105.png",
+        "bhq-comment": "BHQ silently supplies the marks in the vowel-then-accent order that is the consensus expectation, in clear contradiction of the manuscript here. In my opinion BHQ shows itself to be out of date by continuing to aspire, as BHS did, to reflect all such ordering anomalies. I think the modern consensus is that these orderings are as meaningless as the variable length of ascenders on ל. Nonetheless, since BHQ still aspires to get these orderings right, it is fair for me to point out when it fails to do so.",
     },
     {
         "bhla-i": 37,
@@ -460,6 +464,7 @@ RECORDS = [
         "highlight": [1, 3],
         "lcloc": {'page': '405B', 'column': 1, 'line': -6, 'including-blank-lines': 1},
         "img": "3107.png",
+        "bhq-comment": "BHQ reflects neither the manuscript nor the consensus expectation here. It reflects the manuscript except it places the סילוק under the א. This not only contradicts the manuscript, but also makes no sense given the רפה on the א. One might argue that this רפה should have been shown, despite the general policy of BHQ to ignore manuscript רפה marks. Regardless of whether the רפה should have been shown, its presence in the manuscript should have excluded the possibility of a סילוק under its letter (א)!",
     },
     {
         "bhla-i": 38,
