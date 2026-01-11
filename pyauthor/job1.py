@@ -1,5 +1,6 @@
 """ Exports gen_html_file and anchor """
 
+from pyauthor.job1_common import here_is
 from pycmn.my_utils import sl_map
 from py import my_html
 from pyauthor.util import author
@@ -16,8 +17,7 @@ def gen_html_file(tdm_ch, jda):
     author.assert_stem_eq(__file__, _FNAME)
     jdae = [" ", jda, "."]
     _CONT_PARA_01 = [
-        "Here is a table expanding upon the entries for the book of Job",
-        " in BHL Appendix A.",
+        *here_is(),
         " For more details, see the",
         jdae,
     ]
