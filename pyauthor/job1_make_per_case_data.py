@@ -3,7 +3,7 @@
 from py import my_html
 from pyauthor.util import author
 from pyauthor.job1_highlight import highlight, color
-from pyauthor.job1_lcloc import maybe_sep_lcloc
+from pyauthor.job1_lcloc import lcloc
 
 
 def make_per_case_data(record):
@@ -46,11 +46,15 @@ def _make_row(record):
     )
 
 
-def _maybe_img(record):
-    if img_fname := record.get("img"):
-        img_tag = my_html.img({"src": f"img/{img_fname}"})
-        return [img_tag]
-    return []
+def _img(img):
+    return my_html.img({"src": f"img/{img}"})
+
+
+def _maybe_bhq(bhq):
+    if bhq is None:
+        return []
+    cont_p = ["BHQ: ", author.hbo(bhq)]
+    return [my_html.para(cont_p)]
 
 
 def _make_details(record):
@@ -61,17 +65,17 @@ def _make_details(record):
     cnvm = "c" + cv.replace(":", "v")
     mwd_href = f"https://bdenckla.github.io/MAM-with-doc/D3-Job.html#{cnvm}"
     mwd_anc = my_html.anchor_h("MwD", mwd_href)
-    dpe = [uxlc_anc, sep, mwd_anc, *maybe_sep_lcloc(record, sep)]
+    dpe = [uxlc_anc, sep, mwd_anc, sep, *lcloc(record.get("lcloc"))]
     if comment := record["comment"]:
         dpe.append(sep)
         dpe.append(comment)
     if bhq_comment := record.get("bhq-comment"):
         dpe.append(sep)
         dpe.append(bhq_comment)
-    details_proper = my_html.para(dpe)
     return [
         author.table_c(_make_row(record)),
-        details_proper,
-        *_maybe_img(record),
+        *_maybe_bhq(record.get("bhq")),
+        my_html.para(dpe),
+        _img(record["img"]),
         my_html.horizontal_rule(),
     ]

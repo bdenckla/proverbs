@@ -1,21 +1,18 @@
-""" Exports maybe_sep_lcloc """
+""" Exports lcloc """
 
 from py import my_html
 
 
-def maybe_sep_lcloc(record, sep):
-    if lcloc := record.get("lcloc"):
-        page = lcloc["page"]
-        line = lcloc["line"]
-        column = lcloc["column"]
-        abs_line, m_sp_cfb = _maybe_sp_cfb(line)
-        m_sp_ibl = _maybe_sp_ibl(lcloc)
-        return [
-            sep,
-            _lc_full_page_anc(page),
-            f" col. {column} line {abs_line}{m_sp_cfb}{m_sp_ibl}",
-        ]
-    return []
+def lcloc(lcloc):
+    page = lcloc["page"]
+    line = lcloc["line"]
+    column = lcloc["column"]
+    abs_line, m_sp_cfb = _maybe_sp_cfb(line)
+    m_sp_ibl = _maybe_sp_ibl(lcloc)
+    return [
+        _lc_full_page_anc(page),
+        f" col. {column} line {abs_line}{m_sp_cfb}{m_sp_ibl}",
+    ]
 
 
 def _lc_full_page_anc(page):
