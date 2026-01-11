@@ -57,6 +57,9 @@ def _maybe_bhq(bhq):
     return [my_html.para(cont_p)]
 
 
+_DEFAULT_BHQ_COMMENT = "BHQ agrees with BHL-A here."
+
+
 def _make_details(record):
     sep = " \N{EM DASH} "
     cv = record["cv"]
@@ -69,9 +72,9 @@ def _make_details(record):
     if comment := record["comment"]:
         dpe.append(sep)
         dpe.append(comment)
-    if bhq_comment := record.get("bhq-comment"):
-        dpe.append(sep)
-        dpe.append(bhq_comment)
+    bhq_comment = record.get("bhq-comment") or _DEFAULT_BHQ_COMMENT
+    dpe.append(sep)
+    dpe.append(bhq_comment)
     return [
         author.table_c(_make_row(record)),
         *_maybe_bhq(record.get("bhq")),

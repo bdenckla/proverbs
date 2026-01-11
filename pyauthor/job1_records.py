@@ -55,7 +55,7 @@ _COMMENT_3629 = [
     " though I feel no appeal to expectations is needed to dismiss this possible געיה.",
 ]
 
-_HEAVY_MARK_COMMENT = [
+_COMMENT_3902 = [
     "The mark in question is very heavy,",
     " having a stroke width more typical of a letter-stroke than of a niqqud-stroke.",
     " Its clarity suggests it is part of the re-inking.",
@@ -66,7 +66,7 @@ _HEAVY_MARK_COMMENT = [
     " Or, it may be only a single mark whose lower end is, for some reason, a blob.",
 ]
 
-_MERGED_WITH_CIRCLE_COMMENT = [
+_COMMENT_3913 = [
     "A more charitable interpretation of the image is that the רביע is present",
     " but is merged with the masorah circle.",
     " (It is fairly clear that a masorah circle is present.)",
@@ -76,6 +76,11 @@ _MERGED_WITH_CIRCLE_COMMENT = [
 _BHQ_COMMENT_0914_AND_0930 = [
     "BHQ silently supplies the סילוק that is the consensus expectation,",
     " despite little or no manuscript evidence for it.",
+]
+
+_BHQ_COMMENT_4125 = [
+    "BHQ silently supplies the סילוק that is the consensus expectation,",
+    " despite no manuscript evidence for it.",
 ]
 
 _BHQ_COMMENT_1203 = [
@@ -124,7 +129,7 @@ _BHQ_COMMENT_2228 = [
 ]
 
 _BHQ_COMMENT_2421 = [
-    "BHQ silently supplies the consensus expectation: a סגול.",
+    "BHQ silently supplies the סגול that is the consensus expectation.",
     " I.e. based on little or no manuscript evidence,",
     " BHQ silently infers a third dot centered below the two clearer dots.",
 ]
@@ -486,7 +491,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {"page": "402A", "column": 2, "line": -5},
         "img": "1905.png",
-        "bhq-comment": "BHQ silently lets the faint possible דגש “win” over the clear רפה.",
+        "bhq-comment": "BHQ silently lets the faint possible דגש “win” over the clear רפה in the manuscript.",
     },
     {
         "bhla-i": 27,
@@ -739,11 +744,11 @@ RECORDS = [
         "bhla": "וְ֝יָדַעְתָּ֜",
         "what-is-weird": "גרש not רביע",
         "mam": "וְ֝יָדַעְתָּ֗",
-        "comment": "".join(_HEAVY_MARK_COMMENT),
+        "comment": "".join(_COMMENT_3902),
         "highlight": 5,
         "lcloc": {"page": "408A", "column": 2, "line": -3},
         "img": "3902.png",
-        "bhq-comment": "",
+        "bhq-comment": "BHQ silently supplies the רביע that is the consensus expectation.",
     },
     {
         "bhla-i": 47,
@@ -765,10 +770,11 @@ RECORDS = [
         "bhla": "אֶ֝בְרָה",
         "what-is-weird": "רביע מגרש may lack רביע",
         "mam": "אֶ֝בְרָ֗ה",
-        "comment": "".join(_MERGED_WITH_CIRCLE_COMMENT),
+        "comment": "".join(_COMMENT_3913),
         "highlight": 3,
         "lcloc": {"page": "408B", "column": 1, "line": 11},
         "img": "3913.png",
+        "bhq-comment": "BHQ seems to split the mark(s) in question into a רביע on ר and a masorah circle on ב.",
     },
     {
         "bhla-i": 49,
@@ -818,5 +824,6 @@ RECORDS = [
         "highlight": 5,
         "lcloc": {"page": "409A", "column": 2, "line": 14},
         "img": "4125.png",
+        "bhq-comment": "".join(_BHQ_COMMENT_4125),
     },
 ]
