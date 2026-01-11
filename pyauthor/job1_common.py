@@ -1,6 +1,7 @@
 from pyauthor.util import author
 from pyauthor.job1_make_per_case_data import make_example_row
 
+
 def intro(expanding, each, jda=None):
     return [
         author.para(_here_is(expanding, jda)),
@@ -22,11 +23,7 @@ def _here_is(expanding, jda=None):
 
 
 def _each(each):
-    return [
-        f"{each} entry below takes the following form:"
-    ]
-
-
+    return [f"{each} entry below takes the following form:"]
 
 
 def _where():
