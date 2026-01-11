@@ -46,6 +46,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {'page': '399A', 'column': 1, 'line': 4},
         "img": "0701.png",
+        "bhq-comment": "BHQ silently ignores the putative רביע.",
     },
     {
         "bhla-i": 5,
@@ -94,6 +95,7 @@ RECORDS = [
         "highlight": 1,
         "lcloc": {'page': '399A', 'column': 2, 'line': 13, 'including-blank-lines': 1},
         "img": "0807.png",
+        "bhq-comment": "BHQ silently ignores the putative שורוק dot.",
     },
     {
         "bhla-i": 9,
@@ -106,6 +108,7 @@ RECORDS = [
         "highlight": 2,
         "lcloc": {'page': '399B', 'column': 1, 'line': 22, 'including-blank-lines': 1},
         "img": "0914.png",
+        "bhq-comment": "BHQ silently supplies the סילוק that is the consensus expectation, despite little or no manuscript evidence for it.",
     },
     {
         "bhla-i": 10,
@@ -118,6 +121,7 @@ RECORDS = [
         "highlight": 2,
         "lcloc": {'page': '399B', 'column': 2, 'line': 15},
         "img": "0930.png",
+        "bhq-comment": "BHQ silently supplies the סילוק that is the consensus expectation, despite little or no manuscript evidence for it.",
     },
     {
         "bhla-i": 11,
@@ -203,6 +207,7 @@ RECORDS = [
         "highlight": 3,
         "lcloc": {'page': '400A', 'column': 2, 'line': -1},
         "img": "1203.png",
+        "bhq-comment": "BHQ silently supplies the מקף that is the consensus expectation, despite no manuscript evidence for it.",
     },
     {
         "bhla-i": 18,
@@ -215,6 +220,7 @@ RECORDS = [
         "highlight": 3,
         "lcloc": {'page': '401A', 'column': 1, 'line': -9},
         "img": "1409.png",
+        "bhq-comment": "BHQ silently ignores the putative דגש.",
     },
     {
         "bhla-i": 19,
@@ -239,6 +245,7 @@ RECORDS = [
         "highlight": 1,
         "lcloc": {'page': '401B', 'column': 1, 'line': -3},
         "img": "1534.png",
+        "bhq-comment": "BHQ silently ignores the putative מרכא.",
     },
     {
         "bhla-i": 21,
@@ -251,6 +258,7 @@ RECORDS = [
         "highlight": 2,
         "lcloc": {'page': '401B', 'column': 2, 'line': 3},
         "img": "1604.png",
+        "bhq-comment": "Though it is not relevant to the point at hand, note that BHQ continues to fail distinguish between גלגל and אתנח הפוך.",
     },
     {
         "bhla-i": 22,
@@ -284,10 +292,11 @@ RECORDS = [
         "bhla": "הֲ֭לְמַּעַנְךָ",
         "what-is-weird": "פתח on ה is חטף",
         "mam": "הַֽ֭לְמַעַנְךָ",
-        "comment": "",
+        "comment": "The געיה difference is not important to us here.",
         "highlight": 1,
         "lcloc": {'page': '402A', 'column': 1, 'line': -4},
         "img": "1804.png",
+        "bhq-comment": "BHQ silently ignores the putative שווא part of the putative חטף פתח. It also silently ignores the possible intepretation of that ink as a געיה. I.e. other than the prepositive דחי accent, BHQ supplies only the (full) פתח that is the consensus expectation here. BHQ does so silently, i.e. with no note.",
     },
     {
         "bhla-i": 25,
@@ -300,6 +309,7 @@ RECORDS = [
         "highlight": 1,
         "lcloc": {'page': '402A', 'column': 1, 'line': -2},
         "img": "1806.png",
+        "bhq-comment": "BHQ positions the mark ambiguously. The mark is a little to the right of center. So it is not centered, as one would expect a טרחא to be, but neither is it as far to the right as דחי normally is in BHQ.",
     },
     {
         "bhla-i": 26,
@@ -312,6 +322,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {'page': '402A', 'column': 2, 'line': -5},
         "img": "1905.png",
+        "bhq-comment": "BHS silently lets the faint putative דגש “win” over the clear רפה.",
     },
     {
         "bhla-i": 27,
@@ -324,6 +335,7 @@ RECORDS = [
         "highlight": 1,
         "lcloc": {'page': '402B', 'column': 1, 'line': 8},
         "img": "1916.png",
+        "bhq-comment": "BHQ silently supplies the putative דגש.",
     },
     {
         "bhla-i": 28,
@@ -336,6 +348,7 @@ RECORDS = [
         "highlight": 1,
         "lcloc": {'page': '403A', 'column': 2, 'line': 13},
         "img": "2125.png",
+        "bhq-comment": "BHQ silently supplies the שווא that is the consensus expectation, despite little or no manuscript evidence for it.",
     },
     {
         "bhla-i": 29,
@@ -344,10 +357,11 @@ RECORDS = [
         "bhla": "עִמּ֑וֹ וּשְׁלם",
         "what-is-weird": "אתנח and ∅ not מונח and קמץ־אתנח?",
         "mam": "עִמּ֣וֹ וּשְׁלָ֑ם",
-        "comment": "Typical sloppy re-inking. Perhaps some super-faint remains of the אתנח under ל can be seen. The top dot of the שווא is super-faint. It is (charitably) transcribed based on consensus expectations. The dot under the מ of עמו is fairly clear. It is (charitably) not transcribed based on consensus expectations.",
+        "comment": "BHL Appendix A fails to note the anomalous non-pointing of the ל in the next word, ושלם. Nonethless I have included ושלם above. The letters of both words are re-inked, and as usual, the re-inking is sloppy. Perhaps some super-faint remains of an אתנח under ל can be seen. The top dot of the שווא (under the ש) is super-faint. I (charitably) transcribed it based on consensus expectations. A dot under the מ of עמו is fairly clear. It is (charitably) not transcribed by BHL, presumably based on consensus expectations.",
         "highlight": [2, 6],
         "lcloc": {'page': '403B', 'column': 1, 'line': -6},
         "img": "2221.png",
+        "bhq-comment": "BHQ transcribes these words as shown above. I.e. BHQ transcribes עמו as BHL does, and BHQ transcribes ושלם as I do. As is its habit, BHQ does all this silently, i.e. without any acknowledgement of uncertainties in transcription or departures from consensus expectations.",
     },
     {
         "bhla-i": 30,
@@ -360,6 +374,7 @@ RECORDS = [
         "highlight": 1,
         "lcloc": {'page': '403B', 'column': 2, 'line': 2},
         "img": "2228.png",
+        "bhq-comment": "BHQ places the mark a little left of center. Though this placement is odd, this makes it clear that a טרחא was intended rather than a דחי.",
     },
     {
         "bhla-i": 31,
@@ -368,10 +383,11 @@ RECORDS = [
         "bhla": "רֹעֵ֣ה",
         "what-is-weird": "ע may have צירה not סגול",
         "mam": "רֹעֶ֣ה",
-        "comment": "Perhaps there is some super-faint evidence of a third dot that would make a סגול, but this could be just wishful thinking.",
+        "comment": "Perhaps there is some super-faint evidence of a third dot that would make a סגול, but this could be just wishful thinking. Note that there is a third dot above the two clearer dots, but I take that to be part of the ע that did not flake off like its neighboring ink did.",
         "highlight": 2,
         "lcloc": {'page': '404A', 'column': 2, 'line': -2},
         "img": "2421.png",
+        "bhq-comment": "BHQ silently supplies the consensus expectation: a סגול. I.e. based on little or no manuscript evidence, BHQ silently infers a third dot centered below the two clearer dots.",
     },
     {
         "bhla-i": 32,

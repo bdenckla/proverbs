@@ -52,6 +52,9 @@ def _make_details(record):
     if comment := record["comment"]:
         dpe.append(sep)
         dpe.append(comment)
+    if bhq_comment := record.get("bhq-comment"):
+        dpe.append(sep)
+        dpe.append(bhq_comment)
     details_proper = my_html.para(dpe)
     return [
         author.table_c(_make_row(record)),
