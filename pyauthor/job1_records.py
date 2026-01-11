@@ -1,3 +1,4 @@
+_V_THEN_A = "BHQ silently supplies the marks in the vowel-then-accent order that is the consensus expectation, in clear contradiction of the manuscript here. In my opinion BHQ shows itself to be out of date by continuing to aspire, as BHS did, to reflect all such ordering anomalies. I think the modern consensus is that these orderings are as meaningless as the variable length of ascenders on ל. Nonetheless, since BHQ still aspires to get these orderings right, it is fair for me to point out when it fails to do so."
 RECORDS = [
     {
         "bhla-i": 1,
@@ -46,7 +47,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {"page": "399A", "column": 1, "line": 4},
         "img": "0701.png",
-        "bhq-comment": "BHQ silently ignores the putative רביע.",
+        "bhq-comment": "BHQ silently ignores the possible רביע.",
     },
     {
         "bhla-i": 5,
@@ -95,7 +96,7 @@ RECORDS = [
         "highlight": 1,
         "lcloc": {"page": "399A", "column": 2, "line": 13, "including-blank-lines": 1},
         "img": "0807.png",
-        "bhq-comment": "BHQ silently ignores the putative שורוק dot.",
+        "bhq-comment": "BHQ silently ignores the possible שורוק dot.",
     },
     {
         "bhla-i": 9,
@@ -220,7 +221,7 @@ RECORDS = [
         "highlight": 3,
         "lcloc": {"page": "401A", "column": 1, "line": -9},
         "img": "1409.png",
-        "bhq-comment": "BHQ silently ignores the putative דגש.",
+        "bhq-comment": "BHQ silently ignores the possible דגש.",
     },
     {
         "bhla-i": 19,
@@ -245,7 +246,7 @@ RECORDS = [
         "highlight": 1,
         "lcloc": {"page": "401B", "column": 1, "line": -3},
         "img": "1534.png",
-        "bhq-comment": "BHQ silently ignores the putative מרכא.",
+        "bhq-comment": "BHQ silently ignores the possible מרכא.",
     },
     {
         "bhla-i": 21,
@@ -296,7 +297,7 @@ RECORDS = [
         "highlight": 1,
         "lcloc": {"page": "402A", "column": 1, "line": -4},
         "img": "1804.png",
-        "bhq-comment": "BHQ silently ignores the putative שווא part of the putative חטף פתח. It also silently ignores the possible intepretation of that ink as a געיה. I.e. other than the prepositive דחי accent, BHQ supplies only the (full) פתח that is the consensus expectation here. BHQ does so silently, i.e. with no note.",
+        "bhq-comment": "BHQ silently ignores the possible שווא part of the possible חטף פתח. It also silently ignores the possible intepretation of that ink as a געיה. I.e. other than the prepositive דחי accent, BHQ supplies only the (full) פתח that is the consensus expectation here. BHQ does so silently, i.e. with no note.",
     },
     {
         "bhla-i": 25,
@@ -322,7 +323,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {"page": "402A", "column": 2, "line": -5},
         "img": "1905.png",
-        "bhq-comment": "BHQ silently lets the faint putative דגש “win” over the clear רפה.",
+        "bhq-comment": "BHQ silently lets the faint possible דגש “win” over the clear רפה.",
     },
     {
         "bhla-i": 27,
@@ -335,7 +336,7 @@ RECORDS = [
         "highlight": 1,
         "lcloc": {"page": "402B", "column": 1, "line": 8},
         "img": "1916.png",
-        "bhq-comment": "BHQ silently supplies the putative דגש.",
+        "bhq-comment": "BHQ silently supplies the possible דגש.",
     },
     {
         "bhla-i": 28,
@@ -451,7 +452,7 @@ RECORDS = [
         "highlight": 3,
         "lcloc": {"page": "405B", "column": 1, "line": -9, "including-blank-lines": 1},
         "img": "3105.png",
-        "bhq-comment": "BHQ silently supplies the marks in the vowel-then-accent order that is the consensus expectation, in clear contradiction of the manuscript here. In my opinion BHQ shows itself to be out of date by continuing to aspire, as BHS did, to reflect all such ordering anomalies. I think the modern consensus is that these orderings are as meaningless as the variable length of ascenders on ל. Nonetheless, since BHQ still aspires to get these orderings right, it is fair for me to point out when it fails to do so.",
+        "bhq-comment": _V_THEN_A,
     },
     {
         "bhla-i": 37,
@@ -491,6 +492,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {"page": "406A", "column": 1, "line": -6},
         "img": "3206.png",
+        "bhq-comment": _V_THEN_A,
     },
     {
         "bhla-i": 40,
@@ -524,10 +526,11 @@ RECORDS = [
         "bhla": "נִּכַּר־",
         "what-is-weird": "נ has דגש",
         "mam": "נִכַּר־",
-        "comment": "The putative דגש is faint, especially compared with the adjacent דגש on כ.",
+        "comment": "The possible דגש is faint, especially compared with the adjacent דגש on כ.",
         "highlight": 1,
         "lcloc": {"page": "406B", "column": 2, "line": -2},
         "img": "3419.png",
+        "bhq-comment": "BHQ silently ignores the faint possible דגש. Or it ignores the manuscript entirely and simply supplies the consensus pointing here, which has no דגש. It is hard to distinguish whether BHQ has done the right thing here by accident or on purpose.",
     },
     {
         "bhla-i": 43,
@@ -536,10 +539,11 @@ RECORDS = [
         "bhla": "סֻכָּֽתֽוֹ׃",
         "what-is-weird": "כ has געיה",
         "mam": "סֻכָּתֽוֹ׃",
-        "comment": "The color image strongly suggests that the mark in question is not ink. A געיה right next to סילוק like that would be extraordinary, BTW, though I feel no appeal to expectations is needed to dismiss this putative געיה.",
+        "comment": "The color image strongly suggests that the mark in question is not ink. A געיה right next to סילוק like that would be extraordinary, BTW, though I feel no appeal to expectations is needed to dismiss this possible געיה.",
         "highlight": 2,
         "lcloc": {"page": "407B", "column": 1, "line": -5},
         "img": "3629.png",
+        "bhq-comment": "BHQ silently ignores the faint possible געיה. Or it ignores the manuscript entirely and simply supplies the consensus pointing here, which has no געיה. It is hard to distinguish whether BHQ has done the right thing here by accident or on purpose.",
     },
     {
         "bhla-i": 44,
