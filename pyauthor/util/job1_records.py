@@ -814,6 +814,7 @@ RECORDS = [
         "highlight": 1,
         "lc-loc": {"page": "408A", "column": 1, "line": -12},
         "lc-img": "3812.png",
+        "bhq-comment": "BHQ notes that here μL disagrees with μA and μY, which have the consensus pointing.",
     },
     {
         "bhla-i": 46,
