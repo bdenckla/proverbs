@@ -151,9 +151,14 @@ _BHQ_COMMENT_3107 = [
     " a סילוק under its letter (א)!",
 ]
 
-_V_THEN_A = [
+_BHQ_COMMENT_CMN_3105_3206 = [
     "BHQ silently supplies the marks in the vowel-then-accent order that is",
     " the consensus expectation, in clear contradiction of the manuscript here.",
+]
+
+_BHQ_COMMENT_3105 = [
+    *_BHQ_COMMENT_CMN_3105_3206,
+    " 32:6 is similar.",
     " In my opinion BHQ shows itself to be out of date by continuing to aspire,",
     " as BHS did,",
     " to reflect all such ordering anomalies.",
@@ -162,6 +167,12 @@ _V_THEN_A = [
     " Nonetheless, since BHQ still aspires to get these orderings right,",
     " it is fair for me to point out when it fails to do so.",
 ]
+
+_BHQ_COMMENT_3206 = [
+    *_BHQ_COMMENT_CMN_3105_3206,
+    "31:5 is similar and discussed the matter at greater length.",
+]
+
 _BHQ_COMMENT_1604 = [
     "Though it is not relevant to the point at hand,",
     " note that BHQ continues to fail to distinguish",
@@ -620,7 +631,7 @@ RECORDS = [
         "highlight": 3,
         "lcloc": {"page": "405B", "column": 1, "line": -9, "including-blank-lines": 1},
         "img": "3105.png",
-        "bhq-comment": "".join(_V_THEN_A),
+        "bhq-comment": "".join(_BHQ_COMMENT_3105),
     },
     {
         "bhla-i": 37,
@@ -660,7 +671,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {"page": "406A", "column": 1, "line": -6},
         "img": "3206.png",
-        "bhq-comment": "".join(_V_THEN_A),
+        "bhq-comment": "".join(_BHQ_COMMENT_3206),
     },
     {
         "bhla-i": 40,
