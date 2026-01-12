@@ -73,6 +73,29 @@ _COMMENT_3913 = [
     " Note that the vertical line above the ר is a סילוק from the line above.",
 ]
 
+_BHQ_COMMENT_CMN_0409_AND_SIMILAR = [
+    "This is one of seven similar cases in Job the LC.",
+]
+_BHQ_COMMENT_0409 = [
+    *_BHQ_COMMENT_CMN_0409_AND_SIMILAR,
+    " Six of these seven, including this one, are noted by BHQ."
+    " They have a short note in the bottom-of-page critical apparatus",
+    " and a longer note in the section “Commentary on the Critical Apparatus.”"
+]
+_BHQ_COMMENT_LIKE_0409 = [
+    *_BHQ_COMMENT_CMN_0409_AND_SIMILAR,
+    " 4:9 discusses the matter at greater length.",
+]
+_BHQ_COMMENT_0417 = [
+    "This is one of seven similar cases in the LC. This is the only one of these seven not noted by BHQ.",
+    " 4:9 discusses the matter at greater length.",
+]
+_BHQ_COMMENT_1106 = _BHQ_COMMENT_LIKE_0409
+_BHQ_COMMENT_1107 = _BHQ_COMMENT_LIKE_0409
+_BHQ_COMMENT_1508 = _BHQ_COMMENT_LIKE_0409
+_BHQ_COMMENT_1620 = _BHQ_COMMENT_LIKE_0409
+_BHQ_COMMENT_3312 = _BHQ_COMMENT_LIKE_0409
+
 _BHQ_COMMENT_0914_AND_0930 = [
     "BHQ silently supplies the סילוק that is the consensus expectation,",
     " despite little or no manuscript evidence for it.",
@@ -170,7 +193,7 @@ _BHQ_COMMENT_3105 = [
 
 _BHQ_COMMENT_3206 = [
     *_BHQ_COMMENT_CMN_3105_3206,
-    "31:5 is similar and discussed the matter at greater length.",
+    "31:5 is similar and discusses the matter at greater length.",
 ]
 
 _BHQ_COMMENT_1604 = [
@@ -202,6 +225,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {"page": "398A", "column": 1, "line": -2},
         "img": "0409.png",
+        "bhq-comment": _BHQ_COMMENT_0409,
     },
     {
         "bhla-i": 3,
@@ -214,6 +238,7 @@ RECORDS = [
         "highlight": 5,
         "lcloc": {"page": "398A", "column": 2, "line": 10},
         "img": "0417.png",
+        "bhq-comment": _BHQ_COMMENT_0417,
     },
     {
         "bhla-i": 4,
@@ -363,6 +388,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {"page": "400A", "column": 2, "line": 5},
         "img": "1106.png",
+        "bhq-comment": "".join(_BHQ_COMMENT_1106),
     },
     {
         "bhla-i": 16,
@@ -375,6 +401,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {"page": "400A", "column": 2, "line": 6},
         "img": "1107.png",
+        "bhq-comment": "".join(_BHQ_COMMENT_1107),
     },
     {
         "bhla-i": 17,
@@ -413,6 +440,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {"page": "401A", "column": 2, "line": -7},
         "img": "1508.png",
+        "bhq-comment": "".join(_BHQ_COMMENT_1508),
     },
     {
         "bhla-i": 20,
@@ -464,6 +492,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {"page": "401B", "column": 2, "line": -2},
         "img": "1620.png",
+        "bhq-comment": "".join(_BHQ_COMMENT_1620),
     },
     {
         "bhla-i": 24,
@@ -684,6 +713,7 @@ RECORDS = [
         "highlight": 4,
         "lcloc": {"page": "406B", "column": 1, "line": 2},
         "img": "3312.png",
+        "bhq-comment": "".join(_BHQ_COMMENT_3312),
     },
     {
         "bhla-i": 41,
