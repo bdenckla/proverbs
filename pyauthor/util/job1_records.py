@@ -6,21 +6,21 @@
 # https://manuscripts.sefaria.org/leningrad-color/BIB_LENCDX_F402A.jpg
 # column 1 line 7
 #
-# 2:8   לְהִתְגָּרֵ֖ר ML (err) | לְהִתְגָּרֵ֖ד MA MY (resh/dalet)
+# 02:08   לְהִתְגָּרֵ֖ר ML (err) | לְהִתְגָּרֵ֖ד MA MY (resh/dalet)
 # 38:17 צַלְמָּ֣וֶת ML (err) | צַלְמָ֣וֶת MA MY (dagesh)
 # 16:13 יַחְמ֑וֹל ML (err) | יַחְמֹ֑ל MA MY (xaser/malei)
 # 17:11 לְבָבִּֽי׃ ML (err) | לְבָבִֽי׃ MA MY (dagesh)
-# 18:9 בְּעָקֵ֣ב ML (err) | בְּעָקֵ֣ב MA MY (?)
+# 18:09 בְּעָקֵ֣ב ML (err) | בְּעָקֵ֣ב MA MY (?)
 # 22:30 וְ֝נִּמְלַ֗ט ML (err) | וְ֝נִמְלַ֗ט MA MY (dagesh)
 # 24:16 יָ֥דְּעוּ ML (err) | יָ֥דְעוּ MA MY (dagesh)
 # כִּבְלִי־ ML (err) | בִּבְלִ־ MA MY(qere) (bet/kaf)
 # 42:13 בָנֽוֹת׃ ML (err) | בָּנֽוֹת׃ MA MY (dagesh)
-# 1:21 יָצָ֜תִי MA MY | יצתי ML(ket) | יָצָ֜אתִי ML(qere) (differ-orth) 
-# 2:7 ְעַ֥ד MA MY | עד Mket | וְעַד Mqere 
-# 5:12 תּוּשִׁיָּֽה׃ ML (differ-orth) | תֻּשִׁיָּֽה׃ MA MY 
-# 6:21 לֹ֑א MA MY (T) | לא ML(ket) | ל֑וֹ ML(qere) (err-lex) 
+# 01:21 יָצָ֜תִי MA MY | יצתי ML(ket) | יָצָ֜אתִי ML(qere) (differ-orth) 
+# 02:07 ְעַ֥ד MA MY | עד Mket | וְעַד Mqere 
+# 05:12 תּוּשִׁיָּֽה׃ ML (differ-orth) | תֻּשִׁיָּֽה׃ MA MY 
+# 06:21 לֹ֑א MA MY (T) | לא ML(ket) | ל֑וֹ ML(qere) (err-lex) 
 # 10:22
-# 14:5
+# 14:05
 # 15:31
 # 18:15
 

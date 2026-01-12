@@ -84,7 +84,7 @@ def _maybe_bhq(bhq):
     return [my_html.para(cont_p)]
 
 
-_DEFAULT_BHQ_COMMENT = "BHQ agrees with BHL-A here."
+_DEFAULT_BHQ_COMMENT = "BHQ agrees with BHL-A here, but BHQ makes no note of μL’s divergence from consensus."
 
 
 def _make_details(record):
