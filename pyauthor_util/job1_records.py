@@ -49,39 +49,75 @@
 # Da-at Miqra 17:6 xaser/malei
 # Da-at Miqra 18:4 patax vs xataf patax; noted by Dotan
 # Da-at Miqra 19:16 geresh muqdam location
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
+# Da-at Miqra 20:1 געיה location (ה vs נ)
+# Da-at Miqra 20:12 xaser/malei
+# Da-at Miqra 20:15 xaser/malei
+# Da-at Miqra 20:22 xaser/malei
+# Da-at Miqra 21:7 dexi vs munax
+# Da-at Miqra 21:15 dagesh
+# Da-at Miqra 21:24 xaser/malei
+# Da-at Miqra 22:10 Aleppo has full revia mugrash. Leningrad lacks the revia.
+# Da-at Miqra 22:15 xaser/malei
+# Da-at Miqra 22:24 bet/kaf
+# Da-at Miqra 22:28 xaser/malei
+# Da-at Miqra 23:5 possible maqaf disagreement
+# Da-at Miqra 24:4 xaser/malei
+# Da-at Miqra 24:13 maqaf
+# Da-at Miqra 24:18 Aleppo has full revia mugrash. Leningrad lacks the revia.
+# Da-at Miqra 24:21 segol/tsere; noted by Dotan
 # Da-at Miqra 26:3 xaser/malei; noted by BHQ
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
-# Da-at Miqra
+# Da-at Miqra 26:13 xaser/malei
+# Da-at Miqra 27:7 varika
+# Da-at Miqra 27:9 xataf something vs patax
+# Da-at Miqra 28:8 xaser/malei
+# Da-at Miqra 29:3 Aleppo has full revia mugrash. Leningrad lacks the revia.
+# Da-at Miqra 30:22 varika
+# Da-at Miqra 31:2 legarmeh (or is it paseq)
+# Da-at Miqra 31:7 shuruq; noted by Dotan
+# Da-at Miqra 31:20 varika
+# Da-at Miqra 31:20 Aleppo has full revia mugrash. Leningrad lacks the revia.
+# Da-at Miqra 31:33 סילוק location; noted by Dotan
+# Da-at Miqra 32:11 something about legarmeh?
+# Da-at Miqra 32:12 מרכא vs געיה? How would you tell?
+# Da-at Miqra 33:12 מפיק in אלוה; noted by BHQ but only in 4:9 note
+# Da-at Miqra 33:21 xaser/malei
+# Da-at Miqra 33:22 varika
+# Da-at Miqra 33:28 Aleppo has full revia mugrash. Leningrad lacks the revia.
+# Da-at Miqra 33:30 סילוק location; noted by Dotan
+# Da-at Miqra 34:5 munax vs dexi
+# Da-at Miqra 34:33 xataf something vs patax
+# Da-at Miqra 34:33 dagesh in lamed
+# Da-at Miqra 34:33 something about legarmeh?
+# Da-at Miqra 34:33 dagesh
+# Da-at Miqra 34:37 samekh/shin
+# Da-at Miqra 35:7 dagesh
+# Da-at Miqra 36:10 xaser/malei
+# Da-at Miqra 36:10 oleh location
+# Da-at Miqra 36:12 bet/kaf & מרכא vs מקף; noted by BHQ but, surprisingly, not by Dotan
+# Da-at Miqra 36:21 there's some question about what L has so maybe it doesn't agree with A
+# Da-at Miqra 36:24 varika
+# Da-at Miqra 37:8 xaser/malei
+# Da-at Miqra 37:15 xaser/malei
+# Da-at Miqra 38:12 xataf patax vs sheva; noted by Dotan
+# Da-at Miqra 38:20 Aleppo has full revia mugrash. Leningrad lacks the revia.
+# Da-at Miqra 38:22 xaser/malei
+# Da-at Miqra 38:29 Aleppo has full revia mugrash. Leningrad lacks the revia.
+# Da-at Miqra 38:31 varika
+# Da-at Miqra 38:25 varika
+# Da-at Miqra 39:6 סילוק location; noted by Dotan
+# Da-at Miqra 39:7 xaser/malei
+# Da-at Miqra 39:15 dagesh in tav
+# Da-at Miqra 39:20 xataf patax vs simple שווא; noted by Dotan
+# Da-at Miqra 39:25 Aleppo has full revia mugrash. Leningrad lacks the revia.
+# Da-at Miqra 40:16 xaser/malei
+# Da-at Miqra 40:18 xaser/malei
+# Da-at Miqra 40:19 Aleppo has full revia mugrash. Leningrad lacks the revia.
+# Da-at Miqra 40:26 xaser/malei (instance 1 of 2)
+# Da-at Miqra 40:26 xaser/malei (instance 2 of 2)
+# Da-at Miqra 40:26 סילוק location; noted by Dotan
+# Da-at Miqra 40:31 varika
+# Da-at Miqra 41:8 xaser/malei
+# Da-at Miqra 42:10 varika
 
 
 ###################################################################
