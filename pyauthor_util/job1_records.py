@@ -471,7 +471,7 @@ _RECORD_1711 = {
 }
 _RECORD_1809 = {
     "cv": "18:9",
-    "lc": "בְּעָּקֵ֣ב",
+    "lc": "בְּעָּקֵ֣ב",
     "what-is-weird": "ע has דגש",
     "mam": "בְּעָקֵ֣ב",
     "comment": "",
@@ -991,7 +991,7 @@ RECORDS = [
     {
         "bhla-i": 42,
         "cv": "34:19",
-        "lc": "נִּכַּר־",
+        "lc": "נִּכַּר־",
         "what-is-weird": "נ has דגש",
         "mam": "נִכַּר־",
         "comment": "The possible דגש is faint, especially compared with the adjacent דגש on כ.",
