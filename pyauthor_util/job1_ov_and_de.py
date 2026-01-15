@@ -1,6 +1,7 @@
 """ Exports make_ov_and_de_for_all_records, make_example_row """
 
 from py import my_html
+from pyauthor.common import D1D_FNAME
 from pyauthor_util import author
 from pyauthor_util.job1_highlight import highlight, color
 from pyauthor_util.job1_lcloc import lcloc
@@ -53,7 +54,7 @@ def _lc_and_mam(record):
 def _make_overview_row(record):
     hbo_attrs = {"lang": "hbo", "dir": "rtl"}
     row_id = _row_id(record)
-    anc = my_html.anchor_h("#", f"#{row_id}")  # self-anchor
+    anc = my_html.anchor_h("#", f"{D1D_FNAME}#{row_id}")  # self-anchor
     tr_contents = [
         my_html.table_datum(anc),
         my_html.table_datum(_lc_and_mam(record), hbo_attrs),
