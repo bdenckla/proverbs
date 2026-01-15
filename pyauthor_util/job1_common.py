@@ -7,7 +7,7 @@ def intro(ov_or_de):
     return [
         author.para(_each(each)),
         author.table_c(make_example_row()),
-        author.para(_where()),
+        *_where(),
     ]
 
 
@@ -34,5 +34,13 @@ def _each(each):
 
 def _where():
     return [
-        "Where c:v is the chapter and verse of the book of Job and μL is the contents of the Leningrad Codex (or the best guess of it)."
+        author.para("Where:"),
+        author.unordered_list(
+            [
+                "# (hash sign) (number sign) is a link to more details on this quirk",
+                "μL is the contents of the Leningrad Codex (or a good guess of it)",
+                "consensus is the Masoretic consensus reading (or a good guess of it)",
+                "c:v is the chapter and verse of the book of Job",
+            ]
+        ) 
     ]

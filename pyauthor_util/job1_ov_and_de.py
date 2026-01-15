@@ -32,6 +32,7 @@ def make_example_row():
     lc_and_mam = [hlc, my_html.line_break(), hmam]
     return my_html.table_row(
         [
+            my_html.table_datum("#"),
             my_html.table_datum(lc_and_mam),
             my_html.table_datum("c:v"),
             my_html.table_datum("how μL differs from consensus"),
