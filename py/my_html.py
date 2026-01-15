@@ -110,9 +110,9 @@ def caption(contents):
     return htel_mk("caption", flex_contents=contents)
 
 
-def table_row(contents):
+def table_row(contents, attr=None):
     """Make a <tr> element."""
-    return htel_mk("tr", flex_contents=contents)
+    return htel_mk("tr", attr=attr, flex_contents=contents)
 
 
 def table_row_of_data(tdconts, tdattrs=None):

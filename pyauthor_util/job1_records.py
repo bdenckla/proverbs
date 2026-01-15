@@ -474,7 +474,7 @@ _RECORD_1809 = {
     "lc": "בְּעָּקֵ֣ב",
     "what-is-weird": "ע has דגש",
     "mam": "בְּעָקֵ֣ב",
-    "comment": "",
+    "comment": "Of course דגש in ע is “illegal” but the dot is convincing, albeit a little close to the right arm of the ע.",
     "highlight": 4,
     "lc-loc": {"page": "402A", "column": 2, "line": 2},
     "lc-img": "1809.png",

@@ -1,15 +1,21 @@
-""" Exports make_per_case_data, make_example_row """
+""" Exports make_ov_and_de_for_all_records, make_example_row """
 
 from py import my_html
 from pyauthor_util import author
 from pyauthor_util.job1_highlight import highlight, color
 from pyauthor_util.job1_lcloc import lcloc
+from pyauthor_util.job1_records import RECORDS
+from pycmn.my_utils import sl_map
 
 
-def make_per_case_data(record):
+def make_ov_and_de_for_all_records():
+    return sl_map(_make_ov_and_de_for_one_record, RECORDS)
+
+
+def _make_ov_and_de_for_one_record(record):
     return {
-        "row": _make_row(record),
-        "details": _make_details(record),
+        "od-overview": _make_overview_row(record),
+        "od-details": _make_details_row(record),
     }
 
 
@@ -26,7 +32,7 @@ def make_example_row():
     )
 
 
-def _make_row(record):
+def _lc_and_mam(record):
     hlc = highlight(record, "lc")
     hmam = highlight(record, "mam")
     if lc_q := record.get("lc-q"):
@@ -35,14 +41,26 @@ def _make_row(record):
     else:
         lc_and_q = [hlc]
     lc_and_mam = [*lc_and_q, my_html.line_break(), hmam]
+    return lc_and_mam
+
+
+def _make_overview_row(record):
     hbo_attrs = {"lang": "hbo", "dir": "rtl"}
-    return my_html.table_row(
-        [
-            my_html.table_datum(lc_and_mam, hbo_attrs),
-            my_html.table_datum(record["cv"]),
-            my_html.table_datum(record["what-is-weird"]),
-        ]
-    )
+    row_id = _row_id(record)
+    anc = my_html.anchor_h("#", f"#{row_id}")  # self-anchor
+    tr_contents = [
+        my_html.table_datum(anc),
+        my_html.table_datum(_lc_and_mam(record), hbo_attrs),
+        my_html.table_datum(record["cv"]),
+        my_html.table_datum(record["what-is-weird"]),
+    ]
+    tr_attrs = {"id": row_id}
+    return my_html.table_row(tr_contents, tr_attrs)
+
+
+def _row_id(record):
+    nn_v_mm = record["cv"].replace(":", "v")
+    return f"row-{nn_v_mm}"
 
 
 def _img(img):
@@ -83,7 +101,9 @@ def _maybe_bhq(bhq):
     return [my_html.para(cont_p)]
 
 
-_DEFAULT_BHQ_COMMENT = "BHQ agrees with μL here, but BHQ makes no note of μL’s divergence from consensus."
+_DEFAULT_BHQ_COMMENT = (
+    "BHQ agrees with μL here, but BHQ makes no note of μL’s divergence from consensus."
+)
 _SEP = " \N{EM DASH} "
 
 
@@ -104,7 +124,7 @@ def _sep_bhq_comment(record):
     return [_SEP, bhq_comment]
 
 
-def _make_details(record):
+def _make_details_row(record):
     cv = record["cv"]
     uxlc_href = f"https://tanach.us/Tanach.xml?Job{cv}"
     uxlc_anc = my_html.anchor_h("UXLC", uxlc_href)
@@ -113,14 +133,16 @@ def _make_details(record):
     mwd_anc = my_html.anchor_h("MwD", mwd_href)
     dpe = [
         uxlc_anc,
-        _SEP, mwd_anc,
-        _SEP, *lcloc(record.get("lc-loc")),
+        _SEP,
+        mwd_anc,
+        _SEP,
+        *lcloc(record.get("lc-loc")),
         *_maybe_sep_comment(record),
         *_sep_bhq_comment(record),
         *_maybe_sep_lc_is_from_bhla(record),
     ]
     return [
-        author.table_c(_make_row(record)),
+        author.table_c(_make_overview_row(record)),
         *_maybe_bhq(record.get("bhq")),
         my_html.para(dpe),
         _img(record["lc-img"]),

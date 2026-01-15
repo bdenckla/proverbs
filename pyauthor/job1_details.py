@@ -4,23 +4,21 @@ from pyauthor.common import D1D_TITLE
 from pyauthor.common import D1D_H1_CONTENTS
 from pyauthor.common import D1D_FNAME
 from pyauthor_util.job1_common import intro
-from pycmn.my_utils import sl_map
 from py import my_html
 from pyauthor_util import author
-from pyauthor_util.job1_records import RECORDS
-from pyauthor_util.job1_make_per_case_data import make_per_case_data
 
 
-def gen_html_file(tdm_ch):
+def gen_html_file(tdm_ch, ov_and_de):
     author.assert_stem_eq(__file__, D1D_FNAME)
-    author.help_gen_html_file(tdm_ch, D1D_FNAME, D1D_TITLE, _CBODY)
+    author.help_gen_html_file(tdm_ch, D1D_FNAME, D1D_TITLE, _make_cbody(ov_and_de))
 
 
-_PER_CASE_DATA = sl_map(make_per_case_data, RECORDS)
-_DETAILS = [pcd["details"] for pcd in _PER_CASE_DATA]
-_CBODY = [
-    author.heading_level_1(D1D_H1_CONTENTS),
-    *intro("details"),
-    my_html.horizontal_rule(),
-    *_DETAILS,
-]
+def _make_cbody(ov_and_de):
+    details = [od["od-details"] for od in ov_and_de]
+    cbody = [
+        author.heading_level_1(D1D_H1_CONTENTS),
+        *intro("intro-details"),
+        my_html.horizontal_rule(),
+        *details,
+    ]
+    return cbody

@@ -1,5 +1,5 @@
 from pyauthor_util import author
-from pyauthor_util.job1_make_per_case_data import make_example_row
+from pyauthor_util.job1_ov_and_de import make_example_row
 
 
 def intro(ov_or_de, jda=None):
@@ -13,8 +13,8 @@ def intro(ov_or_de, jda=None):
 
 
 _VARIANTS = {
-    "overview": ("Below is a table summarizing", "Each"),
-    "details": ("This document presents", "The header of each"),
+    "intro-overview": ("Below is a table summarizing", "Each"),
+    "intro-details": ("This document presents", "The header of each"),
 }
 
 
