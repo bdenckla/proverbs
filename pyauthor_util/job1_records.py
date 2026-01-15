@@ -123,7 +123,7 @@
 ###################################################################
 
 # Below "All good" means:
-#    As expected, BHL body (both ketiv and qere, if relevant) matches ML above.
+#    As expected, BHL main (both ketiv and qere, if relevant) matches ML above.
 #    As expected, BHLA has no entry for this.
 #    As expected, UXLC matches ML above.
 #    As expected, MAM matches MA above.
@@ -143,7 +143,7 @@
 
 # 2:8 לְהִתְגָּרֵ֖ר ML (err) | לְהִתְגָּרֵ֖ד MA MY (resh/dalet)
 # Come on, the letter in question (the last) has a רפה and even has a little serif that might make it ד.
-# BHL body ends in ד, and BHLA has no entry for this.
+# BHL main ends in ד, and BHLA has no entry for this.
 # UXLC ends in ד.
 # MAM ends in ד.
 # https://manuscripts.sefaria.org/leningrad-color/BIB_LENCDX_F397B.jpg
@@ -177,7 +177,7 @@
 # As expected, noted in Da-at Miqra.
 
 # 17:6 וְתֹ֖פֶתּ ML (err) | וְתֹ֖פֶת MA MY ○ וְתֹ֖פֶתּ (dagesh) (see above)
-# As expected, BHL body matches MA/MY above.
+# As expected, BHL main matches MA/MY above.
 # Unexpectedly, BHLA has no entry for this.
 # Unexpectedly, UXLC matches MA/MY above.
 # As expected, MAM matches MA above.
@@ -187,7 +187,7 @@
 # docs\jobn\img\1706.png
 
 # 17:11 לְבָבִּֽי׃ ML (err) | לְבָבִֽי׃ MA MY (dagesh)
-# As expected, BHL body matches MA/MY above.
+# As expected, BHL main matches MA/MY above.
 # Unexpectedly, BHLA has no entry for this.
 # Unexpectedly, UXLC matches MA/MY above.
 # As expected, MAM matches MA above.
@@ -197,7 +197,7 @@
 # docs\jobn\img\1711.png
 
 # 18:9 בְּעָּקֵ֣ב ML (err) | בְּעָקֵ֣ב MA MY (dagesh in ע in ML (not present in Accordance))
-# As expected, BHL body matches MA/MY above.
+# As expected, BHL main matches MA/MY above.
 # Unexpectedly, BHLA has no entry for this.
 # Unexpectedly, UXLC matches MA/MY above.
 # As expected, MAM matches MA above.
@@ -207,7 +207,7 @@
 # docs\jobn\img\1809.png
 
 # 18:15 מִבְּלִיל֑וֹ ML MY | מִבְּלִי־ל֑וֹ MA (differ-orth)
-# BHL body has a simple word here, which is expected if we think ML has that, i.e. if we think ML is as above.
+# BHL main has a simple word here, which is expected if we think ML has that, i.e. if we think ML is as above.
 # BHLA has no entry for this, which is expected if we think a simple word is either the consensus, or there is no consensus on this issue.
 # UXLC has a compound word here, disagreeing with ML above but agreeing with MAM regarding the contents of μL.
 # MAM matches MY above, i.e. has a simple word here, and MAM notes that it is explicitly going against MA here.
@@ -215,14 +215,14 @@
 # Da-at Miqra says both MA and ML have a simple word here.
 
 # 22:30 וְ֝נִּמְלַ֗ט ML (err) | וְ֝נִמְלַ֗ט MA MY (dagesh)
-# As expected, BHL body matches MA/MY above.
+# As expected, BHL main matches MA/MY above.
 # Unexpectedly, BHLA has no entry for this.
 # Unexpectedly, UXLC matches MA/MY above.
 # As expected, MAM matches MA above.
 # Unexpectedly, Da-at Miqra has no entry for this.
 
 # 24:16 יָ֥דְּעוּ ML (err) | יָ֥דְעוּ MA MY (dagesh)
-# As expected, BHL body matches MA/MY above.
+# As expected, BHL main matches MA/MY above.
 # Unexpectedly, BHLA has no entry for this.
 # Unexpectedly, UXLC matches MA/MY above.
 # As expected, MAM matches MA above.
@@ -234,20 +234,20 @@
 
 # 36:12 כִּבְלִי־ ML (err) | בִּבְלִ־ MA MY(qere) (bet/kaf & ∅/י (∅/yod))
 # Plus, maybe MY has k/q but neither MA nor ML does?
-# BHL body has bet and BHLA has no entry.
+# BHL main has bet and BHLA has no entry.
 # UXLC has kaf.
 # MAM has bet.
 # As expected, the bet/kaf issue is noted in Da-at Miqra but I'm not sure if Da-at Miqra differs from BHQ in other ways.
 
 # 38:17 צַלְמָּ֣וֶת ML (err) | צַלְמָ֣וֶת MA MY (dagesh)
-# As expected, BHL body has no dagesh.
+# As expected, BHL main has no dagesh.
 # Unexpectedly, BHLA has no entry.
 # Unexpectedly, UXLC has no dagesh.
 # As expected, MAM has no dagesh.
 # Unexpectedly, Da-at Miqra has no entry for this.
 
 # 42:13 בָנֽוֹת׃ ML (err) | בָּנֽוֹת׃ MA MY (dagesh)
-# As expected, BHL body has dagesh.
+# As expected, BHL main has dagesh.
 # Unexpectedly, BHLA has no entry.
 # Unexpectedly, UXLC has dagesh.
 # As expected, MAM has dagesh.
