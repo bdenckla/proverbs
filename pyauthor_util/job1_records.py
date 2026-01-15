@@ -16,7 +16,7 @@
 # Da-at Miqra 6:10 Aleppo has maqaf.
 # Da-at Miqra 6:17 Aleppo has munax. Leningrad has dexi.
 # Da-at Miqra 6:21 k/q difference; noted by BHQ
-# Da-at Miqra 6:27 געיה location 
+# Da-at Miqra 6:27 געיה location
 # Da-at Miqra 6:29 xaser/malei
 # Da-at Miqra 7:20 oleh location
 # Da-at Miqra 7:21 varika
@@ -175,16 +175,6 @@
 # 16:13 יַחְמ֑וֹל ML (err) | יַחְמֹ֑ל MA MY (xaser/malei)
 # All good.
 # As expected, noted in Da-at Miqra.
-
-# 17:6 וְתֹ֖פֶתּ ML (err) | וְתֹ֖פֶת MA MY ○ וְתֹ֖פֶתּ (dagesh) (see above)
-# As expected, BHL main matches MA/MY above.
-# Unexpectedly, BHLA has no entry for this.
-# Unexpectedly, UXLC matches MA/MY above.
-# As expected, MAM matches MA above.
-# Unexpectedly, Da-at Miqra has no entry for this.
-# https://manuscripts.sefaria.org/leningrad-color/BIB_LENCDX_F402A.jpg
-# column 1 line 7
-# docs\jobn\img\1706.png
 
 # 17:11 לְבָבִּֽי׃ ML (err) | לְבָבִֽי׃ MA MY (dagesh)
 # As expected, BHL main matches MA/MY above.
@@ -472,12 +462,25 @@ _BHQ_COMMENT_1604 = [
     " note that BHQ continues to fail to distinguish",
     " between גלגל and אתנח הפוך.",
 ]
+_BHQ_COMMENT_1706 = "BHQ catches this, whereas this was missed by BHLA and Da-at Miqra."
+_RECORD_1076 = {
+    "cv": "17:6",
+    "lc": "וְתֹ֖פֶתּ",
+    "what-is-weird": "final ת has דגש",
+    "mam": "וְתֹ֖פֶת",
+    "comment": "",
+    "highlight": 4,
+    "lc-loc": {"page": "402A", "column": 1, "line": 7},
+    "lc-img": "1706.png",
+    "bhq-comment": "".join(_BHQ_COMMENT_1706),
+    "uxlc-needs-fix": True,
+}
 RECORDS = [
+    _RECORD_1076,
     {
         "bhla-i": 1,
         "cv": "1:21",
-        "bhla-q": "",
-        "bhla": "שָׁ֔מָה",
+        "lc": "שָׁ֔מָה",
         "what-is-weird": "מ has no דגש",
         "mam": "שָׁ֔מָּה",
         "comment": "",
@@ -489,8 +492,7 @@ RECORDS = [
     {
         "bhla-i": 2,
         "cv": "4:9",
-        "bhla-q": "",
-        "bhla": "אֱל֣וֹהַ",
+        "lc": "אֱל֣וֹהַ",
         "what-is-weird": "ה has no מפיק",
         "mam": "אֱל֣וֹהַּ",
         "comment": "",
@@ -502,8 +504,7 @@ RECORDS = [
     {
         "bhla-i": 3,
         "cv": "4:17",
-        "bhla-q": "",
-        "bhla": "מֵאֱל֣וֹהַ",
+        "lc": "מֵאֱל֣וֹהַ",
         "what-is-weird": "ה has no מפיק",
         "mam": "מֵאֱל֣וֹהַּ",
         "comment": "",
@@ -515,8 +516,7 @@ RECORDS = [
     {
         "bhla-i": 4,
         "cv": "7:1",
-        "bhla-q": "",
-        "bhla": "וְכִימֵ֖֗י",
+        "lc": "וְכִימֵ֖֗י",
         "what-is-weird": "רביע fights טרחא",
         "mam": "וְכִימֵ֖י",
         "comment": "",
@@ -528,8 +528,7 @@ RECORDS = [
     {
         "bhla-i": 5,
         "cv": "7:9",
-        "bhla-q": "",
-        "bhla": "יַעֲלֽ͏ֶה׃",
+        "lc": "יַעֲלֽ͏ֶה׃",
         "what-is-weird": "סילוק precedes סגול",
         "mam": "יַעֲלֶֽה׃",
         "comment": "",
@@ -540,8 +539,7 @@ RECORDS = [
     {
         "bhla-i": 6,
         "cv": "7:21",
-        "bhla-q": "",
-        "bhla": "וְשִׁ֖חֲרְתַּ֣נִי",
+        "lc": "וְשִׁ֖חֲרְתַּ֣נִי",
         "what-is-weird": "פתח on ח is חטף",
         "mam": "וְשִׁ֖חַרְתַּ֣נִי",
         "comment": "",
@@ -552,8 +550,7 @@ RECORDS = [
     {
         "bhla-i": 7,
         "cv": "8:1",
-        "bhla-q": "",
-        "bhla": "וַיֹאמַֽר׃",
+        "lc": "וַיֹאמַֽר׃",
         "what-is-weird": "י (yod) has no דגש",
         "mam": "וַיֹּאמַֽר׃",
         "comment": "",
@@ -565,8 +562,7 @@ RECORDS = [
     {
         "bhla-i": 8,
         "cv": "8:7",
-        "bhla-q": "",
-        "bhla": "וְּ֝אַחֲרִיתְךָ֗",
+        "lc": "וְּ֝אַחֲרִיתְךָ֗",
         "what-is-weird": "שורוק dot fights שווא",
         "mam": "וְ֝אַחֲרִֽיתְךָ֗",
         "comment": "The געיה difference is not important to us here.",
@@ -578,8 +574,8 @@ RECORDS = [
     {
         "bhla-i": 9,
         "cv": "9:14",
-        "bhla-q": "(?)",
-        "bhla": "עִמּוֹ׃",
+        "lc-q": "(?)",
+        "lc": "עִמּוֹ׃",
         "what-is-weird": "סילוק may be missing",
         "mam": "עִמּֽוֹ׃",
         "comment": "",
@@ -591,8 +587,8 @@ RECORDS = [
     {
         "bhla-i": 10,
         "cv": "9:30",
-        "bhla-q": "(?)",
-        "bhla": "כַּפָּי׃",
+        "lc-q": "(?)",
+        "lc": "כַּפָּי׃",
         "what-is-weird": "סילוק may be missing",
         "mam": "כַּפָּֽי׃",
         "comment": "",
@@ -604,8 +600,7 @@ RECORDS = [
     {
         "bhla-i": 11,
         "cv": "9:35",
-        "bhla-q": "",
-        "bhla": "אַֽ֭דַבְּרָה",
+        "lc": "אַֽ֭דַבְּרָה",
         "what-is-weird": "פתח on א is not חטף",
         "mam": "אֲֽ֭דַבְּרָה",
         "comment": "",
@@ -616,12 +611,11 @@ RECORDS = [
     {
         "bhla-i": 12,
         "cv": "10:1",
-        "bhla-q": "",
-        "bhla": "אֲ֝דַבְּרָה֗",
+        "lc": "אֲ֝דַבְּרָה֗",
         "what-is-weird": "רביע is on ה not ר",
         "mam": "אֲ֝דַבְּרָ֗ה",
         "comment": "",
-        "highlight-bhla": 5,
+        "highlight-lc": 5,
         "highlight-mam": 4,
         "lc-loc": {"page": "399B", "column": 2, "line": -6},
         "lc-img": "1001.png",
@@ -629,8 +623,7 @@ RECORDS = [
     {
         "bhla-i": 13,
         "cv": "10:15",
-        "bhla-q": "",
-        "bhla": "עָנְיֽ͏ִי׃",
+        "lc": "עָנְיֽ͏ִי׃",
         "what-is-weird": "סילוק precedes חיריק",
         "mam": "עׇנְיִֽי׃",
         "comment": "",
@@ -641,8 +634,7 @@ RECORDS = [
     {
         "bhla-i": 14,
         "cv": "11:3",
-        "bhla-q": "",
-        "bhla": "יַחֲרִ֑ישׁו",
+        "lc": "יַחֲרִ֑ישׁו",
         "what-is-weird": "שורוק dot is missing",
         "mam": "יַחֲרִ֑ישׁוּ",
         "comment": "",
@@ -653,8 +645,7 @@ RECORDS = [
     {
         "bhla-i": 15,
         "cv": "11:6",
-        "bhla-q": "",
-        "bhla": "אֱ֝ל֗וֹהַ",
+        "lc": "אֱ֝ל֗וֹהַ",
         "what-is-weird": "ה has no מפיק",
         "mam": "אֱ֝ל֗וֹהַּ",
         "comment": "",
@@ -666,8 +657,7 @@ RECORDS = [
     {
         "bhla-i": 16,
         "cv": "11:7",
-        "bhla-q": "",
-        "bhla": "אֱל֣וֹהַ",
+        "lc": "אֱל֣וֹהַ",
         "what-is-weird": "ה has no מפיק",
         "mam": "אֱל֣וֹהַּ",
         "comment": "",
@@ -679,8 +669,7 @@ RECORDS = [
     {
         "bhla-i": 17,
         "cv": "12:3",
-        "bhla-q": "",
-        "bhla": "וְאֶת_",
+        "lc": "וְאֶת_",
         "what-is-weird": "מקף is missing",
         "mam": "וְאֶת־",
         "comment": "",
@@ -692,8 +681,7 @@ RECORDS = [
     {
         "bhla-i": 18,
         "cv": "14:9",
-        "bhla-q": "",
-        "bhla": "מֵרֵ֣יַּח",
+        "lc": "מֵרֵ֣יַּח",
         "what-is-weird": "י (yod) has דגש",
         "mam": "מֵרֵ֣יחַ",
         "comment": "",
@@ -705,8 +693,7 @@ RECORDS = [
     {
         "bhla-i": 19,
         "cv": "15:8",
-        "bhla-q": "",
-        "bhla": "אֱל֣וֹהַ",
+        "lc": "אֱל֣וֹהַ",
         "what-is-weird": "ה has no מפיק",
         "mam": "אֱל֣וֹהַּ",
         "comment": "",
@@ -718,8 +705,7 @@ RECORDS = [
     {
         "bhla-i": 20,
         "cv": "15:34",
-        "bhla-q": "",
-        "bhla": "שֹֽׁ֥חַד׃",
+        "lc": "שֹֽׁ֥חַד׃",
         "what-is-weird": "מרכא fights סילוק",
         "mam": "שֹֽׁחַד׃",
         "comment": "",
@@ -731,8 +717,7 @@ RECORDS = [
     {
         "bhla-i": 21,
         "cv": "16:4",
-        "bhla-q": "",
-        "bhla": "ל֤וּ־",
+        "lc": "ל֤וּ־",
         "what-is-weird": "מקף is present",
         "mam": "ל֤וּ_",
         "comment": "".join(_COMMENT_1604),
@@ -744,12 +729,11 @@ RECORDS = [
     {
         "bhla-i": 22,
         "cv": "16:13",
-        "bhla-q": "",
-        "bhla": "מְרֵרָֽתִי׃",
+        "lc": "מְרֵרָֽתִי׃",
         "what-is-weird": "סילוק is on 2nd ר not ת",
         "mam": "מְרֵרָתִֽי׃",
         "comment": "",
-        "highlight-bhla": 3,
+        "highlight-lc": 3,
         "highlight-mam": 4,
         "lc-loc": {"page": "401B", "column": 2, "line": -10},
         "lc-img": "1613.png",
@@ -757,8 +741,7 @@ RECORDS = [
     {
         "bhla-i": 23,
         "cv": "16:20",
-        "bhla-q": "",
-        "bhla": "אֱ֝ל֗וֹהַ",
+        "lc": "אֱ֝ל֗וֹהַ",
         "what-is-weird": "ה has no מפיק",
         "mam": "אֱ֝ל֗וֹהַּ",
         "comment": "",
@@ -770,8 +753,7 @@ RECORDS = [
     {
         "bhla-i": 24,
         "cv": "18:4",
-        "bhla-q": "",
-        "bhla": "הֲ֭לְמַּעַנְךָ",
+        "lc": "הֲ֭לְמַּעַנְךָ",
         "what-is-weird": "פתח on ה is חטף and מ has דגש.",
         "mam": "הַֽ֭לְמַעַנְךָ",
         "comment": "The געיה difference is not important to us here.",
@@ -786,8 +768,7 @@ RECORDS = [
     {
         "bhla-i": 25,
         "cv": "18:6",
-        "bhla-q": "",
-        "bhla": "א֖וֹר",
+        "lc": "א֖וֹר",
         "what-is-weird": "דחי is placed like a טרחא",
         "mam": "א֭וֹר",
         "comment": "",
@@ -799,8 +780,8 @@ RECORDS = [
     {
         "bhla-i": 26,
         "cv": "19:5",
-        "bhla-q": "(?)",
-        "bhla": "חֶרְפָּתִּֽֿי",
+        "lc-q": "(?)",
+        "lc": "חֶרְפָּתִּֽֿי",
         "what-is-weird": "דגש may fight with רפה",
         "mam": "חֶרְפָּתִֽי׃",
         "comment": "Color photos show דגש to be unlikely.",
@@ -812,8 +793,8 @@ RECORDS = [
     {
         "bhla-i": 27,
         "cv": "19:16",
-        "bhla-q": "(?)",
-        "bhla": "קָּ֭רָאתִי",
+        "lc-q": "(?)",
+        "lc": "קָּ֭רָאתִי",
         "what-is-weird": "ק may have דגש",
         "mam": "קָ֭רָאתִי",
         "comment": "The dot is suspiciously brown rather than black.",
@@ -825,8 +806,7 @@ RECORDS = [
     {
         "bhla-i": 28,
         "cv": "21:25",
-        "bhla-q": "",
-        "bhla": "וִלֹֽא־",
+        "lc": "וִלֹֽא־",
         "what-is-weird": "ו has חיריק not שווא",
         "mam": "וְלֹֽא־",
         "comment": "".join(_COMMENT_2125),
@@ -838,8 +818,8 @@ RECORDS = [
     {
         "bhla-i": 29,
         "cv": "22:21",
-        "bhla-q": "(?)",
-        "bhla": "עִמּ֑וֹ וּשְׁלם",
+        "lc-q": "(?)",
+        "lc": "עִמּ֑וֹ וּשְׁלם",
         "what-is-weird": "אתנח and ∅ not מונח and קמץ־אתנח?",
         "mam": "עִמּ֣וֹ וּשְׁלָ֑ם",
         "comment": "".join(_COMMENT_2221),
@@ -856,8 +836,7 @@ RECORDS = [
     {
         "bhla-i": 30,
         "cv": "22:28",
-        "bhla-q": "",
-        "bhla": "א֖וֹמֶר",
+        "lc": "א֖וֹמֶר",
         "what-is-weird": "דחי is placed like a טרחא",
         "mam": "אֹ֭מֶר",
         "comment": "The מלא/חסר spelling difference is not important to us here.",
@@ -869,8 +848,8 @@ RECORDS = [
     {
         "bhla-i": 31,
         "cv": "24:21",
-        "bhla-q": "(?)",
-        "bhla": "רֹעֵ֣ה",
+        "lc-q": "(?)",
+        "lc": "רֹעֵ֣ה",
         "what-is-weird": "ע may have צירה not סגול",
         "mam": "רֹעֶ֣ה",
         "comment": "".join(_COMMENT_2421),
@@ -882,8 +861,7 @@ RECORDS = [
     {
         "bhla-i": 32,
         "cv": "27:2",
-        "bhla-q": "",
-        "bhla": "חַי_",
+        "lc": "חַי_",
         "what-is-weird": "מקף is missing",
         "mam": "חַי־",
         "comment": "".join(_COMMENT_2702),
@@ -895,8 +873,7 @@ RECORDS = [
     {
         "bhla-i": 33,
         "cv": "28:8",
-        "bhla-q": "",
-        "bhla": "הִדְריכֻ֥הוּ",
+        "lc": "הִדְריכֻ֥הוּ",
         "what-is-weird": "חיריק is missing",
         "mam": "הִדְרִיכ֥וּהוּ",
         "comment": "The מלא/חסר spelling difference is not important to us here.",
@@ -908,8 +885,7 @@ RECORDS = [
     {
         "bhla-i": 34,
         "cv": "29:11",
-        "bhla-q": "",
-        "bhla": "וְעַ֥ין",
+        "lc": "וְעַ֥ין",
         "what-is-weird": "חיריק is missing",
         "mam": "וְעַ֥יִן",
         "comment": "",
@@ -921,8 +897,7 @@ RECORDS = [
     {
         "bhla-i": 35,
         "cv": "29:19",
-        "bhla-q": "",
-        "bhla": "בִּקְצִירֽ͏ִי׃",
+        "lc": "בִּקְצִירֽ͏ִי׃",
         "what-is-weird": "סילוק precedes חיריק",
         "mam": "בִּקְצִירִֽי׃",
         "comment": "".join(_COMMENT_2919),
@@ -933,8 +908,7 @@ RECORDS = [
     {
         "bhla-i": 36,
         "cv": "31:5",
-        "bhla-q": "",
-        "bhla": "רַגְלֽ͏ִי׃",
+        "lc": "רַגְלֽ͏ִי׃",
         "what-is-weird": "סילוק precedes חיריק",
         "mam": "רַגְלִֽי׃",
         "comment": "",
@@ -946,8 +920,7 @@ RECORDS = [
     {
         "bhla-i": 37,
         "cv": "31:7",
-        "bhla-q": "",
-        "bhla": "מֻאֿוּֽם׃",
+        "lc": "מֻאֿוּֽם׃",
         "what-is-weird": "קבוץ and סילוק not סילוק and ∅",
         "mam": "מֽאֿוּם׃",
         "comment": "",
@@ -960,12 +933,11 @@ RECORDS = [
     {
         "bhla-i": 38,
         "cv": "31:33",
-        "bhla-q": "",
-        "bhla": "עֲוֺֽנִי׃",
+        "lc": "עֲוֺֽנִי׃",
         "what-is-weird": "סילוק is on ו not נ",
         "mam": "עֲוֺנִֽי׃",
         "comment": "",
-        "highlight-bhla": 2,
+        "highlight-lc": 2,
         "highlight-mam": 3,
         "lc-loc": {"page": "405B", "column": 2, "line": -3},
         "lc-img": "3133.png",
@@ -973,8 +945,7 @@ RECORDS = [
     {
         "bhla-i": 39,
         "cv": "32:6",
-        "bhla-q": "",
-        "bhla": "יְשִׁישׁ֑‍ִים",
+        "lc": "יְשִׁישׁ֑‍ִים",
         "what-is-weird": "אתנח precedes חיריק",
         "mam": "יְשִׁישִׁ֑ים",
         "comment": "",
@@ -986,8 +957,7 @@ RECORDS = [
     {
         "bhla-i": 40,
         "cv": "33:12",
-        "bhla-q": "",
-        "bhla": "אֱ֝ל֗וֹהַ",
+        "lc": "אֱ֝ל֗וֹהַ",
         "what-is-weird": "ה has no מפיק",
         "mam": "אֱ֝ל֗וֹהַּ",
         "comment": "",
@@ -999,12 +969,11 @@ RECORDS = [
     {
         "bhla-i": 41,
         "cv": "33:30",
-        "bhla-q": "",
-        "bhla": "הַֽחַיִּים׃",
+        "lc": "הַֽחַיִּים׃",
         "what-is-weird": "סילוק is on syl. 1 not 3",
         "mam": "הַחַיִּֽים׃",
         "comment": "",
-        "highlight-bhla": 1,
+        "highlight-lc": 1,
         "highlight-mam": 3,
         "lc-loc": {"page": "406B", "column": 1, "line": -1},
         "lc-img": "3330.png",
@@ -1013,8 +982,7 @@ RECORDS = [
     {
         "bhla-i": 42,
         "cv": "34:19",
-        "bhla-q": "",
-        "bhla": "נִּכַּר־",
+        "lc": "נִּכַּר־",
         "what-is-weird": "נ has דגש",
         "mam": "נִכַּר־",
         "comment": "The possible דגש is faint, especially compared with the adjacent דגש on כ.",
@@ -1026,8 +994,7 @@ RECORDS = [
     {
         "bhla-i": 43,
         "cv": "36:29",
-        "bhla-q": "",
-        "bhla": "סֻכָּֽתֽוֹ׃",
+        "lc": "סֻכָּֽתֽוֹ׃",
         "what-is-weird": "כ has געיה",
         "mam": "סֻכָּתֽוֹ׃",
         "comment": "".join(_COMMENT_3629),
@@ -1039,8 +1006,7 @@ RECORDS = [
     {
         "bhla-i": 44,
         "cv": "37:6",
-        "bhla-q": "",
-        "bhla": "לַשֶּׁ֨לַג׀",
+        "lc": "לַשֶּׁ֨לַג׀",
         "what-is-weird": "2nd ל has פתח not סגול",
         "mam": "לַשֶּׁ֨לֶג׀",
         "comment": "",
@@ -1051,8 +1017,7 @@ RECORDS = [
     {
         "bhla-i": 45,
         "cv": "38:12",
-        "bhla-q": "",
-        "bhla": "הְֽ֭מִיָּמֶיךָ",
+        "lc": "הְֽ֭מִיָּמֶיךָ",
         "what-is-weird": "simple שווא not חטף פתח",
         "mam": "הֲֽ֭מִיָּמֶיךָ",
         "comment": "39:20 is similar",
@@ -1064,8 +1029,7 @@ RECORDS = [
     {
         "bhla-i": 46,
         "cv": "39:2",
-        "bhla-q": "",
-        "bhla": "וְ֝יָדַעְתָּ֜",
+        "lc": "וְ֝יָדַעְתָּ֜",
         "what-is-weird": "גרש not רביע",
         "mam": "וְ֝יָדַעְתָּ֗",
         "comment": "".join(_COMMENT_3902),
@@ -1077,12 +1041,11 @@ RECORDS = [
     {
         "bhla-i": 47,
         "cv": "39:6",
-        "bhla-q": "",
-        "bhla": "מְלֵֽחָה׃",
+        "lc": "מְלֵֽחָה׃",
         "what-is-weird": "סילוק is on ל not ח",
         "mam": "מְלֵחָֽה׃",
         "comment": "",
-        "highlight-bhla": 2,
+        "highlight-lc": 2,
         "highlight-mam": 3,
         "lc-loc": {"page": "408B", "column": 1, "line": 3},
         "lc-img": "3906.png",
@@ -1090,8 +1053,8 @@ RECORDS = [
     {
         "bhla-i": 48,
         "cv": "39:13",
-        "bhla-q": "(?)",
-        "bhla": "אֶ֝בְרָה",
+        "lc-q": "(?)",
+        "lc": "אֶ֝בְרָה",
         "what-is-weird": "רביע מגרש may lack רביע",
         "mam": "אֶ֝בְרָ֗ה",
         "comment": "".join(_COMMENT_3913),
@@ -1103,8 +1066,7 @@ RECORDS = [
     {
         "bhla-i": 49,
         "cv": "39:20",
-        "bhla-q": "",
-        "bhla": "הְֽ֭תַרְעִישֶׁנּוּ",
+        "lc": "הְֽ֭תַרְעִישֶׁנּוּ",
         "what-is-weird": "simple שווא not חטף פתח",
         "mam": "הֲֽ֭תַרְעִישֶׁנּוּ",
         "comment": "38:12 is similar",
@@ -1115,8 +1077,8 @@ RECORDS = [
     {
         "bhla-i": 50,
         "cv": "40:10",
-        "bhla-q": "(?)",
-        "bhla": "גָֽא֣וֹן",
+        "lc-q": "(?)",
+        "lc": "גָֽא֣וֹן",
         "what-is-weird": "געיה may be present (on ג)",
         "mam": "גָא֣וֹן",
         "comment": "The mark in question could easily be accidental.",
@@ -1127,12 +1089,11 @@ RECORDS = [
     {
         "bhla-i": 51,
         "cv": "40:26",
-        "bhla-q": "",
-        "bhla": "לֶֽחֱיוֹ׃",
+        "lc": "לֶֽחֱיוֹ׃",
         "what-is-weird": "סילוק on ל not י (yod)",
         "mam": "לֶחֱיֽוֹ׃",
         "comment": "",
-        "highlight-bhla": 1,
+        "highlight-lc": 1,
         "highlight-mam": 3,
         "lc-loc": {"page": "409A", "column": 1, "line": 8},
         "lc-img": "4026.png",
@@ -1140,8 +1101,7 @@ RECORDS = [
     {
         "bhla-i": 52,
         "cv": "41:25",
-        "bhla-q": "",
-        "bhla": "לִבְלִי־חָת׃",
+        "lc": "לִבְלִי־חָת׃",
         "what-is-weird": "סילוק missing",
         "mam": "לִבְלִי־חָֽת׃",
         "comment": "",

@@ -14,32 +14,31 @@ def make_per_case_data(record):
 
 
 def make_example_row():
-    hbhla = color("BHL-A", "bhla")
+    hlc = color("μL", "lc")
     hmam = color("consensus", "mam")
-    bhla_and_mam = [hbhla, my_html.line_break(), hmam]
+    lc_and_mam = [hlc, my_html.line_break(), hmam]
     return my_html.table_row(
         [
-            my_html.table_datum(bhla_and_mam),
+            my_html.table_datum(lc_and_mam),
             my_html.table_datum("c:v"),
-            my_html.table_datum("how BHL-A differs from consensus"),
+            my_html.table_datum("how μL differs from consensus"),
         ]
     )
 
 
 def _make_row(record):
-    hbhla = highlight(record, "bhla")
+    hlc = highlight(record, "lc")
     hmam = highlight(record, "mam")
-    if blha_q := record["bhla-q"]:
-        assert blha_q == "(?)"
-        bhla_and_q = [hbhla, " (?)"]
+    if lc_q := record.get("lc-q"):
+        assert lc_q == "(?)"
+        lc_and_q = [hlc, " (?)"]
     else:
-        bhla_and_q = [hbhla]
-    bhla_and_mam = [*bhla_and_q, my_html.line_break(), hmam]
+        lc_and_q = [hlc]
+    lc_and_mam = [*lc_and_q, my_html.line_break(), hmam]
     hbo_attrs = {"lang": "hbo", "dir": "rtl"}
     return my_html.table_row(
         [
-            # str(record["bhla-i"]),
-            my_html.table_datum(bhla_and_mam, hbo_attrs),
+            my_html.table_datum(lc_and_mam, hbo_attrs),
             my_html.table_datum(record["cv"]),
             my_html.table_datum(record["what-is-weird"]),
         ]
@@ -84,7 +83,7 @@ def _maybe_bhq(bhq):
     return [my_html.para(cont_p)]
 
 
-_DEFAULT_BHQ_COMMENT = "BHQ agrees with BHL-A here, but BHQ makes no note of μL’s divergence from consensus."
+_DEFAULT_BHQ_COMMENT = "BHQ agrees with μL here, but BHQ makes no note of μL’s divergence from consensus."
 
 
 def _make_details(record):

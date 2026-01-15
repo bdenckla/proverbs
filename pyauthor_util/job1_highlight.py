@@ -20,11 +20,11 @@ def color(text, key):
 
 
 _RK_COLOR = {
-    "bhla": "red",
+    "lc": "red",
     "mam": "green",
 }
 _RK_HL_SPECIFIC = {
-    "bhla": "highlight-bhla",
+    "lc": "highlight-lc",
     "mam": "highlight-mam",
 }
 

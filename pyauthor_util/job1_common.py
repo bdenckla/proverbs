@@ -28,5 +28,5 @@ def _each(each):
 
 def _where():
     return [
-        "Where c:v is the chapter and verse of the book of Job and BHL-A is entry in the BHL Appendix A."
+        "Where c:v is the chapter and verse of the book of Job and μL is the contents of the Leningrad Codex (or the best guess of it)."
     ]
