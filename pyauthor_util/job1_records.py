@@ -184,20 +184,6 @@
 # BHQ claims that ML has a simple word, not a compound word, but MAM says the opposite.
 # Da-at Miqra says both MA and ML have a simple word here.
 
-# 22:30 וְ֝נִּמְלַ֗ט ML (err) | וְ֝נִמְלַ֗ט MA MY (dagesh)
-# As expected, BHL main matches MA/MY above.
-# Unexpectedly, BHLA has no entry for this.
-# Unexpectedly, UXLC matches MA/MY above.
-# As expected, MAM matches MA above.
-# Unexpectedly, Da-at Miqra has no entry for this.
-
-# 24:16 יָ֥דְּעוּ ML (err) | יָ֥דְעוּ MA MY (dagesh)
-# As expected, BHL main matches MA/MY above.
-# Unexpectedly, BHLA has no entry for this.
-# Unexpectedly, UXLC matches MA/MY above.
-# As expected, MAM matches MA above.
-# Unexpectedly, Da-at Miqra has no entry for this.
-
 # 26:3 וְ֝תוּשִׁיָּ֗ה ML (differ-orth) | וְ֝תֻשִׁיָּ֗ה MA MY(qere)
 # All good.
 # As expected, noted in Da-at Miqra.
@@ -208,20 +194,6 @@
 # UXLC has kaf.
 # MAM has bet.
 # As expected, the bet/kaf issue is noted in Da-at Miqra but I'm not sure if Da-at Miqra differs from BHQ in other ways.
-
-# 38:17 צַלְמָּ֣וֶת ML (err) | צַלְמָ֣וֶת MA MY (dagesh)
-# As expected, BHL main has no dagesh.
-# Unexpectedly, BHLA has no entry.
-# Unexpectedly, UXLC has no dagesh.
-# As expected, MAM has no dagesh.
-# Unexpectedly, Da-at Miqra has no entry for this.
-
-# 42:13 בָנֽוֹת׃ ML (err) | בָּנֽוֹת׃ MA MY (dagesh)
-# As expected, BHL main has dagesh.
-# Unexpectedly, BHLA has no entry.
-# Unexpectedly, UXLC has dagesh.
-# As expected, MAM has dagesh.
-# Unexpectedly, Da-at Miqra has no entry for this.
 
 
 def _correctly_ignores(what, adjective=""):
@@ -442,19 +414,18 @@ _BHQ_COMMENT_1604 = [
     " note that $BHQ continues to fail to distinguish",
     " between גלגל and אתנח הפוך.",
 ]
-_BHQ_COMMENT_1706 = "$BHQ catches this, whereas this was missed by $BHL_A and Da-at Miqra."
-_BHQ_COMMENT_1711 = _BHQ_COMMENT_1706
-_BHQ_COMMENT_1809 = _BHQ_COMMENT_1706
+_BHQ_COMMENT_MISSED_BY_DO_AND_BR = "$BHQ catches this, whereas this was missed by $BHL_A and Da-at Miqra."
+_BHQ_COMMENT_MISSED_BY_DO_AND_BR_POSSIBLE = "$BHQ catches this possibility, whereas this was either missed by $BHL_A and Da-at Miqra, or considered to be too slight a possibility to mention."
 RECORD_1076 = {
     "cv": "17:6",
     "lc": "וְתֹ֖פֶתּ",
     "what-is-weird": "final ת has דגש",
     "mam": "וְתֹ֖פֶת",
-    "comment": "",
+    "comment": "A דגש in a final ת doesn’t make sense without a קמץ or a שווא נח below. But the dot is convincing.",
     "highlight": 4,
     "lc-loc": {"page": "402A", "column": 1, "line": 7},
     "lc-img": "1706.png",
-    "bhq-comment": "".join(_BHQ_COMMENT_1706),
+    "bhq-comment": "".join(_BHQ_COMMENT_MISSED_BY_DO_AND_BR),
     "uxlc-needs-fix": True,
 }
 RECORD_1711 = {
@@ -466,7 +437,7 @@ RECORD_1711 = {
     "highlight": 3,
     "lc-loc": {"page": "402A", "column": 1, "line": 13},
     "lc-img": "1711.png",
-    "bhq-comment": "".join(_BHQ_COMMENT_1711),
+    "bhq-comment": "".join(_BHQ_COMMENT_MISSED_BY_DO_AND_BR),
     "uxlc-needs-fix": True,
 }
 RECORD_1809 = {
@@ -474,23 +445,74 @@ RECORD_1809 = {
     "lc": "בְּעָּקֵ֣ב",
     "what-is-weird": "ע has דגש",
     "mam": "בְּעָקֵ֣ב",
-    "comment": "Of course דגש in ע is “illegal” but the dot is convincing, albeit a little close to the right arm of the ע.",
+    "comment": "A דגש in a ע doesn’t make sense. But the dot is convincing, despite being a little close to the right arm of the ע.",
     "highlight": 2,
     "lc-loc": {"page": "402A", "column": 2, "line": 2},
     "lc-img": "1809.png",
-    "bhq-comment": "".join(_BHQ_COMMENT_1809),
+    "bhq-comment": "".join(_BHQ_COMMENT_MISSED_BY_DO_AND_BR),
     "uxlc-needs-fix": True,
 }
-
+RECORD_2230 = {
+    "cv": "22:30",
+    "lc": "וְ֝נִּמְלַ֗ט",
+    "what-is-weird": "נ may have דגש",
+    "mam": "וְ֝נִמְלַ֗ט",
+    "comment": "The dot in question is smaller than nearby ones.",
+    "highlight": 2,
+    "lc-loc": {"page": "403B", "column": 2, "line": 4},
+    "lc-img": "2230.png",
+    "bhq-comment": "".join(_BHQ_COMMENT_MISSED_BY_DO_AND_BR_POSSIBLE),
+    "uxlc-needs-fix": True,
+}
+RECORD_2416 = {
+    "cv": "24:16",
+    "lc": "יָ֥דְּעוּ",
+    "what-is-weird": "ד may have דגש",
+    "mam": "יָ֥דְעוּ",
+    "comment": "The dot in question is larger than nearby ones.",
+    "highlight": 2,
+    "lc-loc": {"page": "404A", "column": 1, "line": -12},
+    "lc-img": "2416.png",
+    "bhq-comment": "".join(_BHQ_COMMENT_MISSED_BY_DO_AND_BR_POSSIBLE),
+    "uxlc-needs-fix": True,
+}
+RECORD_3817 = {
+    "cv": "38:17",
+    "lc": "צַלְמָּ֣וֶת",
+    "what-is-weird": "מ has דגש",
+    "mam": "צַלְמָ֣וֶת",
+    "comment": "",
+    "highlight": 3,
+    "lc-loc": {"page": "402A", "column": 2, "line": 2},
+    "lc-img": "3817.png",
+    "bhq-comment": "".join(_BHQ_COMMENT_MISSED_BY_DO_AND_BR),
+    "uxlc-needs-fix": True,
+}
+RECORD_4213 = {
+    "cv": "42:13",
+    "lc": "בָנֽוֹת׃",
+    "what-is-weird": "ב lacks דגש",
+    "mam": "בָּנֽוֹת׃",
+    "comment": "",
+    "highlight": 1,
+    "lc-loc": {"page": "402A", "column": 2, "line": 2},
+    "lc-img": "4213.png",
+    "bhq-comment": "".join(_BHQ_COMMENT_MISSED_BY_DO_AND_BR),
+    "uxlc-needs-fix": True,
+}
 RECORDS = [
     RECORD_1076,
     RECORD_1711,
     RECORD_1809,
+    RECORD_2230,
+    RECORD_2416,
+    RECORD_3817,
+    RECORD_4213,
     {
         "bhla-i": 1,
         "cv": "1:21",
         "lc": "שָׁ֔מָה",
-        "what-is-weird": "מ has no דגש",
+        "what-is-weird": "מ lacks דגש",
         "mam": "שָׁ֔מָּה",
         "comment": "",
         "highlight": 2,
@@ -560,7 +582,7 @@ RECORDS = [
         "bhla-i": 7,
         "cv": "8:1",
         "lc": "וַיֹאמַֽר׃",
-        "what-is-weird": "י (yod) has no דגש",
+        "what-is-weird": "י (yod) lacks דגש",
         "mam": "וַיֹּאמַֽר׃",
         "comment": "",
         "highlight": 2,
