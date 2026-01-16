@@ -285,7 +285,8 @@ _BHQ_COMMENT_LIKE_0409 = [
     " 4:9 discusses the matter at greater length.",
 ]
 _BHQ_COMMENT_0417 = [
-    "This is one of seven similar cases in Job in μL. This is the only one of these seven not noted by $BHQ.",
+    "This is one of seven similar cases in Job in μL.",
+    " This is the only one of these seven not noted by $BHQ.",
     " 4:9 discusses the matter at greater length.",
 ]
 _BHQ_COMMENT_1106 = _BHQ_COMMENT_LIKE_0409
@@ -419,14 +420,17 @@ _BHQ_COMMENT_MISSED_BY_DO_AND_BR = [
 ]
 _BHQ_COMMENT_MISSED_BY_DO_AND_BR_POSSIBLE = [
     "$BHQ catches this possibility, whereas this was either missed by $BHL_A and Da-at Miqra,",
-    " or considered to be too slight a possibility to mention."
+    " or considered to be too slight a possibility to mention.",
 ]
 RECORD_1076 = {
     "cv": "17:6",
     "lc": "וְתֹ֖פֶתּ",
     "what-is-weird": "final ת has דגש",
     "mam": "וְתֹ֖פֶת",
-    "comment": "A דגש in a final ת doesn’t make sense without a קמץ or a שווא נח below. But the dot is convincing.",
+    "comment": [
+        "A דגש in a final ת doesn’t make sense without a קמץ or a שווא נח below.",
+        " But the dot is convincing.",
+    ],
     "highlight": 4,
     "lc-loc": {"page": "402A", "column": 1, "line": 7},
     "lc-img": "1706.png",
@@ -451,7 +455,11 @@ RECORD_1809 = {
     "lc-q": "(?)",
     "what-is-weird": "ע may have דגש",
     "mam": "בְּעָקֵ֣ב",
-    "comment": "A דגש in a ע doesn’t make sense. But the dot is convincing, despite being a little close to the right arm of the ע.",
+    "comment": [
+        "A דגש in a ע doesn’t make sense.",
+        " But the dot is convincing,",
+        " despite being a little close to the right arm of the ע.",
+    ],
     "highlight": 2,
     "lc-loc": {"page": "402A", "column": 2, "line": 2},
     "lc-img": "1809.png",
@@ -477,7 +485,11 @@ RECORD_2416 = {
     "lc-q": "(?)",
     "what-is-weird": "דגש may fight with רפה",
     "mam": "יָ֥דְעוּ",
-    "comment": "A דגש on a letter with רפה doesn’t make sense. The dot in question is suspiciously larger than nearby ones, and looks different from them in other ways.",
+    "comment": [
+        "A דגש on a letter with רפה doesn’t make sense.",
+        " The dot in question is suspiciously larger than nearby ones,",
+        " and looks different from them in other ways.",
+    ],
     "highlight": 2,
     "lc-loc": {"page": "404A", "column": 1, "line": -12},
     "lc-img": "2416.png",
@@ -518,7 +530,10 @@ _RECORD_0121 = {
     "highlight": 2,
     "lc-loc": {"page": "397B", "column": 1, "line": 1},
     "lc-img": "0121.png",
-    "bhq-comment": "$BHQ notes that here μL disagrees with μA and μY, which have the consensus pointing.",
+    "bhq-comment": [
+        "$BHQ notes that here μL disagrees with μA and μY,",
+        " which have the consensus pointing.",
+    ],
 }
 
 _RECORD_0409 = {
@@ -840,7 +855,10 @@ _RECORD_1905 = {
     "lc": "חֶרְפָּתִּֽֿי",
     "what-is-weird": "דגש may fight with רפה",
     "mam": "חֶרְפָּתִֽי׃",
-    "comment": "A דגש on a letter with רפה doesn’t make sense. Color photos show דגש to be unlikely.",
+    "comment": [
+        "A דגש on a letter with רפה doesn’t make sense.",
+        " Color photos show דגש to be unlikely.",
+    ],
     "highlight": 4,
     "lc-loc": {"page": "402A", "column": 2, "line": -5},
     "lc-img": "1905.png",
@@ -1048,7 +1066,10 @@ _RECORD_3330 = {
     "highlight-mam": 3,
     "lc-loc": {"page": "406B", "column": 1, "line": -1},
     "lc-img": "3330.png",
-    "bhq-comment": "$BHQ notes that here μL disagrees with μA and μY, which have the consensus pointing.",
+    "bhq-comment": [
+        "$BHQ notes that here μL disagrees with μA and μY,",
+        " which have the consensus pointing.",
+    ],
 }
 
 _RECORD_3419 = {
@@ -1099,7 +1120,10 @@ _RECORD_3812 = {
     "highlight": 1,
     "lc-loc": {"page": "408A", "column": 1, "line": -12},
     "lc-img": "3812.png",
-    "bhq-comment": "$BHQ notes that here μL disagrees with μA and μY, which have the consensus pointing.",
+    "bhq-comment": [
+        "$BHQ notes that here μL disagrees with μA and μY,",
+        " which have the consensus pointing.",
+    ],
 }
 
 _RECORD_3902 = {
@@ -1139,7 +1163,10 @@ _RECORD_3913 = {
     "highlight": 3,
     "lc-loc": {"page": "408B", "column": 1, "line": 11},
     "lc-img": "3913.png",
-    "bhq-comment": "$BHQ seems to split the mark(s) in question into a רביע on ר and a masorah circle on ב.",
+    "bhq-comment": [
+        "$BHQ seems to split the mark(s) in question",
+        " into a רביע on ר and a masorah circle on ב.",
+    ],
 }
 
 _RECORD_3920 = {
