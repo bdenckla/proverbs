@@ -503,15 +503,7 @@ RECORD_4213 = {
     "bhq-comment": "".join(_BHQ_COMMENT_MISSED_BY_DO_AND_BR),
     "uxlc-needs-fix": True,
 }
-RECORDS = [
-    RECORD_1076,
-    RECORD_1711,
-    RECORD_1809,
-    RECORD_2230,
-    RECORD_2416,
-    RECORD_3817,
-    RECORD_4213,
-    {
+_RECORD_0121 = {
         "bhla-i": 1,
         "cv": "1:21",
         "lc": "שָׁ֔מָה",
@@ -522,8 +514,9 @@ RECORDS = [
         "lc-loc": {"page": "397B", "column": 1, "line": 1},
         "lc-img": "0121.png",
         "bhq-comment": "$BHQ notes that here μL disagrees with μA and μY, which have the consensus pointing.",
-    },
-    {
+    }
+    
+_RECORD_0409 = {
         "bhla-i": 2,
         "cv": "4:9",
         "lc": "אֱל֣וֹהַ",
@@ -534,8 +527,9 @@ RECORDS = [
         "lc-loc": {"page": "398A", "column": 1, "line": -2},
         "lc-img": "0409.png",
         "bhq-comment": _BHQ_COMMENT_0409,
-    },
-    {
+    }
+    
+_RECORD_0417 = {
         "bhla-i": 3,
         "cv": "4:17",
         "lc": "מֵאֱל֣וֹהַ",
@@ -546,7 +540,19 @@ RECORDS = [
         "lc-loc": {"page": "398A", "column": 2, "line": 10},
         "lc-img": "0417.png",
         "bhq-comment": _BHQ_COMMENT_0417,
-    },
+    }
+    
+RECORDS = [
+    RECORD_1076,
+    RECORD_1711,
+    RECORD_1809,
+    RECORD_2230,
+    RECORD_2416,
+    RECORD_3817,
+    RECORD_4213,
+    _RECORD_0121,
+    _RECORD_0409,
+    _RECORD_0417,
     {
         "bhla-i": 4,
         "cv": "7:1",
