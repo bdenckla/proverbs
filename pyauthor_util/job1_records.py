@@ -189,6 +189,7 @@
 # As expected, noted in Da-at Miqra.
 
 from pyauthor_util import author
+from py import my_html
 
 def _correctly_ignores(what, adjective=""):
     adj = f" {adjective}" if adjective else ""
@@ -495,7 +496,7 @@ RECORD_2416 = {
 RECORD_3612 = {
     "cv": "36:12",
     "lc": "כִּבְלִי־",
-    "what-is-weird": "כ where ב is expected",
+    "what-is-weird": "כ not ב",
     "mam": "בִּבְלִי־",
     "comment": [
         "Although my focus is pointing rather than spelling,",
@@ -513,11 +514,16 @@ RECORD_3612 = {
         " It is noted in Da-at Miqra.",
         " Here $BHQ has a typo:",
         [" it has ",author.hbo("בִּבְלִ־")," rather than ", author.hbo("בִּבְלִי־")],
-        " in the word it reports for uA and uL.",
+        " in the word it reports for μA and μL.",
         " I.e. it is missing a final $yod (י) before the מקף."
+        " The same typo appears in the $BHQ section “Commentary on the Critical Apparatus.”",
+        " In addition to the typo, for some reason $BHQ reports this word as being the $qere",
+        [" of μA, i.e. M", my_html.sup("Y(qere)"), " rather than just M",my_html.sup("Y"),"."]
     ],
     "aleppo-page-url": "https://www.mgketer.org/mikra/29/36/1/mg/106",
     "aleppo-img": "Aleppo-3612.png",
+    "cam1753-page-url": "https://archive.org/details/ketuvim-cambridge-ms-add-1753-images/page/n87/mode/1up",
+    "cam1753-img": "Cam1753-3612.png",
     "uxlc-needs-fix": "UXLC has kaf (as it should) but should note the divergence from consensus",
 }
 RECORD_3817 = {
