@@ -60,7 +60,7 @@ def make_overview_row(record):
         my_html.table_datum(anc),
         my_html.table_datum(_lc_and_mam(record), hbo_attrs),
         my_html.table_datum(record["cv"]),
-        my_html.table_datum(record["what-is-weird"]),
+        author.table_datum(record["what-is-weird"]),
     ]
     tr_attrs = {"id": row_id}
     return my_html.table_row(tr_contents, tr_attrs)

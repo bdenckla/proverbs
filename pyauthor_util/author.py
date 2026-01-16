@@ -36,6 +36,10 @@ def emphasis(contents):
     return my_html.emphasis(dollar_sub(contents))
 
 
+def table_datum(contents):
+    return my_html.table_datum(dollar_sub(contents))
+
+
 def stem_eq(path1, path2):
     return _stem(path1) == _stem(path2)
 
@@ -45,7 +49,7 @@ def assert_stem_eq(path1, path2):
 
 
 def para(contents, attr=None):
-    return my_html.para(dollar_sub(_rns(contents)), attr)
+    return my_html.para(dollar_sub(contents), attr)
 
 
 def para_cc(contents, attr=None):
@@ -59,7 +63,7 @@ def para_dr_cc(contents, attr=None):
 
 
 def blockquote(contents, attr=None):
-    return my_html.blockquote(dollar_sub(_rns(contents)), attr)
+    return my_html.blockquote(dollar_sub(contents), attr)
 
 
 def unordered_list(items, attr=None):
@@ -225,13 +229,6 @@ def _std_cell(htel):
         if re.search(r"[א-ת]", htel) and not re.search(r"[A-Za-z]", htel):
             return hbo(htel)
     return dollar_sub(htel)
-
-
-def _rns(contents):
-    """Replace each newline with a space."""
-    if isinstance(contents, str):
-        return contents.replace("\n", " ")
-    return contents
 
 
 def _romanized(string: str):

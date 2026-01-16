@@ -93,7 +93,7 @@
 # Da-at Miqra 35:7 dagesh
 # Da-at Miqra 36:10 xaser/malei
 # Da-at Miqra 36:10 oleh location
-# Da-at Miqra 36:12 bet/kaf & מרכא vs מקף; noted by BHQ but, unexpectedly, not by Dotan
+# Da-at Miqra 36:12 bet/kaf; noted by BHQ but, unexpectedly, not by Dotan
 # Da-at Miqra 36:21 there's some question about what L has so maybe it doesn't agree with A
 # Da-at Miqra 36:24 varika
 # Da-at Miqra 37:8 xaser/malei
@@ -188,13 +188,7 @@
 # All good.
 # As expected, noted in Da-at Miqra.
 
-# 36:12 כִּבְלִי־ ML (err) | בִּבְלִ־ MA MY(qere) (bet/kaf & ∅/י (∅/yod))
-# Plus, maybe MY has k/q but neither MA nor ML does?
-# BHL main has bet and BHLA has no entry.
-# UXLC has kaf.
-# MAM has bet.
-# As expected, the bet/kaf issue is noted in Da-at Miqra but I'm not sure if Da-at Miqra differs from BHQ in other ways.
-
+from pyauthor_util import author
 
 def _correctly_ignores(what, adjective=""):
     adj = f" {adjective}" if adjective else ""
@@ -416,11 +410,13 @@ _BHQ_COMMENT_1604 = [
     " between גלגל and אתנח הפוך.",
 ]
 _BHQ_COMMENT_MISSED_BY_DO_AND_BR = [
-    "$BHQ catches this, whereas this was missed by $BHL_A and Da-at Miqra."
+    "$BHQ catches this, whereas this is not noted in $BHL_A or Da-at Miqra."
 ]
 _BHQ_COMMENT_MISSED_BY_DO_AND_BR_POSSIBLE = [
-    "$BHQ catches this possibility, whereas this was either missed by $BHL_A and Da-at Miqra,",
-    " or considered to be too slight a possibility to mention.",
+    "$BHQ catches this possibility, whereas this is not noted in $BHL_A or Da-at Miqra.",
+    " It could be that Dotan and Breuer did not catch this,",
+    " or it could be that they caught it",
+    " but considered to be too slight a possibility to note it.",
 ]
 RECORD_1076 = {
     "cv": "17:6",
@@ -495,6 +491,34 @@ RECORD_2416 = {
     "lc-img": "2416.png",
     "bhq-comment": _BHQ_COMMENT_MISSED_BY_DO_AND_BR_POSSIBLE,
     "uxlc-needs-fix": True,
+}
+RECORD_3612 = {
+    "cv": "36:12",
+    "lc": "כִּבְלִי־",
+    "what-is-weird": "כ where ב is expected",
+    "mam": "בִּבְלִי־",
+    "comment": [
+        "Although my focus is pointing rather than spelling,",
+        " I am interested in a spelling difference like this,",
+        " since it is not just a חסר vs מלא difference.",
+    ],
+    "highlight": 1,
+    "lc-loc": {"page": "407B", "column": 1, "line": 4},
+    "lc-img": "3612.png",
+    "bhq-comment": [
+        "$BHQ catches this, whereas this is not noted in $BHL_A.",
+        " It could be that Dotan did not catch this,",
+        " or it could be that he caught it",
+        " but considered to be too slight a possibility to note it.",
+        " It is noted in Da-at Miqra.",
+        " Here $BHQ has a typo:",
+        [" it has ",author.hbo("בִּבְלִ־")," rather than ", author.hbo("בִּבְלִי־")],
+        " in the word it reports for uA and uL.",
+        " I.e. it is missing a final $yod (י) before the מקף."
+    ],
+    "aleppo-page-url": "https://www.mgketer.org/mikra/29/36/1/mg/106",
+    "aleppo-img": "Aleppo-3612.png",
+    "uxlc-needs-fix": "UXLC has kaf (as it should) but should note the divergence from consensus",
 }
 RECORD_3817 = {
     "cv": "38:17",
@@ -603,7 +627,7 @@ _RECORD_0801 = {
     "bhla-i": 7,
     "cv": "8:1",
     "lc": "וַיֹאמַֽר׃",
-    "what-is-weird": "י (yod) lacks דגש",
+    "what-is-weird": "$yod (י) lacks דגש",
     "mam": "וַיֹּאמַֽר׃",
     "comment": "",
     "highlight": 2,
@@ -745,7 +769,7 @@ _RECORD_1409 = {
     "bhla-i": 18,
     "cv": "14:9",
     "lc": "מֵרֵ֣יַּח",
-    "what-is-weird": "י (yod) has דגש",
+    "what-is-weird": "$yod (י) has דגש",
     "mam": "מֵרֵ֣יחַ",
     "comment": "",
     "highlight": 3,
@@ -1198,7 +1222,7 @@ _RECORD_4026 = {
     "bhla-i": 51,
     "cv": "40:26",
     "lc": "לֶֽחֱיוֹ׃",
-    "what-is-weird": "סילוק on ל not י (yod)",
+    "what-is-weird": "סילוק on ל not $yod (י)",
     "mam": "לֶחֱיֽוֹ׃",
     "comment": "",
     "highlight-lc": 1,
@@ -1226,6 +1250,7 @@ RECORDS = [
     RECORD_1809,
     RECORD_2230,
     RECORD_2416,
+    RECORD_3612,
     RECORD_3817,
     RECORD_4213,
     _RECORD_0121,
