@@ -542,18 +542,7 @@ _RECORD_0417 = {
         "bhq-comment": _BHQ_COMMENT_0417,
     }
     
-RECORDS = [
-    RECORD_1076,
-    RECORD_1711,
-    RECORD_1809,
-    RECORD_2230,
-    RECORD_2416,
-    RECORD_3817,
-    RECORD_4213,
-    _RECORD_0121,
-    _RECORD_0409,
-    _RECORD_0417,
-    {
+_RECORD_0701 = {
         "bhla-i": 4,
         "cv": "7:1",
         "lc": "וְכִימֵ֖֗י",
@@ -564,8 +553,9 @@ RECORDS = [
         "lc-loc": {"page": "399A", "column": 1, "line": 4},
         "lc-img": "0701.png",
         "bhq-comment": "$BHQ silently ignores the possible רביע.",
-    },
-    {
+    }
+
+_RECORD_0709 = {
         "bhla-i": 5,
         "cv": "7:9",
         "lc": "יַעֲלֽ͏ֶה׃",
@@ -575,8 +565,9 @@ RECORDS = [
         "highlight": 3,
         "lc-loc": {"page": "399A", "column": 1, "line": 14},
         "lc-img": "0709.png",
-    },
-    {
+    }
+
+_RECORD_0721 = {
         "bhla-i": 6,
         "cv": "7:21",
         "lc": "וְשִׁ֖חֲרְתַּ֣נִי",
@@ -586,8 +577,9 @@ RECORDS = [
         "highlight": 3,
         "lc-loc": {"page": "399A", "column": 2, "line": 3},
         "lc-img": "0721.png",
-    },
-    {
+    }
+
+_RECORD_0801 = {
         "bhla-i": 7,
         "cv": "8:1",
         "lc": "וַיֹאמַֽר׃",
@@ -598,8 +590,9 @@ RECORDS = [
         "lc-loc": {"page": "399A", "column": 2, "line": 5, "including-blank-lines": 1},
         "lc-img": "0801.png",
         "bhq-comment": "".join(_BHQ_COMMENT_0801),
-    },
-    {
+    }
+
+_RECORD_0807 = {
         "bhla-i": 8,
         "cv": "8:7",
         "lc": "וְּ֝אַחֲרִיתְךָ֗",
@@ -610,8 +603,9 @@ RECORDS = [
         "lc-loc": {"page": "399A", "column": 2, "line": 13, "including-blank-lines": 1},
         "lc-img": "0807.png",
         "bhq-comment": "$BHQ silently ignores the possible שורוק dot.",
-    },
-    {
+    }
+
+_RECORD_0914 = {
         "bhla-i": 9,
         "cv": "9:14",
         "lc-q": "(?)",
@@ -623,8 +617,9 @@ RECORDS = [
         "lc-loc": {"page": "399B", "column": 1, "line": 22, "including-blank-lines": 1},
         "lc-img": "0914.png",
         "bhq-comment": "".join(_BHQ_COMMENT_0914_AND_0930),
-    },
-    {
+    }
+
+_RECORD_0930 = {
         "bhla-i": 10,
         "cv": "9:30",
         "lc-q": "(?)",
@@ -636,8 +631,9 @@ RECORDS = [
         "lc-loc": {"page": "399B", "column": 2, "line": 15},
         "lc-img": "0930.png",
         "bhq-comment": "".join(_BHQ_COMMENT_0914_AND_0930),
-    },
-    {
+    }
+
+_RECORD_0935 = {
         "bhla-i": 11,
         "cv": "9:35",
         "lc": "אַֽ֭דַבְּרָה",
@@ -647,8 +643,9 @@ RECORDS = [
         "highlight": 1,
         "lc-loc": {"page": "399B", "column": 2, "line": -8},
         "lc-img": "0935.png",
-    },
-    {
+    }
+
+_RECORD_1001 = {
         "bhla-i": 12,
         "cv": "10:1",
         "lc": "אֲ֝דַבְּרָה֗",
@@ -659,8 +656,9 @@ RECORDS = [
         "highlight-mam": 4,
         "lc-loc": {"page": "399B", "column": 2, "line": -6},
         "lc-img": "1001.png",
-    },
-    {
+    }
+
+_RECORD_1015 = {
         "bhla-i": 13,
         "cv": "10:15",
         "lc": "עָנְיֽ͏ִי׃",
@@ -670,8 +668,9 @@ RECORDS = [
         "highlight": 3,
         "lc-loc": {"page": "400A", "column": 1, "line": 14},
         "lc-img": "1015.png",
-    },
-    {
+    }
+
+_RECORD_1103 = {
         "bhla-i": 14,
         "cv": "11:3",
         "lc": "יַחֲרִ֑ישׁו",
@@ -681,8 +680,9 @@ RECORDS = [
         "highlight": 6,
         "lc-loc": {"page": "400A", "column": 1, "line": -1},
         "lc-img": "1103.png",
-    },
-    {
+    }
+
+_RECORD_1106 = {
         "bhla-i": 15,
         "cv": "11:6",
         "lc": "אֱ֝ל֗וֹהַ",
@@ -693,8 +693,9 @@ RECORDS = [
         "lc-loc": {"page": "400A", "column": 2, "line": 5},
         "lc-img": "1106.png",
         "bhq-comment": "".join(_BHQ_COMMENT_1106),
-    },
-    {
+    }
+
+_RECORD_1107 = {
         "bhla-i": 16,
         "cv": "11:7",
         "lc": "אֱל֣וֹהַ",
@@ -705,8 +706,9 @@ RECORDS = [
         "lc-loc": {"page": "400A", "column": 2, "line": 6},
         "lc-img": "1107.png",
         "bhq-comment": "".join(_BHQ_COMMENT_1107),
-    },
-    {
+    }
+
+_RECORD_1203 = {
         "bhla-i": 17,
         "cv": "12:3",
         "lc": "וְאֶת_",
@@ -717,8 +719,9 @@ RECORDS = [
         "lc-loc": {"page": "400A", "column": 2, "line": -1},
         "lc-img": "1203.png",
         "bhq-comment": "".join(_BHQ_COMMENT_1203),
-    },
-    {
+    }
+
+_RECORD_1409 = {
         "bhla-i": 18,
         "cv": "14:9",
         "lc": "מֵרֵ֣יַּח",
@@ -729,8 +732,9 @@ RECORDS = [
         "lc-loc": {"page": "401A", "column": 1, "line": -9},
         "lc-img": "1409.png",
         "bhq-comment": "$BHQ silently ignores the possible דגש.",
-    },
-    {
+    }
+
+_RECORD_1508 = {
         "bhla-i": 19,
         "cv": "15:8",
         "lc": "אֱל֣וֹהַ",
@@ -741,8 +745,9 @@ RECORDS = [
         "lc-loc": {"page": "401A", "column": 2, "line": -7},
         "lc-img": "1508.png",
         "bhq-comment": "".join(_BHQ_COMMENT_1508),
-    },
-    {
+    }
+
+_RECORD_1534 = {
         "bhla-i": 20,
         "cv": "15:34",
         "lc": "שֹֽׁ֥חַד׃",
@@ -753,8 +758,9 @@ RECORDS = [
         "lc-loc": {"page": "401B", "column": 1, "line": -3},
         "lc-img": "1534.png",
         "bhq-comment": "$BHQ silently ignores the possible מרכא.",
-    },
-    {
+    }
+
+_RECORD_1604 = {
         "bhla-i": 21,
         "cv": "16:4",
         "lc": "ל֤וּ־",
@@ -765,8 +771,9 @@ RECORDS = [
         "lc-loc": {"page": "401B", "column": 2, "line": 3},
         "lc-img": "1604.png",
         "bhq-comment": "".join(_BHQ_COMMENT_1604),
-    },
-    {
+    }
+
+_RECORD_1613 = {
         "bhla-i": 22,
         "cv": "16:13",
         "lc": "מְרֵרָֽתִי׃",
@@ -777,8 +784,9 @@ RECORDS = [
         "highlight-mam": 4,
         "lc-loc": {"page": "401B", "column": 2, "line": -10},
         "lc-img": "1613.png",
-    },
-    {
+    }
+
+_RECORD_1620 = {
         "bhla-i": 23,
         "cv": "16:20",
         "lc": "אֱ֝ל֗וֹהַ",
@@ -789,8 +797,9 @@ RECORDS = [
         "lc-loc": {"page": "401B", "column": 2, "line": -2},
         "lc-img": "1620.png",
         "bhq-comment": "".join(_BHQ_COMMENT_1620),
-    },
-    {
+    }
+
+_RECORD_1804 = {
         "bhla-i": 24,
         "cv": "18:4",
         "lc": "הֲ֭לְמַּעַנְךָ",
@@ -804,8 +813,9 @@ RECORDS = [
         "aleppo-page-url": "https://www.mgketer.org/mikra/29/18/1/mg/106",
         "aleppo-img": "Aleppo-1804.png",
         "bhq": "הַ֭לְמַּעַנְךָ",
-    },
-    {
+    }
+
+_RECORD_1806 = {
         "bhla-i": 25,
         "cv": "18:6",
         "lc": "א֖וֹר",
@@ -816,8 +826,9 @@ RECORDS = [
         "lc-loc": {"page": "402A", "column": 1, "line": -2},
         "lc-img": "1806.png",
         "bhq-comment": "".join(_BHQ_COMMENT_1806),
-    },
-    {
+    }
+
+_RECORD_1905 = {
         "bhla-i": 26,
         "cv": "19:5",
         "lc-q": "(?)",
@@ -829,8 +840,9 @@ RECORDS = [
         "lc-loc": {"page": "402A", "column": 2, "line": -5},
         "lc-img": "1905.png",
         "bhq-comment": "$BHQ silently lets the faint possible דגש “win” over the clear רפה in μL.",
-    },
-    {
+    }
+
+_RECORD_1916 = {
         "bhla-i": 27,
         "cv": "19:16",
         "lc-q": "(?)",
@@ -842,8 +854,9 @@ RECORDS = [
         "lc-loc": {"page": "402B", "column": 1, "line": 8},
         "lc-img": "1916.png",
         "bhq-comment": "$BHQ notes that the דגש on the ק in μL disagrees with μA and μY.",
-    },
-    {
+    }
+
+_RECORD_2125 = {
         "bhla-i": 28,
         "cv": "21:25",
         "lc": "וִלֹֽא־",
@@ -854,8 +867,9 @@ RECORDS = [
         "lc-loc": {"page": "403A", "column": 2, "line": 13},
         "lc-img": "2125.png",
         "bhq-comment": "".join(_BHQ_COMMENT_2125),
-    },
-    {
+    }
+
+_RECORD_2221 = {
         "bhla-i": 29,
         "cv": "22:21",
         "lc-q": "(?)",
@@ -872,8 +886,9 @@ RECORDS = [
         "cam1753-page-url": "https://archive.org/details/ketuvim-cambridge-ms-add-1753-images/page/n83/mode/1up",
         "cam1753-img": "Cam1753-2221.png",
         "cam1753-img-intro": "".join(_CAM1753_IMG_INTRO_2221),
-    },
-    {
+    }
+
+_RECORD_2228 = {
         "bhla-i": 30,
         "cv": "22:28",
         "lc": "א֖וֹמֶר",
@@ -884,8 +899,9 @@ RECORDS = [
         "lc-loc": {"page": "403B", "column": 2, "line": 2},
         "lc-img": "2228.png",
         "bhq-comment": "".join(_BHQ_COMMENT_2228),
-    },
-    {
+    }
+
+_RECORD_2421 = {
         "bhla-i": 31,
         "cv": "24:21",
         "lc-q": "(?)",
@@ -897,8 +913,9 @@ RECORDS = [
         "lc-loc": {"page": "404A", "column": 2, "line": -2},
         "lc-img": "2421.png",
         "bhq-comment": "".join(_BHQ_COMMENT_2421),
-    },
-    {
+    }
+
+_RECORD_2702 = {
         "bhla-i": 32,
         "cv": "27:2",
         "lc": "חַי_",
@@ -909,8 +926,9 @@ RECORDS = [
         "lc-loc": {"page": "404A", "column": 2, "line": -2},
         "lc-img": "2702.png",
         "bhq-comment": "".join(_BHQ_COMMENT_2702),
-    },
-    {
+    }
+
+_RECORD_2808 = {
         "bhla-i": 33,
         "cv": "28:8",
         "lc": "הִדְריכֻ֥הוּ",
@@ -921,8 +939,9 @@ RECORDS = [
         "lc-loc": {"page": "404B", "column": 2, "line": 5},
         "lc-img": "2808.png",
         "bhq-comment": "".join(_BHQ_COMMENT_2808_AND_2911),
-    },
-    {
+    }
+
+_RECORD_2911 = {
         "bhla-i": 34,
         "cv": "29:11",
         "lc": "וְעַ֥ין",
@@ -933,8 +952,9 @@ RECORDS = [
         "lc-loc": {"page": "405A", "column": 1, "line": -12},
         "lc-img": "2911.png",
         "bhq-comment": "".join(_BHQ_COMMENT_2808_AND_2911),
-    },
-    {
+    }
+
+_RECORD_2919 = {
         "bhla-i": 35,
         "cv": "29:19",
         "lc": "בִּקְצִירֽ͏ִי׃",
@@ -944,8 +964,9 @@ RECORDS = [
         "highlight": 5,
         "lc-loc": {"page": "405A", "column": 1, "line": -4},
         "lc-img": "2919.png",
-    },
-    {
+    }
+
+_RECORD_3105 = {
         "bhla-i": 36,
         "cv": "31:5",
         "lc": "רַגְלֽ͏ִי׃",
@@ -956,8 +977,9 @@ RECORDS = [
         "lc-loc": {"page": "405B", "column": 1, "line": -9, "including-blank-lines": 1},
         "lc-img": "3105.png",
         "bhq-comment": "".join(_BHQ_COMMENT_3105),
-    },
-    {
+    }
+
+_RECORD_3107 = {
         "bhla-i": 37,
         "cv": "31:7",
         "lc": "מֻאֿוּֽם׃",
@@ -969,8 +991,9 @@ RECORDS = [
         "lc-img": "3107.png",
         "bhq-comment": "".join(_BHQ_COMMENT_3107),
         "bhq": "מֻאֽוּם׃",
-    },
-    {
+    }
+
+_RECORD_3133 = {
         "bhla-i": 38,
         "cv": "31:33",
         "lc": "עֲוֺֽנִי׃",
@@ -981,8 +1004,9 @@ RECORDS = [
         "highlight-mam": 3,
         "lc-loc": {"page": "405B", "column": 2, "line": -3},
         "lc-img": "3133.png",
-    },
-    {
+    }
+
+_RECORD_3206 = {
         "bhla-i": 39,
         "cv": "32:6",
         "lc": "יְשִׁישׁ֑‍ִים",
@@ -993,8 +1017,9 @@ RECORDS = [
         "lc-loc": {"page": "406A", "column": 1, "line": -6},
         "lc-img": "3206.png",
         "bhq-comment": "".join(_BHQ_COMMENT_3206),
-    },
-    {
+    }
+
+_RECORD_3312 = {
         "bhla-i": 40,
         "cv": "33:12",
         "lc": "אֱ֝ל֗וֹהַ",
@@ -1005,8 +1030,9 @@ RECORDS = [
         "lc-loc": {"page": "406B", "column": 1, "line": 2},
         "lc-img": "3312.png",
         "bhq-comment": "".join(_BHQ_COMMENT_3312),
-    },
-    {
+    }
+
+_RECORD_3330 = {
         "bhla-i": 41,
         "cv": "33:30",
         "lc": "הַֽחַיִּים׃",
@@ -1018,8 +1044,9 @@ RECORDS = [
         "lc-loc": {"page": "406B", "column": 1, "line": -1},
         "lc-img": "3330.png",
         "bhq-comment": "$BHQ notes that here μL disagrees with μA and μY, which have the consensus pointing.",
-    },
-    {
+    }
+
+_RECORD_3419 = {
         "bhla-i": 42,
         "cv": "34:19",
         "lc": "נִּכַּר־",
@@ -1030,8 +1057,9 @@ RECORDS = [
         "lc-loc": {"page": "406B", "column": 2, "line": -2},
         "lc-img": "3419.png",
         "bhq-comment": "".join(_correctly_ignores("דגש")),
-    },
-    {
+    }
+
+_RECORD_3629 = {
         "bhla-i": 43,
         "cv": "36:29",
         "lc": "סֻכָּֽתֽוֹ׃",
@@ -1042,8 +1070,9 @@ RECORDS = [
         "lc-loc": {"page": "407B", "column": 1, "line": -5},
         "lc-img": "3629.png",
         "bhq-comment": _correctly_ignores("געיה", "large"),
-    },
-    {
+    }
+
+_RECORD_3706 = {
         "bhla-i": 44,
         "cv": "37:6",
         "lc": "לַשֶּׁ֨לַג׀",
@@ -1053,8 +1082,9 @@ RECORDS = [
         "highlight": 3,
         "lc-loc": {"page": "407B", "column": 2, "line": 7},
         "lc-img": "3706.png",
-    },
-    {
+    }
+
+_RECORD_3812 = {
         "bhla-i": 45,
         "cv": "38:12",
         "lc": "הְֽ֭מִיָּמֶיךָ",
@@ -1065,8 +1095,9 @@ RECORDS = [
         "lc-loc": {"page": "408A", "column": 1, "line": -12},
         "lc-img": "3812.png",
         "bhq-comment": "$BHQ notes that here μL disagrees with μA and μY, which have the consensus pointing.",
-    },
-    {
+    }
+
+_RECORD_3902 = {
         "bhla-i": 46,
         "cv": "39:2",
         "lc": "וְ֝יָדַעְתָּ֜",
@@ -1077,8 +1108,9 @@ RECORDS = [
         "lc-loc": {"page": "408A", "column": 2, "line": -3},
         "lc-img": "3902.png",
         "bhq-comment": "$BHQ silently supplies the רביע that is the consensus expectation.",
-    },
-    {
+    }
+
+_RECORD_3906 = {
         "bhla-i": 47,
         "cv": "39:6",
         "lc": "מְלֵֽחָה׃",
@@ -1089,8 +1121,9 @@ RECORDS = [
         "highlight-mam": 3,
         "lc-loc": {"page": "408B", "column": 1, "line": 3},
         "lc-img": "3906.png",
-    },
-    {
+    }
+
+_RECORD_3913 = {
         "bhla-i": 48,
         "cv": "39:13",
         "lc-q": "(?)",
@@ -1102,8 +1135,9 @@ RECORDS = [
         "lc-loc": {"page": "408B", "column": 1, "line": 11},
         "lc-img": "3913.png",
         "bhq-comment": "$BHQ seems to split the mark(s) in question into a רביע on ר and a masorah circle on ב.",
-    },
-    {
+    }
+
+_RECORD_3920 = {
         "bhla-i": 49,
         "cv": "39:20",
         "lc": "הְֽ֭תַרְעִישֶׁנּוּ",
@@ -1113,8 +1147,9 @@ RECORDS = [
         "highlight": 1,
         "lc-loc": {"page": "408B", "column": 1, "line": -10},
         "lc-img": "3920.png",
-    },
-    {
+    }
+
+_RECORD_4010 = {
         "bhla-i": 50,
         "cv": "40:10",
         "lc-q": "(?)",
@@ -1125,8 +1160,9 @@ RECORDS = [
         "highlight": 1,
         "lc-loc": {"page": "408B", "column": 2, "line": -11},
         "lc-img": "4010.png",
-    },
-    {
+    }
+
+_RECORD_4026 = {
         "bhla-i": 51,
         "cv": "40:26",
         "lc": "לֶֽחֱיוֹ׃",
@@ -1137,8 +1173,9 @@ RECORDS = [
         "highlight-mam": 3,
         "lc-loc": {"page": "409A", "column": 1, "line": 8},
         "lc-img": "4026.png",
-    },
-    {
+    }
+
+_RECORD_4125 = {
         "bhla-i": 52,
         "cv": "41:25",
         "lc": "לִבְלִי־חָת׃",
@@ -1149,5 +1186,66 @@ RECORDS = [
         "lc-loc": {"page": "409A", "column": 2, "line": 14},
         "lc-img": "4125.png",
         "bhq-comment": "".join(_BHQ_COMMENT_4125),
-    },
+    }
+
+RECORDS = [
+    RECORD_1076,
+    RECORD_1711,
+    RECORD_1809,
+    RECORD_2230,
+    RECORD_2416,
+    RECORD_3817,
+    RECORD_4213,
+    _RECORD_0121,
+    _RECORD_0409,
+    _RECORD_0417,
+    _RECORD_0701,
+    _RECORD_0709,
+    _RECORD_0721,
+    _RECORD_0801,
+    _RECORD_0807,
+    _RECORD_0914,
+    _RECORD_0930,
+    _RECORD_0935,
+    _RECORD_1001,
+    _RECORD_1015,
+    _RECORD_1103,
+    _RECORD_1106,
+    _RECORD_1107,
+    _RECORD_1203,
+    _RECORD_1409,
+    _RECORD_1508,
+    _RECORD_1534,
+    _RECORD_1604,
+    _RECORD_1613,
+    _RECORD_1620,
+    _RECORD_1804,
+    _RECORD_1806,
+    _RECORD_1905,
+    _RECORD_1916,
+    _RECORD_2125,
+    _RECORD_2221,
+    _RECORD_2228,
+    _RECORD_2421,
+    _RECORD_2702,
+    _RECORD_2808,
+    _RECORD_2911,
+    _RECORD_2919,
+    _RECORD_3105,
+    _RECORD_3107,
+    _RECORD_3133,
+    _RECORD_3206,
+    _RECORD_3312,
+    _RECORD_3330,
+    _RECORD_3419,
+    _RECORD_3629,
+    _RECORD_3706,
+    _RECORD_3812,
+    _RECORD_3902,
+    _RECORD_3906,
+    _RECORD_3913,
+    _RECORD_3920,
+    _RECORD_4010,
+    _RECORD_4026,
+    _RECORD_4125,
 ]
