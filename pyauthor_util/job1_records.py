@@ -1,3 +1,7 @@
+# XXX which notes are new to BHQ, and which were already in BHS?
+# XXX study WLC notes in Job
+# XXX study UXLC changes in Job
+
 # Da-at Miqra 1:19 Aleppo dagesh in yod
 # Da-at Miqra 3:4 Aleppo פתח Leningrad קמץ
 # Da-at Miqra 3:7 xaser/malei
@@ -191,6 +195,7 @@
 from pyauthor_util import author
 from py import my_html
 
+
 def _correctly_ignores(what, adjective=""):
     adj = f" {adjective}" if adjective else ""
     out_parts = [
@@ -207,12 +212,10 @@ _COMMENT_1604 = [
     "Though it is not relevant to the point at hand, which is the presence of a מקף,",
     " note that in μL, the shape we take to be מחפך is touching the bottom of the ל (lamed).",
 ]
-
 _COMMENT_2125 = [
     "The dot is suspiciously brown rather than black,",
     " making me wonder whether the ו was pointed at all.",
 ]
-
 _COMMENT_2221 = [
     "BHL Appendix A fails to note the anomalous non-pointing of the ל in the next word, ושלם.",
     " Nonethless I have included ושלם above.",
@@ -223,30 +226,25 @@ _COMMENT_2221 = [
     " A dot under the מ of עמו is fairly clear.",
     " It is (charitably) not transcribed by BHL, presumably based on consensus expectations.",
 ]
-
 _COMMENT_2421 = [
     "Perhaps there is some super-faint evidence of a third dot that would make a סגול,",
     " but this could be just wishful thinking.",
     " Note that there is a third dot above the two clearer dots,",
     " but I take that to be part of the ע that did not flake off like its neighboring ink did.",
 ]
-
 _COMMENT_2702 = [
     "Perhaps there is some super-faint evidence of a מקף that was ignored during re-inking.",
     " By the way, the evidence for the דחי on the א of the next word is super-faint.",
 ]
-
 _COMMENT_2919 = [
     "Probably the ascender of the ל on the line below",
     f" “forced” the סילוק to be early.",
 ]
-
 _COMMENT_3629 = [
     "The color image strongly suggests that the mark in question is not ink.",
     " A געיה right next to סילוק like that would be extraordinary, BTW,",
     " though I feel no appeal to expectations is needed to dismiss this possible געיה.",
 ]
-
 _COMMENT_3902 = [
     "The mark in question is very heavy,",
     " having a stroke width more typical of a letter-stroke than of a niqqud-stroke.",
@@ -257,7 +255,6 @@ _COMMENT_3902 = [
     " a רביע (expected) overlaid with a גרש (unexpected).",
     " Or, it may be only a single mark whose lower end is, for some reason, a blob.",
 ]
-
 _COMMENT_3913 = [
     "A more charitable interpretation of the image is that the רביע is present",
     " but is merged with the masorah circle.",
@@ -513,14 +510,15 @@ _RECORD_MBDO_3612 = {
         " but considered to be too slight a possibility to note it.",
         " It is noted in Da-at Miqra.",
         " Here $BHQ has a typo:",
-        [" it has ",author.hbo("בִּבְלִ־")," rather than ", author.hbo("בִּבְלִי־")],
+        [" it has ", author.hbo("בִּבְלִ־"), " rather than ", author.hbo("בִּבְלִי־")],
         " in the word it reports for μA and μY.",
         " I.e. it is missing a final $yod (י) before the מקף."
         " The same typo appears in the $BHQ section “Commentary on the Critical Apparatus.”",
         " In addition to the typo, for some reason $BHQ reports this word as being the קרי",
-        [" of μY, i.e. M", my_html.sup("Y(qere)"), " rather than just M",my_html.sup("Y"),"."],
+        [" of μY, i.e. M", my_html.sup("Y(qere)")],
+        [" rather than just M", my_html.sup("Y"), "."],
         " I see no “Masora dot pair” (μY’s equivalent of a masorah circle) on this word in μY.",
-        " Nor do I see any קרי note in the margin."
+        " Nor do I see any קרי note in the margin.",
     ],
     "aleppo-page-url": "https://www.mgketer.org/mikra/29/36/1/mg/106",
     "aleppo-img": "Aleppo-3612.png",
