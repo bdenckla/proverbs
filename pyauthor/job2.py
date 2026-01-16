@@ -11,6 +11,7 @@ from pyauthor_util.job1_records import RECORD_1809
 from pyauthor_util.job1_ov_and_de import make_overview_row
 from pyauthor_util.job1_common import intro
 
+
 def gen_html_file(tdm_ch):
     author.assert_stem_eq(__file__, D2_FNAME)
     author.help_gen_html_file(tdm_ch, D2_FNAME, D2_TITLE, _CBODY)
@@ -136,5 +137,5 @@ _CBODY = [
     author.para(_CPARA16),
     author.para(_CPARA17),
     make_mini_table(_RECORDS_AFTER_PARA17),
-    *intro("intro-job2")
+    *intro("intro-job2"),
 ]

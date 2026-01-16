@@ -42,5 +42,5 @@ def _where():
                 "consensus is the Masoretic consensus reading (or a good guess of it)",
                 "c:v is the chapter and verse of the book of Job",
             ]
-        ) 
+        ),
     ]

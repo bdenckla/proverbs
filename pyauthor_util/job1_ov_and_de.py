@@ -109,9 +109,7 @@ def _maybe_bhq(bhq):
     return [my_html.para(cont_p)]
 
 
-_DEFAULT_BHQ_COMMENT = (
-    "$BHQ agrees with μL here, but $BHQ makes no note of μL’s divergence from consensus."
-)
+_DEFAULT_BHQ_COMMENT = "$BHQ agrees with μL here, but $BHQ makes no note of μL’s divergence from consensus."
 _SEP = " \N{EM DASH} "
 
 
