@@ -375,8 +375,10 @@ _RECORD_0121 = {
     "lc-loc": {"page": "397B", "column": 1, "line": 1},
     "lc-img": "0121.png",
     "bhq-comment": [
-        "$BHQ notes that here μL disagrees with μA and μY,",
-        " which have the consensus pointing.",
+        "$BHQ notes this quirk."
+        " As usual, it does so by noting that μA and μY agree, and μL disagrees with them.",
+        " I.e. μA=μY=x, μL=w, and w≠x."
+        " So what we boldly call the consensus, $BHQ merely calls the matching contents of μA and μY.",
     ],
     "noted-by": "BHQ-BHL-DM",
 }
@@ -395,7 +397,7 @@ _BHQ_COMMENT_0409 = [
     " section “Commentary on the Critical Apparatus.”",
     " Only this one and 11:6",
     " are noted in the bottom-of-page critical apparatus as well.",
-    " The one in 4:17 is not noted at all in $BHQ.",
+    " The one in 4:17 is not noted in any way in $BHQ.",
 ]
 _RECORD_0409 = {
     "bhla-i": 2,
@@ -412,7 +414,7 @@ _RECORD_0409 = {
 }
 _BHQ_COMMENT_0417 = [
     *_BHQ_COMMENT_CMN_0409_AND_SIMILAR,
-    " This is the only one of these seven not noted in any way by $BHQ.",
+    " This is the only one of these seven not noted in any way in $BHQ.",
     " For more details, see my entry on 4:9.",
 ]
 _RECORD_0417 = {
@@ -466,9 +468,6 @@ _RECORD_0721 = {
     "lc-img": "0721.png",
     "noted-by": "tBHQ-BHL-DM",
 }
-_BHQ_COMMENT_0801 = [
-    "This is noted in the bottom-of-page critical apparatus of $BHQ.",
-]
 _RECORD_0801 = {
     "bhla-i": 7,
     "cv": "8:1",
@@ -479,7 +478,7 @@ _RECORD_0801 = {
     "highlight": 2,
     "lc-loc": {"page": "399A", "column": 2, "line": 5, "including-blank-lines": 1},
     "lc-img": "0801.png",
-    "bhq-comment": _BHQ_COMMENT_0801,
+    "bhq-comment": "This quirk is noted in $BHQ.",
     "noted-by": "BHQ-BHL-xDM",
 }
 _RECORD_0807 = {
@@ -550,6 +549,7 @@ _RECORD_1001 = {
     "highlight-mam": 4,
     "lc-loc": {"page": "399B", "column": 2, "line": -6},
     "lc-img": "1001.png",
+    "noted-by": "tBHQ-BHL-xDM",
 }
 _RECORD_1015 = {
     "bhla-i": 13,
