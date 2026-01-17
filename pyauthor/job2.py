@@ -5,7 +5,7 @@ from pyauthor.common import D2_TITLE
 from pyauthor.common import D2_H1_CONTENTS
 from pyauthor.common import D2_FNAME
 from py import my_html
-from pyauthor_util.job1_records import RECORDS_MISSED_BY_BOTH, RECORDS_MISSED_BY_DO
+from pyauthor_util.job1_records import RECORDS_BY_PERF
 from pyauthor_util.job1_ov_and_de import make_overview_row
 from pyauthor_util.job1_common import intro
 
@@ -29,7 +29,7 @@ _CPARA10 = [
     " for the following reasons:",
 ]
 #
-_C_LIST_ITEMS_AFTER_PARA10 = [
+_C_LIST10 = [
     "It often fails to accurately transcribe μL (the Leningrad Codex).",
     #
     "It often fails to note where μL disagrees with other manuscripts.",
@@ -63,7 +63,7 @@ _CPARA13 = [
     #
     " The editions most relevant to $BHQ are the following two:",
 ]
-_C_LIST_ITEMS_AFTER_PARA13 = [
+_C_LIST13 = [
     f"דעת מקרא (Breuer et al., {num_range(1970, 2003)})",
     "$BHL (Dotan, 2001)",
 ]
@@ -88,7 +88,7 @@ _CPARA15 = [
     " Thus I am not concerned with",
     " the many parts of $BHQ that deal with the following:",
 ]
-_C_LIST_ITEMS_AFTER_PARA15 = [
+_C_LIST15 = [
     "sources in languages other than Hebrew",
     "non-Masoretic (e.g. unpointed) Hebrew sources",
     "Masorah magna and parva",
@@ -99,6 +99,8 @@ _CPARA16 = [
     #
     " But those parts are not my concern.",
 ]
+_RECORDS_MISSED_BY_BOTH = RECORDS_BY_PERF.get("mbb") or []
+_RECORDS_MISSED_BY_DO = RECORDS_BY_PERF.get("mbdo") or []
 _CPARA17 = [
     "Having criticized $BHQ in general terms,",
     " I will now review the specifics of the $BHQ Book of Job.",
@@ -106,7 +108,7 @@ _CPARA17 = [
     " As of now, it is the latest volume of $BHQ to be published.",
     #
     " First, the good news: the Job volume of $BHQ catches",
-    [" ", str(len(RECORDS_MISSED_BY_BOTH))],
+    [" ", str(len(_RECORDS_MISSED_BY_BOTH))],
     " quirks in μL that were not noted in either $BHL Appendix A or דעת מקרא.",
     " They are as follows:",
 ]
@@ -115,8 +117,7 @@ _CPARA18 = [
     " one quirk in μL that, while noted in דעת מקרא,",
     " was not noted in $BHL Appendix A:",
 ]
-
-assert len(RECORDS_MISSED_BY_DO) == 1
+assert len(_RECORDS_MISSED_BY_DO) == 1
 
 
 def make_mini_table(records):
@@ -126,19 +127,16 @@ def make_mini_table(records):
 
 _CBODY = [
     author.heading_level_1(D2_H1_CONTENTS),
-    author.para(_CPARA10),
-    author.ordered_list(_C_LIST_ITEMS_AFTER_PARA10),
+    author.para_ol(_CPARA10, _C_LIST10),
     author.para(_CPARA11),
     author.para(_CPARA12),
-    author.para(_CPARA13),
-    author.unordered_list(_C_LIST_ITEMS_AFTER_PARA13),
+    author.para_ul(_CPARA13, _C_LIST13),
     author.para(_CPARA14),
-    author.para(_CPARA15),
-    author.unordered_list(_C_LIST_ITEMS_AFTER_PARA15),
+    author.para_ul(_CPARA15, _C_LIST15),
     author.para(_CPARA16),
     author.para(_CPARA17),
-    make_mini_table(RECORDS_MISSED_BY_BOTH),
+    make_mini_table(_RECORDS_MISSED_BY_BOTH),
     *intro("intro-job2"),
     author.para(_CPARA18),
-    make_mini_table(RECORDS_MISSED_BY_DO),
+    make_mini_table(_RECORDS_MISSED_BY_DO),
 ]

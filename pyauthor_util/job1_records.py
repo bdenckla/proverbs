@@ -194,6 +194,7 @@
 
 from pyauthor_util import author
 from py import my_html
+from pycmn.my_utils import my_groupby
 
 _CAM1753_PAGE_URL_BASE = (
     "https://archive.org/details/ketuvim-cambridge-ms-add-1753-images/page"
@@ -235,6 +236,7 @@ _RECORD_MBB_1076 = {
     "lc-loc": {"page": "402A", "column": 1, "line": 7},
     "lc-img": "1706.png",
     "bhq-comment": _BHQ_COMMENT_MISSED_BY_DO_AND_BR,
+    "bhq-performance": "mbb",
     "uxlc-needs-fix": True,
 }
 _RECORD_MBB_1711 = {
@@ -247,6 +249,7 @@ _RECORD_MBB_1711 = {
     "lc-loc": {"page": "402A", "column": 1, "line": 13},
     "lc-img": "1711.png",
     "bhq-comment": _BHQ_COMMENT_MISSED_BY_DO_AND_BR,
+    "bhq-performance": "mbb",
     "uxlc-needs-fix": True,
 }
 _RECORD_MBB_1809 = {
@@ -264,6 +267,7 @@ _RECORD_MBB_1809 = {
     "lc-loc": {"page": "402A", "column": 2, "line": 2},
     "lc-img": "1809.png",
     "bhq-comment": _BHQ_COMMENT_MISSED_BY_DO_AND_BR_POSSIBLE,
+    "bhq-performance": "mbb",
     "uxlc-needs-fix": True,
 }
 _RECORD_MBB_2230 = {
@@ -277,6 +281,7 @@ _RECORD_MBB_2230 = {
     "lc-loc": {"page": "403B", "column": 2, "line": 4},
     "lc-img": "2230.png",
     "bhq-comment": _BHQ_COMMENT_MISSED_BY_DO_AND_BR_POSSIBLE,
+    "bhq-performance": "mbb",
     "uxlc-needs-fix": True,
 }
 _RECORD_MBB_2416 = {
@@ -294,6 +299,7 @@ _RECORD_MBB_2416 = {
     "lc-loc": {"page": "404A", "column": 1, "line": -12},
     "lc-img": "2416.png",
     "bhq-comment": _BHQ_COMMENT_MISSED_BY_DO_AND_BR_POSSIBLE,
+    "bhq-performance": "mbb",
     "uxlc-needs-fix": True,
 }
 _BHQ_COMMENT_3612 = [
@@ -329,6 +335,7 @@ _RECORD_MBDO_3612 = {
     "lc-loc": {"page": "407B", "column": 1, "line": 4},
     "lc-img": "3612.png",
     "bhq-comment": _BHQ_COMMENT_3612,
+    "bhq-performance": "mbdo",
     "aleppo-page-url": "https://www.mgketer.org/mikra/29/36/1/mg/106",
     "aleppo-img": "Aleppo-3612.png",
     "cam1753-page-url": f"{_CAM1753_PAGE_URL_BASE}/n87/mode/1up",
@@ -345,6 +352,7 @@ _RECORD_MBB_3817 = {
     "lc-loc": {"page": "408A", "column": 1, "line": -5},
     "lc-img": "3817.png",
     "bhq-comment": _BHQ_COMMENT_MISSED_BY_DO_AND_BR,
+    "bhq-performance": "mbb",
     "uxlc-needs-fix": True,
 }
 _RECORD_MBB_4213 = {
@@ -357,6 +365,7 @@ _RECORD_MBB_4213 = {
     "lc-loc": {"page": "409B", "column": 1, "line": -9, "including-blank-lines": 1},
     "lc-img": "4213.png",
     "bhq-comment": _BHQ_COMMENT_MISSED_BY_DO_AND_BR,
+    "bhq-performance": "mbb",
     "uxlc-needs-fix": True,
 }
 _RECORD_0121 = {
@@ -1191,7 +1200,7 @@ _RECORD_4125 = {
     "lc-img": "4125.png",
     "bhq-comment": _BHQ_COMMENT_4125,
 }
-RECORDS_MISSED_BY_BOTH = [
+RECORDS = [
     _RECORD_MBB_1076,
     _RECORD_MBB_1711,
     _RECORD_MBB_1809,
@@ -1199,13 +1208,7 @@ RECORDS_MISSED_BY_BOTH = [
     _RECORD_MBB_2416,
     _RECORD_MBB_3817,
     _RECORD_MBB_4213,
-]
-RECORDS_MISSED_BY_DO = [
     _RECORD_MBDO_3612,
-]
-RECORDS = [
-    *RECORDS_MISSED_BY_BOTH,
-    *RECORDS_MISSED_BY_DO,
     _RECORD_0121,
     _RECORD_0409,
     _RECORD_0417,
@@ -1259,3 +1262,10 @@ RECORDS = [
     _RECORD_4026,
     _RECORD_4125,
 ]
+
+
+def _get_perf(record):
+    return record.get("bhq-performance")
+
+
+RECORDS_BY_PERF = my_groupby(RECORDS, _get_perf)
