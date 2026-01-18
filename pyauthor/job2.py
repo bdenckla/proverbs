@@ -8,7 +8,7 @@ from pyauthor.common import D2_H1_CONTENTS
 from pyauthor.common import D2_FNAME
 from pyauthor_util.job1_ov_and_de import row_id, sort_key
 from pyauthor_util.job1_common import intro
-
+from pycmn.my_utils import sl_map
 
 def gen_html_file(tdm_ch, ov_and_de, quirkrecs):
     author.assert_stem_eq(__file__, D2_FNAME)
@@ -17,6 +17,26 @@ def gen_html_file(tdm_ch, ov_and_de, quirkrecs):
 
 
 def _make_cbody(ov_and_de, quirkrecs):
+    groups = _get_groups(quirkrecs)
+    cbody = [
+        author.heading_level_1(D2_H1_CONTENTS),
+        author.para_ol(_CPARA10, _C_LIST10),
+        author.para(_CPARA11),
+        author.para(_CPARA12),
+        author.para_ul(_CPARA13, _C_LIST13),
+        author.para(_CPARA14),
+        author.para_ul(_CPARA15, _C_LIST15),
+        author.para(_CPARA16),
+        _para_and_table(cpara17, ov_and_de, groups[0]),
+        *intro("intro-job2"),
+        _para_and_table(cpara18, ov_and_de, groups[1]),
+        _para_and_table(cpara19, ov_and_de, groups[2]),
+        _para_and_table(cpara20, ov_and_de, groups[3]),
+        author.para_ul(_CPARA21, clist21(sl_map(len, groups))),
+    ]
+    return cbody
+
+def _get_groups(quirkrecs):
     qr_by_perf = my_groupby(quirkrecs, _noted_by)
     q_only_noted_in_bhq = qr_by_perf.get("BHQ-xBHL-xDM") or []
     q_noted_in_bhq_and_elsewhere = [
@@ -37,28 +57,19 @@ def _make_cbody(ov_and_de, quirkrecs):
         *(qr_by_perf.get("tBHQ-BHL-DM") or []),
     ]
     q_tbnn_in_bhq.sort(key=sort_key)
-    cbody = [
-        author.heading_level_1(D2_H1_CONTENTS),
-        author.para_ol(_CPARA10, _C_LIST10),
-        author.para(_CPARA11),
-        author.para(_CPARA12),
-        author.para_ul(_CPARA13, _C_LIST13),
-        author.para(_CPARA14),
-        author.para_ul(_CPARA15, _C_LIST15),
-        author.para(_CPARA16),
-        _para_and_table(cpara17, ov_and_de, q_only_noted_in_bhq),
-        *intro("intro-job2"),
-        _para_and_table(cpara18, ov_and_de, q_noted_in_bhq_and_elsewhere),
-        _para_and_table(cpara19, ov_and_de, q_not_transcribed_in_bhq),
-        _para_and_table(cpara20, ov_and_de, q_tbnn_in_bhq),
+    groups = [
+        q_only_noted_in_bhq,
+        q_noted_in_bhq_and_elsewhere,
+        q_not_transcribed_in_bhq,
+        q_tbnn_in_bhq,
     ]
-    return cbody
+    return groups
 
 
-def _para_and_table(para_func, ov_and_de, quirkrecs):
+def _para_and_table(para_func, ov_and_de, group_of_quirkrecs):
     return [
-        author.para(para_func(len(quirkrecs))),
-        _table_of_quirks(ov_and_de, quirkrecs),
+        author.para(para_func(len(group_of_quirkrecs))),
+        _table_of_quirks(ov_and_de, group_of_quirkrecs),
     ]
 
 
@@ -66,8 +77,8 @@ def _noted_by(quirkrec):
     return quirkrec.get("noted-by")
 
 
-def _table_of_quirks(ov_and_de, quirkrecs):
-    rows = [_overview(ov_and_de, rec) for rec in quirkrecs]
+def _table_of_quirks(ov_and_de, group_of_quirkrecs):
+    rows = [_overview(ov_and_de, rec) for rec in group_of_quirkrecs]
     return author.table_c(rows)
 
 
@@ -165,6 +176,9 @@ _CPARA16 = [
     #
     " But those parts are not my concern.",
 ]
+_CPARA21 = [
+    "In conclusion, compared to the μL quirks noted in $BHL and דעת מקרא:",
+]
 
 
 def cpara17(the_len):
@@ -188,6 +202,10 @@ def cpara18(the_len):
         " quirks in μL that are noted in $BHL Appendix A and/or דעת מקרא.",
         " I.e. these are places where $BHQ reiterates something available",
         " in one or both of those two other editions.",
+        " While reiteration is not as valuable as new contributions,",
+        " it is still valuable.",
+        " Indeed the central complaint of my review is that $BHQ",
+        " should have reiterated most or all of what can be found in those editions.",
         " Those reiterations are as follows:",
     ]
 
@@ -207,3 +225,12 @@ def cpara20(the_len):
         " quirks in μL that are noted in $BHL Appendix A and/or דעת מקרא.",
         " Those transcriptions without notes are as follows:",
     ]
+
+
+def clist21(the_lens):
+    return [
+        f"$BHQ contributes notes on {str(the_lens[0])} quirks not found in those sources.",
+        f"$BHQ reiterates notes on {str(the_lens[1])} quirks are found those sources.",
+        f"$BHQ fails to transcribe (or note) {str(the_lens[2])} quirks noted in those sources.",
+        f"$BHQ transcribes but does not note {str(the_lens[3])} quirks noted in those sources.",
+    ]       
