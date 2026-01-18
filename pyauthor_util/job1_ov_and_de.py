@@ -10,9 +10,10 @@ from pycmn.my_utils import sl_map
 
 
 def make_ov_and_de_for_all_quirkrecs():
-    ids = sl_map(_row_id, QUIRKRECS)
+    ids = sl_map(row_id, QUIRKRECS)
     assert _unique(ids)
-    return sl_map(_make_ov_and_de_for_one_record, QUIRKRECS)
+    ovdes = sl_map(_make_ov_and_de_for_one_record, QUIRKRECS)
+    return dict(zip(ids, ovdes))
 
 
 def make_example_row():
@@ -35,7 +36,7 @@ def _unique(seq):
 
 def _make_ov_and_de_for_one_record(record):
     return {
-        "od-overview": make_overview_row(record),
+        "od-overview": _make_overview_row(record),
         "od-details": _make_details_row(record),
     }
 
@@ -52,21 +53,21 @@ def _lc_and_mam(record):
     return lc_and_mam
 
 
-def make_overview_row(record):
+def _make_overview_row(record):
     hbo_attrs = {"lang": "hbo", "dir": "rtl"}
-    row_id = _row_id(record)
-    anc = my_html.anchor_h("#", f"{D1D_FNAME}#{row_id}")  # self-anchor
+    the_row_id = row_id(record)
+    anc = my_html.anchor_h("#", f"{D1D_FNAME}#{the_row_id}")  # self-anchor
     tr_contents = [
         my_html.table_datum(anc),
         my_html.table_datum(_lc_and_mam(record), hbo_attrs),
         my_html.table_datum(record["cv"]),
         author.table_datum(record["what-is-weird"]),
     ]
-    tr_attrs = {"id": row_id}
+    tr_attrs = {"id": the_row_id}
     return my_html.table_row(tr_contents, tr_attrs)
 
 
-def _row_id(record):
+def row_id(record):
     cn_v_vn = record["cv"].replace(":", "v")  # E.g. 1:2 becomes 1v2
     ftw = record.get("n_of_m_for_this_word")
     ftw_str = f"-{ftw[0]}of{ftw[1]}ftw" if ftw else ""  # E.g. -1of2ftw
@@ -143,7 +144,7 @@ def _make_details_row(record):
         *_sep_bhq_comment(record),
     ]
     return [
-        author.table_c(make_overview_row(record)),
+        author.table_c(_make_overview_row(record)),
         *_maybe_bhq(record.get("bhq")),
         author.para(dpe),
         _img(record["lc-img"]),

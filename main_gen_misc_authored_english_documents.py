@@ -27,7 +27,7 @@ def main():
     ov_and_de = make_ov_and_de_for_all_quirkrecs()
     job1_overview.gen_html_file(tdm_ch, ov_and_de)
     job1_details.gen_html_file(tdm_ch, ov_and_de)
-    job2.gen_html_file(tdm_ch)
+    job2.gen_html_file(tdm_ch, ov_and_de)
     #
     write_index_dot_html((css_href,), "docs/index.html")
 

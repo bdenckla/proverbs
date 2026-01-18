@@ -14,7 +14,7 @@ def gen_html_file(tdm_ch, ov_and_de):
 
 
 def _make_cbody(ov_and_de):
-    details = [od["od-details"] for od in ov_and_de]
+    details = [od["od-details"] for od in ov_and_de.values()]
     cbody = [
         author.heading_level_1(D1D_H1_CONTENTS),
         author.para(here_is("This document presents")),

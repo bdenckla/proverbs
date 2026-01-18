@@ -14,7 +14,7 @@ def gen_html_file(tdm_ch, ov_and_de):
 
 
 def _make_cbody(ov_and_de):
-    overview = [od["od-overview"] for od in ov_and_de]
+    overview = [od["od-overview"] for od in ov_and_de.values()]
     cbody = [
         author.heading_level_1(D1V_H1_CONTENTS),
         author.para(here_is("Below is a table summarizing", d1d_anchor())),

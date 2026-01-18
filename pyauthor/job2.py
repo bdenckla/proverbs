@@ -6,16 +6,38 @@ from pyauthor.common import D2_H1_CONTENTS
 from pyauthor.common import D2_FNAME
 from py import my_html
 from pyauthor_util.job1_quirkrecs import QUIRKRECS_BY_PERF
-from pyauthor_util.job1_ov_and_de import make_overview_row
+from pyauthor_util.job1_ov_and_de import row_id
 from pyauthor_util.job1_common import intro
 
 
-def gen_html_file(tdm_ch):
+def gen_html_file(tdm_ch, ov_and_de):
     author.assert_stem_eq(__file__, D2_FNAME)
-    author.help_gen_html_file(tdm_ch, D2_FNAME, D2_TITLE, _CBODY)
+    author.help_gen_html_file(tdm_ch, D2_FNAME, D2_TITLE, _make_cbody(ov_and_de))
 
 
-def num_range(start, stop):
+def _make_cbody(ov_and_de):
+    details = [od["od-details"] for od in ov_and_de.values()]
+    cbody = [
+        author.heading_level_1(D2_H1_CONTENTS),
+        author.para_ol(_CPARA10, _C_LIST10),
+        author.para(_CPARA11),
+        author.para(_CPARA12),
+        author.para_ul(_CPARA13, _C_LIST13),
+        author.para(_CPARA14),
+        author.para_ul(_CPARA15, _C_LIST15),
+        author.para(_CPARA16),
+        author.para(_CPARA17),
+        _table_of_quirks(ov_and_de, _QUIRKS_ONLY_NOTED_IN_BHQ),
+        *intro("intro-job2"),
+        author.para(_CPARA18),
+        _table_of_quirks(ov_and_de, _QUIRKS_NOTED_IN_BHQ_AND_ELSEWHERE),
+        author.para(_CPARA19),
+        _table_of_quirks(ov_and_de, _QUIRKS_NOT_TRANSCRIBED_IN_BHQ),
+    ]
+    return cbody
+
+
+def _num_range(start, stop):
     return f"{start}\N{THIN SPACE}\N{EN DASH}\N{THIN SPACE}{stop}"
 
 
@@ -68,7 +90,7 @@ _C_LIST13 = [
         "The דעת מקרא series,",
         " particularly the volumes with sections called",
         f" “הנוסח ומקורותיו”",
-        f" (Breuer et al., {num_range(1970, 2003)})",
+        f" (Breuer et al., {_num_range(1970, 2003)})",
     ],
     ["Biblia Hebraica Leningradensia ($BHL) (Dotan, 2001)"],
 ]
@@ -140,25 +162,11 @@ _CPARA19 = [
 ]
 
 
-def _table_of_quirks(quirkrecs):
-    rows = [make_overview_row(rec) for rec in quirkrecs]
+def _overview(ov_and_de, quirkrec):
+    the_row_id = row_id(quirkrec)
+    return ov_and_de[the_row_id]["od-overview"]
+
+
+def _table_of_quirks(ov_and_de, quirkrecs):
+    rows = [_overview(ov_and_de, rec) for rec in quirkrecs]
     return author.table_c(rows)
-
-
-_CBODY = [
-    author.heading_level_1(D2_H1_CONTENTS),
-    author.para_ol(_CPARA10, _C_LIST10),
-    author.para(_CPARA11),
-    author.para(_CPARA12),
-    author.para_ul(_CPARA13, _C_LIST13),
-    author.para(_CPARA14),
-    author.para_ul(_CPARA15, _C_LIST15),
-    author.para(_CPARA16),
-    author.para(_CPARA17),
-    _table_of_quirks(_QUIRKS_ONLY_NOTED_IN_BHQ),
-    *intro("intro-job2"),
-    author.para(_CPARA18),
-    _table_of_quirks(_QUIRKS_NOTED_IN_BHQ_AND_ELSEWHERE),
-    author.para(_CPARA19),
-    _table_of_quirks(_QUIRKS_NOT_TRANSCRIBED_IN_BHQ),
-]
