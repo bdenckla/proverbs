@@ -218,6 +218,7 @@ _RECORD_0121 = {
         " So what we boldly call the consensus, $BHQ merely calls the matching contents of μA and μY.",
     ],
     "noted-by": "BHQ-BHL-DM",
+    "wlc-422-note": "]1",
 }
 _BHQ_COMMENT_CMN_0409_AND_SIMILAR = [
     "This is one of seven similar cases in Job in μL.",
@@ -317,6 +318,7 @@ _RECORD_0801 = {
     "lc-img": "0801.png",
     "bhq-comment": "This quirk is noted in $BHQ.",
     "noted-by": "BHQ-BHL-xDM",
+    "wlc-422-note": "]1",
 }
 _RECORD_0807 = {
     "bhla-i": 8,
@@ -709,6 +711,7 @@ _RECORD_2221 = {
     "lc-img": "2221.png",
     "bhq-comment": _BHQ_COMMENT_2221,
     "noted-by": "BHQ-BHL-xDM",
+    "wlc-422-note": "]1",
     # Above I am being charitable to both BHQ and BHL even though both miss things.
     "aleppo-page-url": "https://www.mgketer.org/mikra/29/22/1/mg/106",
     "aleppo-img": "Aleppo-2221.png",
@@ -1001,6 +1004,7 @@ _RECORD_3812 = {
         " which have the consensus pointing.",
     ],
     "noted-by": "BHQ-BHL-DM",
+    "wlc-422-note": "]1",
 }
 _COMMENT_3902 = [
     "The mark in question is very heavy,",
