@@ -28,8 +28,10 @@ def _make_cbody(ov_and_de, quirkrecs):
         author.para(_CPARA14),
         author.para_ul(_CPARA15, _C_LIST15),
         author.para(_CPARA16),
-        _para_and_table(_cpara17, ov_and_de, groups[0]),
+        author.para(_CPARA16),
+        _para_and_table(_cpara17a, ov_and_de, groups[0]),
         *intro("intro-job2"),
+        author.para(_CPARA17B),
         _para_and_table(_cpara18, ov_and_de, groups[1]),
         _para_and_table(_cpara19, ov_and_de, groups[2]),
         _para_and_table(_cpara20, ov_and_de, groups[3]),
@@ -182,7 +184,7 @@ _CPARA16 = [
 ]
 
 
-def _cpara17(the_len):
+def _cpara17a(the_len):
     return [
         "Having criticized $BHQ in general terms,",
         " I will now review the specifics of the $BHQ Book of Job.",
@@ -191,13 +193,26 @@ def _cpara17(the_len):
         #
         f" First, the good news: the Job volume of $BHQ notes {str(the_len)}",
         " quirks in μL that were not noted in either $BHL_A ($BHL Appendix A) or דעת מקרא.",
+        #
         " I.e. these are places where $BHQ contributes something not available",
         " in either of those two other editions.",
-        " Unsurprisingly, all but one of these contributions",
-        " are new to $BHQ, i.e. not present in $BHS.",
-        " (The one not new to $BHQ is the one regarding 22:21 ושלם.)"
-        " Those contributions are as follows:",
+        #
+        " The contributions of $BHQ are as follows:",
     ]
+
+_CPARA17B = [
+    #
+    "Unsurprisingly, all but one of these contributions",
+    " are new to $BHQ, i.e. not present in $BHS.",
+    #
+    " (The one not new to $BHQ is the one regarding 22:21 ושלם.)"
+    #
+    " I find some of these contributions far-fetched, i.e. unlikely to have been",
+    " the scribe’s intention.",
+    #
+    " Nonetheless, I consider even those ones to be valuable contributions",
+    " to the discussion."
+]
 
 
 def _cpara18(the_len):
@@ -206,7 +221,7 @@ def _cpara18(the_len):
         " quirks in μL that are noted in $BHL_A and/or דעת מקרא.",
         " I.e. these are places where $BHQ reiterates something available",
         " in one or both of those two other editions.",
-        " While reiteration is not as valuable as new contributions,",
+        " While a reiteration is not as valuable as a new contribution,",
         " it is still valuable.",
         " Indeed my main criticism of $BHQ Job is that it",
         " should have reiterated most or all of what can be found in those editions.",
@@ -220,10 +235,11 @@ def _cpara18(the_len):
 def _cpara19(the_len):
     return [
         f"Now for some bad news:",
-        f" the Job volume of $BHQ fails to transcribe {str(the_len)}",
+        f" the Job volume of $BHQ fails to accurately transcribe {str(the_len)}",
         f" quirks in μL that are noted in $BHL_A and/or דעת מקרא.",
-        f" And, either by coincidence or editorial policy,",
-        f" $BHQ never notes a quirk it does not transcribe.",
+        f" In all but one of these cases, a note is also lacking.",
+        f" (The one with a note is the one regarding 31:7 מאום,",
+        f" although the note, too, is inaccurate.)",
     ]
 
 
@@ -245,7 +261,7 @@ def _clist21(the_lens):
     return [
         f"$BHQ contributes notes on {str(the_lens[0])} quirks not found in those sources.",
         f"$BHQ reiterates notes on {str(the_lens[1])} quirks found in those sources.",
-        f"$BHQ fails to transcribe (or note) {str(the_lens[2])} quirks found in those sources.",
+        f"$BHQ fails to accurately transcribe {str(the_lens[2])} quirks found in those sources.",
         f"$BHQ transcribes but does not note {str(the_lens[3])} quirks found in those sources.",
     ]
 

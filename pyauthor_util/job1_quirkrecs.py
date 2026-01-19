@@ -840,7 +840,10 @@ _RECORD_3107 = {
     "lc-img": "3107.png",
     "bhq-comment": _BHQ_COMMENT_3107,
     "bhq": "מֻאֽוּם׃",
-    "noted-by": "BHQ-BHL-DM",
+    "noted-by": "xBHQ-BHL-DM",
+    # Above we consider this xBHQ because:
+    #    Though it attempts to transcribe the quirk, it does so inaccurately.
+    #    Though it notes the quirk, it does so inaccurately.
     "wlc-422-note": "]1",
 }
 _RECORD_3133 = {
