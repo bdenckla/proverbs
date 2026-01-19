@@ -12,18 +12,18 @@ _CAM1753_PAGE_URL_BASE = (
 
 _CORR_IG_VARIANT = {
     "34:19": [
-        " Since $BHQ does not note any uncertainty in the transcription here,"
+        " Since $BHQ does not note any uncertainty in its transcription here,"
         " it is hard to distinguish whether $BHQ has ignored the mark in question",
         " on purpose or by accident.",
         " More broadly, $BHQ Job never notes",
-        " any uncertainty in the transcription of μL.",
+        " any uncertainty in its transcription of μL.",
         " This may mislead many readers."
         " Despite the fact that high-resolution, color images of μL are now widely available,",
         " many readers will not engage with those images enough to understand how often",
         " there is great uncertainty in transcribing μL.",
         " And, even if the reader understands that such uncertainty exists in general,",
         " $BHQ should, in my opinion, indicate to the reader the specific places",
-        " where the transcription is particularly uncertain.",
+        " where its transcription is particularly uncertain.",
     ],
     "36:29": [" See my entry on 34:19 for further discusion."],
 }
@@ -122,7 +122,6 @@ _RECORD_0417 = {
     "lc-img": "0417.png",
     "bhq-comment": _BHQ_COMMENT_0417,
     "noted-by": "tBHQ-BHL-DM",
-    # tBHQ means "transcribed in the BHQ body, but without note anywhere"
 }
 _RECORD_0701 = {
     "bhla-i": 4,
@@ -537,7 +536,7 @@ _RECORD_1905 = {
         " As usual, we don’t know whether $BHQ dropped this note on purpose or by accident.",
         " $BHQ silently lets the faint possible דגש “win” over the clear רפה in μL.",
         " In my opinion, $BHQ should have transcribed either both marks (דגש and רפה) or neither.",
-        " Thus I consider $BHQ to have not (fully) transcribed μL here."
+        " Thus I consider $BHQ to have not accurately transcribed μL here."
         " Also, $BHQ should have had a note.",
     ],
     "noted-by": "xBHQ-BHL-xDM",
@@ -580,7 +579,8 @@ _RECORD_2125 = {
 }
 _COMMENT_2221_A = [
     "A dot under the מ of עמו is fairly clear.",
-    " It is (charitably) not transcribed by $BHL_A, presumably based on consensus expectations.",
+    " It is (charitably) not transcribed by $BHL_A,",
+    " presumably based on the consensus expectation that it is absent.",
 ]
 _COMMENT_2221_B = [
     "Perhaps some super-faint remains of an אתנח under ל can be seen.",

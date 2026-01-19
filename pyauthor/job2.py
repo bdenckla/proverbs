@@ -246,7 +246,7 @@ def _cpara19(the_len):
 def _cpara20(the_len):
     return [
         f"Now for some mixed news:",
-        f" the Job volume of $BHQ transcribes but does not note {str(the_len)}",
+        f" the Job volume of $BHQ accurately transcribes but does not note {str(the_len)}",
         f" quirks in μL that are noted in $BHL_A and/or דעת מקרא.",
         f" Those transcriptions without notes are as follows:",
     ]
@@ -262,7 +262,7 @@ def _clist21(the_lens):
         f"$BHQ contributes notes on {str(the_lens[0])} quirks not found in those sources.",
         f"$BHQ reiterates notes on {str(the_lens[1])} quirks found in those sources.",
         f"$BHQ fails to accurately transcribe {str(the_lens[2])} quirks found in those sources.",
-        f"$BHQ transcribes but does not note {str(the_lens[3])} quirks found in those sources.",
+        f"$BHQ accurately transcribes but does not note {str(the_lens[3])} quirks found in those sources.",
     ]
 
 
