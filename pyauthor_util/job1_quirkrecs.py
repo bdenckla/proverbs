@@ -47,10 +47,10 @@ def _correctly_ignores(what, cv, adjective=""):
 
 
 _BHQ_COMMENT_XBHL_XDM = [
-    "$BHQ notes this, whereas this is not noted in either $BHL_A or Da-at Miqra."
+    "$BHQ noted this, whereas this is not noted in either $BHL_A or Da-at Miqra."
 ]
 _BHQ_COMMENT_XBHL_XDM_DUBIOUS = [
-    "$BHQ notes this possibility,",
+    "$BHQ noted this possibility,",
     " whereas this is not noted in either $BHL_A or Da-at Miqra.",
     " It could be that Dotan and Breuer did not catch this,",
     " or it could be that they caught it",
@@ -67,7 +67,7 @@ _RECORD_0121 = {
     "lc-loc": {"page": "397B", "column": 1, "line": 1},
     "lc-img": "0121.png",
     "bhq-comment": [
-        "$BHQ notes this quirk."
+        "$BHQ noted this quirk."
         " As usual, it does so by noting that μA and μY agree, and μL disagrees with them.",
         " I.e. μA=μY=x, μL=w, and w≠x."
         " So what we boldly call the consensus, $BHQ merely calls the matching contents of μA and μY.",
@@ -283,8 +283,8 @@ _RECORD_1106 = {
     "bhq-comment": _BHQ_COMMENT_LIKE_0409,
     "noted-by": "BHQ-BHL-DM",
     # Above, note BHQ-... not tBHQ-...
-    # I.e. note that BHQ not only transcribes this right,
-    # but also notes it in the (bottom-of-page) critical apparatus.
+    # I.e. note that BHQ not only transcribed this right,
+    # but also noted it in the (bottom-of-page) critical apparatus.
 }
 _RECORD_1107 = {
     "bhla-i": 16,
@@ -461,7 +461,7 @@ _RECORD_1804_A = {
     "noted-by": "xBHQ-BHL-DM",
 }
 _BHQ_COMMENT_1804_B = [
-    "$BHQ notes that the דגש on the מ in μL disagrees with μA and μY.",
+    "$BHQ noted that the דגש on the מ in μL disagrees with μA and μY.",
     " $BHQ misses the געיה in μA.",
     " This געיה is irrelevant to $BHQ’s point here, which is about the דגש.",
     " Still, it would have been nice if $BHQ had transcribed the געיה.",
@@ -539,8 +539,8 @@ _RECORD_1905 = {
         " In my opinion, $BHQ should have transcribed either both marks (דגש and רפה) or neither.",
         " Also, $BHQ should have had a note.",
     ],
-    "noted-by": "xBHQ-BHL-xDM",
-    # Above, I use xBHQ rather than tBHQ because BHQ only partially transcribes μL here,
+    "noted-by": "tBHQ-BHL-xDM",
+    # Above, I use xBHQ rather than tBHQ because BHQ only partially transcribed μL here,
     # having the דגש without the רפה that contradicts the דגש.
     "wlc-422-note": "]1",
 }
@@ -555,7 +555,7 @@ _RECORD_1916 = {
     "highlight": 1,
     "lc-loc": {"page": "402B", "column": 1, "line": 8},
     "lc-img": "1916.png",
-    "bhq-comment": "$BHQ notes that the דגש on the ק in μL disagrees with μA and μY.",
+    "bhq-comment": "$BHQ noted that the דגש on the ק in μL disagrees with μA and μY.",
     "noted-by": "tBHQ-BHL-xDM",
 }
 _COMMENT_2125 = [
@@ -589,11 +589,11 @@ _COMMENT_2221_B = [
     " $BHQ (charitably) transcribed it based on consensus expectations.",
 ]
 _BHQ_COMMENT_2221_A = [
-    "$BHQ fails to note that the אתנח it transcribes on עמו",
+    "$BHQ fails to note that the אתנח it transcribed on עמו",
     " disagrees with μA and μY.",
 ]
 _BHQ_COMMENT_2221_B = [
-    "$BHQ notes that whereas the ל of ושלם is unpointed in μL,",
+    "$BHQ noted that whereas the ל of ושלם is unpointed in μL,",
     " that ל has קמץ and אתנח in μA and μY.",
     " See my entry for 22:21 עמי for μA and μY images."
 ]
@@ -646,7 +646,7 @@ _BHQ_COMMENT_2228 = [
     # XXX add BHQ image
     " Though this placement is odd,",
     " this makes it clear that a טרחא was intended by $BHQ rather than a דחי.",
-    " Thus $BHQ somewhat-accurately transcribes the quirk in μL,",
+    " Thus $BHQ somewhat-accurately transcribed the quirk in μL,",
     " but should have noted the quirk.",
 ]
 _RECORD_2228 = {
@@ -824,7 +824,7 @@ _BHQ_COMMENT_3107 = [
     " Regardless of whether the רפה should have been shown,",
     " its presence in μL should have excluded the possibility of",
     " a סילוק under its letter (א)!",
-    " $BHQ notes that here μL disagrees with μA and μY, which have the consensus pointing.",
+    " $BHQ noted that here μL disagrees with μA and μY, which have the consensus pointing.",
 ]
 _RECORD_3107 = {
     "bhla-i": 37,
@@ -896,7 +896,7 @@ _RECORD_3330 = {
     "lc-loc": {"page": "406B", "column": 1, "line": -1},
     "lc-img": "3330.png",
     "bhq-comment": [
-        "$BHQ notes that here μL disagrees with μA and μY,",
+        "$BHQ noted that here μL disagrees with μA and μY,",
         " which have the consensus pointing.",
     ],
     "noted-by": "BHQ-BHL-DM",
@@ -915,7 +915,7 @@ _RECORD_3419 = {
     "noted-by": "xBHQ-BHL-DM",
 }
 _BHQ_COMMENT_3612 = [
-    "$BHQ notes this, whereas this is not noted in $BHL_A.",
+    "$BHQ noted this, whereas this is not noted in $BHL_A.",
     " It could be that Dotan did not catch this,",
     " or it could be that he caught it",
     " but considered to be too slight a possibility to note it.",
@@ -996,7 +996,7 @@ _RECORD_3812 = {
     "lc-loc": {"page": "408A", "column": 1, "line": -12},
     "lc-img": "3812.png",
     "bhq-comment": [
-        "$BHQ notes that here μL disagrees with μA and μY,",
+        "$BHQ noted that here μL disagrees with μA and μY,",
         " which have the consensus pointing.",
     ],
     "noted-by": "BHQ-BHL-DM",
