@@ -457,7 +457,7 @@ _RECORD_1704 = {
     "what-is-weird": "מ has דגש",
     "mam": "מִשָּׂ֑כֶל",
     "comment": [
-        "Surprisingly, BHL just includes this דגש in its body text.",
+        "Surprisingly, $BHL just includes this דגש in its body text.",
     ],
     "highlight": 1,
     "lc-loc": {"page": "402A", "column": 1, "line": 7},
@@ -1278,6 +1278,7 @@ QUIRKRECS = [
     _RECORD_1604,
     _RECORD_1613,
     _RECORD_1620,
+    _RECORD_1704,
     _RECORD_1706,
     _RECORD_1711,
     _RECORD_1804_A,
