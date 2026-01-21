@@ -12,12 +12,12 @@ _CAM1753_PAGE_URL_BASE = (
 _SEE_3419 = [" See my entry on 34:19 for further discusion."]
 _CORR_IG_VARIANT = {
     "34:19": [
-        " Since $BHQ does not note any uncertainty in its transcription here,"
+        " Since $BHQ does not note any uncertainty in its transcription here,",
         " it is hard to distinguish whether $BHQ has ignored the mark in question",
         " on purpose or by accident.",
         " More broadly, $BHQ Job never notes",
         " any uncertainty in its transcription of μL.",
-        " This may mislead many readers."
+        " This may mislead many readers.",
         " Despite the fact that high-resolution, color images of μL are now widely available,",
         " many readers will not engage with those images enough to understand how often",
         " there is great uncertainty in transcribing μL.",
@@ -68,9 +68,9 @@ _RECORD_0121 = {
     "lc-loc": {"page": "397B", "column": 1, "line": 1},
     "lc-img": "0121.png",
     "bhq-comment": [
-        "$BHQ notes this quirk."
+        "$BHQ notes this quirk.",
         " As usual, it does so by noting that μA and μY agree, and μL disagrees with them.",
-        " I.e. μA=μY=x, μL=w, and w≠x."
+        " I.e. μA=μY=x, μL=w, and w≠x.",
         " So what we boldly call the consensus, $BHQ merely calls the matching contents of μA and μY.",
     ],
     "noted-by": "nBHQ-nBHL-nDM-nWLC",
@@ -86,7 +86,7 @@ _BHQ_COMMENT_LIKE_0409 = [
 ]
 _BHQ_COMMENT_0409 = [
     *_BHQ_COMMENT_CMN_0409_AND_SIMILAR,
-    " Six of these seven, including this one, are noted in the entry for 4:9 in the $BHQ"
+    " Six of these seven, including this one, are noted in the entry for 4:9 in the $BHQ",
     " section “Commentary on the Critical Apparatus.”",
     " Only this one and 11:6",
     " are noted in the bottom-of-page critical apparatus as well.",
@@ -122,6 +122,21 @@ _RECORD_0417 = {
     "lc-img": "0417.png",
     "bhq-comment": _BHQ_COMMENT_0417,
     "noted-by": "tBHQ-nBHL-nDM",
+}
+_RECORD_0629 = {
+    "cv": "6:29",
+    "lc": "וְשֽׁוּבוּ",
+    "what-is-weird": "word has no טעם",
+    "mam": "וְשׁ֥וּבוּ",
+    "comment": [
+        "The word has only געיה.",
+        " Or I suppose it that mark could, absurdly, be interpreted as סילוק."
+    ],
+    "highlight": 5,
+    "lc-loc": {"page": "398A", "column": 2, "line": 10},
+    "lc-img": "0629.png",
+    "bhq-comment": "",
+    "noted-by": "tBHQ-xBHL-xDM-zWLC",
 }
 _RECORD_0701 = {
     "bhla-i": 4,
@@ -600,11 +615,11 @@ _RECORD_1905 = {
     "lc-loc": {"page": "402A", "column": 2, "line": -5},
     "lc-img": "1905.png",
     "bhq-comment": [
-        "$BHQ drops the note that $BHS has on this quirk, which is extraordinary."
+        "$BHQ drops the note that $BHS has on this quirk, which is extraordinary.",
         " As usual, we don’t know whether $BHQ dropped this note on purpose or by accident.",
         " $BHQ silently lets the faint possible דגש “win” over the clear רפה in μL.",
         " In my opinion, $BHQ should have transcribed either both marks (דגש and רפה) or neither.",
-        " Thus I consider $BHQ to have not accurately transcribed μL here."
+        " Thus I consider $BHQ to have not accurately transcribed μL here.",
         " Also, $BHQ should have had a note.",
     ],
     "noted-by": "xBHQ-nBHL-xDM-nWLC",
@@ -1034,7 +1049,7 @@ _BHQ_COMMENT_3612 = [
     "Here $BHQ has a typo:",
     [" it has ", author.hbo("בִּבְלִ־"), " rather than ", author.hbo("בִּבְלִי־")],
     " in the word it reports for μA and μY.",
-    " I.e. it is missing a final $yod (י) before the מקף."
+    " I.e. it is missing a final $yod (י) before the מקף.",
     " The same typo appears in the $BHQ section “Commentary on the Critical Apparatus.”",
     " In addition to the typo, for some reason $BHQ reports this word as being the קרי",
     [" of μY, i.e. M", my_html.sup("Y(qere)")],
@@ -1262,6 +1277,7 @@ QUIRKRECS = [
     _RECORD_0121,
     _RECORD_0409,
     _RECORD_0417,
+    _RECORD_0629,
     _RECORD_0701,
     _RECORD_0709,
     _RECORD_0721,

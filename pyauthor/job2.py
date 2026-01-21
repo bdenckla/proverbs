@@ -238,7 +238,7 @@ def _cpara17a(the_len):
         " As of now (January 2026), it is the latest volume of $BHQ to be published.",
         #
         f" First, the good news: the Job volume of $BHQ notes {str(the_len)}",
-        " quirks in μL that were not noted in any of the three editions listed above.",
+        " quirks in μL that are not noted in any of the three editions listed above.",
         #
         " I.e. these are places where $BHQ contributes something not available",
         " in any of those other three editions.",
@@ -313,10 +313,14 @@ def _cpara20a(the_len):
 
 def _cpara20b(the_len):
     return [
-        f"Finally, $WLC helps us identify {str(the_len)}",
-        f" cases in which $BHQ Job transcribes but does not note a quirk in μL.",
-        f" All of these are unlikely to be the scribe’s intention,",
-        f" i.e. more likely quirks in $BHQ than quirks in μL."
+        f"Finally, $WLC helps us identify that",
+        f" the Job volume of $BHQ transcribes but does not note at least {str(the_len)}",
+        f" quirks in μL that,",
+        [" ", my_html.bold("for good reason"), ","],
+        " are not noted in any of the three editions listed above.",
+        #
+        f" The good reason is that all of these are unlikely to be the scribe’s intention,",
+        f" i.e. are more likely quirks in $BHQ than quirks in μL.",
     ]
 
 
