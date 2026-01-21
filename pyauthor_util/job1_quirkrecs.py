@@ -47,10 +47,10 @@ def _correctly_ignores(what, cv, adjective=""):
 
 
 _BHQ_COMMENT_XELSEWHERE = [
-    "$BHQ noted this, whereas this is not noted in the other editions under consideration."
+    "$BHQ notes this, whereas this is not noted in the other editions under consideration."
 ]
 _BHQ_COMMENT_XELSEWHERE = [
-    "$BHQ noted this possibility,",
+    "$BHQ notes this possibility,",
     " whereas this is not noted in the other editions under consideration.",
     " It could be the editors of those other editions did not catch this,",
     " or it could be that they caught it",
@@ -67,13 +67,12 @@ _RECORD_0121 = {
     "lc-loc": {"page": "397B", "column": 1, "line": 1},
     "lc-img": "0121.png",
     "bhq-comment": [
-        "$BHQ noted this quirk."
+        "$BHQ notes this quirk."
         " As usual, it does so by noting that μA and μY agree, and μL disagrees with them.",
         " I.e. μA=μY=x, μL=w, and w≠x."
         " So what we boldly call the consensus, $BHQ merely calls the matching contents of μA and μY.",
     ],
     "noted-by": "BHQ-BHL-DM-WLC",
-    "wlc-422-note": "]1",
 }
 _BHQ_COMMENT_CMN_0409_AND_SIMILAR = [
     "This is one of seven similar cases in Job in μL.",
@@ -172,7 +171,6 @@ _RECORD_0801 = {
     "lc-img": "0801.png",
     "bhq-comment": "This quirk is noted in $BHQ.",
     "noted-by": "BHQ-BHL-xDM-WLC",
-    "wlc-422-note": "]1",
 }
 _RECORD_0807 = {
     "bhla-i": 8,
@@ -197,7 +195,6 @@ _RECORD_0906 = {
     "lc-loc": {"page": "399B", "column": 1, "line": 12, "including-blank-lines": 1},
     "lc-img": "0906.png",
     "noted-by": "tBHQ-xBHL-xDM-WLC",
-    "wlc-422-note": "]1",
 }
 _BHQ_COMMENT_0914_AND_0930 = [
     "$BHQ silently supplies the סילוק that is the consensus expectation,",
@@ -279,7 +276,6 @@ _RECORD_1103 = {
     "lc-loc": {"page": "400A", "column": 1, "line": -1},
     "lc-img": "1103.png",
     "noted-by": "tBHQ-BHL-xDM-WLC",
-    "wlc-422-note": "]1",
 }
 _RECORD_1106 = {
     "bhla-i": 15,
@@ -320,7 +316,6 @@ _RECORD_1113 = {
     "lc-loc": {"page": "400A", "column": 2, "line": 13},
     "lc-img": "1113.png",
     "noted-by": "tBHQ-xBHL-xDM-WLC",
-    "wlc-422-note": "]1",
     "noted-by-mam": True,
     "noted-by-uxlc": True,
 }
@@ -345,7 +340,6 @@ _RECORD_1216 = {
     "lc-loc": {"page": "400B", "column": 1, "line": 11},
     "lc-img": "1216.png",
     "noted-by": "tBHQ-xBHL-xDM-WLC",
-    "wlc-422-note": "]1",
 }
 _BHQ_COMMENT_1203 = [
     "$BHQ silently supplies the מקף that is the consensus expectation,",
@@ -454,18 +448,23 @@ _RECORD_1620 = {
 _RECORD_1704 = {
     "cv": "17:4",
     "lc": "מִּשָּׂ֑כֶל",
-    "what-is-weird": "מ has דגש",
+    "lc-q": "(?)",
+    "what-is-weird": "מ may have דגש",
     "mam": "מִשָּׂ֑כֶל",
     "comment": [
-        "Surprisingly, $BHL just includes this דגש in its body text.",
+        "The color image of μL reveals this דגש to be unlikely.",
+        " Surprisingly, $BHL includes this דגש in its body text rather than noting it in $BHL_A.",
     ],
     "highlight": 1,
-    "lc-loc": {"page": "402A", "column": 1, "line": 7},
+    "lc-loc": {"page": "402A", "column": 1, "line": 5},
     "lc-img": "1704.png",
     "bhq-comment": "",
-    "noted-by": "tBHQ-xBHL-xDM-WLC",
-    "wlc-422-note": "]p",
-    "uxlc-needs-fix": "UXLC has דגש on מ (as it should) but should note the divergence from consensus",
+    "noted-by": "xBHQ-xBHL-xDM-WLC",
+    "uxlc-needs-fix": [
+        "UXLC should do one of the following.",
+        "(1) Remove the דגש from מ and note the uncertainty in transcription.",
+        "(2) Leave the דגש and note the divergence from consensus as well as the uncertainty in transcription."
+    ],
 }
 _RECORD_1706 = {
     "cv": "17:6",
@@ -525,7 +524,7 @@ _RECORD_1804_A = {
     "noted-by": "xBHQ-BHL-DM",
 }
 _BHQ_COMMENT_1804_B = [
-    "$BHQ noted that the דגש on the מ in μL disagrees with μA and μY.",
+    "$BHQ notes that the דגש on the מ in μL disagrees with μA and μY.",
     " $BHQ misses the געיה in μA.",
     " This געיה is irrelevant to $BHQ’s point here, which is about the דגש.",
     " Still, it would have been nice if $BHQ had transcribed the געיה.",
@@ -591,7 +590,7 @@ _RECORD_1905 = {
     "mam": "חֶרְפָּתִֽי׃",
     "comment": [
         "A דגש on a letter with רפה doesn’t make sense.",
-        " Color photos show דגש to be unlikely.",
+        " The color image of μL reveals this דגש to be unlikely.",
     ],
     "highlight": 4,
     "lc-loc": {"page": "402A", "column": 2, "line": -5},
@@ -605,7 +604,6 @@ _RECORD_1905 = {
         " Also, $BHQ should have had a note.",
     ],
     "noted-by": "xBHQ-BHL-xDM-WLC",
-    "wlc-422-note": "]1",
 }
 _RECORD_1916 = {
     "bhla-i": 27,
@@ -618,7 +616,7 @@ _RECORD_1916 = {
     "highlight": 1,
     "lc-loc": {"page": "402B", "column": 1, "line": 8},
     "lc-img": "1916.png",
-    "bhq-comment": "$BHQ noted that the דגש on the ק in μL disagrees with μA and μY.",
+    "bhq-comment": "$BHQ notes that the דגש on the ק in μL disagrees with μA and μY.",
     "noted-by": "tBHQ-BHL-xDM",
 }
 _COMMENT_2125 = [
@@ -657,9 +655,9 @@ _BHQ_COMMENT_2221_A = [
     " disagrees with μA and μY.",
 ]
 _BHQ_COMMENT_2221_B = [
-    "$BHQ (charitably) transcribed the top dot of the שווא",
+    "$BHQ (charitably) transcribes the top dot of the שווא",
     " using, as one often has to, faint evidence bolstered by consensus expectations.",
-    " $BHQ noted (as did $BHS) that whereas the ל of ושלם is unpointed in μL,",
+    " $BHQ notes (as does $BHS) that whereas the ל of ושלם is unpointed in μL,",
     " that ל has קמץ and אתנח in μA and μY.",
 ]
 _CAM1753_IMG_INTRO_2221 = [
@@ -681,7 +679,6 @@ _RECORD_2221_A = {
     "lc-img": "2221.png",
     "bhq-comment": _BHQ_COMMENT_2221_A,
     "noted-by": "tBHQ-BHL-xDM-WLC",
-    "wlc-422-note": "]1",
     "aleppo-page-url": "https://www.mgketer.org/mikra/29/22/1/mg/106",
     "aleppo-img": "Aleppo-2221.png",
     "cam1753-page-url": f"{_CAM1753_PAGE_URL_BASE}/n83/mode/1up",
@@ -700,7 +697,6 @@ _RECORD_2221_B = {
     "lc-img": "2221.png",
     "bhq-comment": _BHQ_COMMENT_2221_B,
     "noted-by": "BHQ-xBHL-xDM-WLC",
-    "wlc-422-note": "]1",
 }
 del _RECORD_2221_B["bhla-i"]
 del _RECORD_2221_B["lc-q"]
@@ -711,7 +707,7 @@ _BHQ_COMMENT_2228 = [
     # XXX add BHQ image
     " Though this placement is odd,",
     " this makes it clear that a טרחא was intended by $BHQ rather than a דחי.",
-    " Thus $BHQ somewhat-accurately transcribed the quirk in μL,",
+    " Thus $BHQ somewhat-accurately transcribes the quirk in μL,",
     " but should have noted the quirk.",
 ]
 _RECORD_2228 = {
@@ -753,7 +749,6 @@ _RECORD_2230_A = {
     ],
     # XXX add Aleppo image and update comments accordingly
     "noted-by": "tBHQ-xBHL-xDM-WLC",
-    "wlc-422-note": "]1",
     "uxlc-needs-fix": "add t-note (transcription uncertain)",
 }
 _RECORD_2230_B = {
@@ -843,7 +838,7 @@ _RECORD_2808 = {
     "bhla-i": 33,
     "cv": "28:8",
     "lc": "הִדְריכֻ֥הוּ",
-    "what-is-weird": "חיריק is missing",
+    "what-is-weird": "ר lacks חיריק",
     "mam": "הִדְרִיכ֥וּהוּ",
     "comment": "The מלא/חסר spelling difference is not important to us here.",
     "highlight": 3,
@@ -852,11 +847,26 @@ _RECORD_2808 = {
     "bhq-comment": _BHQ_COMMENT_2808_AND_2911,
     "noted-by": "xBHQ-BHL-xDM",
 }
+_RECORD_2826 = {
+    "cv": "28:26",
+    "lc": "בַּעֲשׂת֣וֹ",
+    "what-is-weird": "ש lacks חולם dot",
+    "mam": "בַּעֲשֹׂת֣וֹ",
+    "comment": "The proposed transcription is mistaken. Here μL clearly has both a $sin dot and חולם dot.",
+    "highlight": 3,
+    "lc-loc": {"page": "404B", "column": 2, "line": -1},
+    "lc-img": "2826.png",
+    "bhq-comment": [
+        "I don’t think $BHQ is really proposing that μL lacks this חולם dot.",
+        " This is more likely a typo (inherited from $BHS) than a deliberate choice.",
+    ],
+    "noted-by": "tBHQ-xBHL-xDM-xWLC",
+}
 _RECORD_2911 = {
     "bhla-i": 34,
     "cv": "29:11",
     "lc": "וְעַ֥ין",
-    "what-is-weird": "חיריק is missing",
+    "what-is-weird": "$yod (י) lacks חיריק",
     "mam": "וְעַ֥יִן",
     "comment": "",
     "highlight": 3,
@@ -919,7 +929,7 @@ _BHQ_COMMENT_3107 = [
     " Regardless of whether the רפה should have been shown,",
     " its presence in μL should have excluded the possibility of",
     " a סילוק under its letter (א)!",
-    " $BHQ noted that here μL disagrees with μA and μY.",
+    " $BHQ notes that here μL disagrees with μA and μY.",
     " But $BHQ gives the מ in μA and μY a מרכא rather than a סילוק,",
     " which seems more likely a typo than a deliberate choice.",
 ]
@@ -936,7 +946,6 @@ _RECORD_3107 = {
     "bhq-comment": _BHQ_COMMENT_3107,
     "bhq": "מֻאֽוּם׃",
     "noted-by": "xBHQ-BHL-DM-WLC",
-    "wlc-422-note": "]1",
     # Above we consider this xBHQ because:
     #    Though it attempts to transcribe the quirk, it does so inaccurately.
     #    Though it notes the quirk, it does so inaccurately.
@@ -996,7 +1005,7 @@ _RECORD_3330 = {
     "lc-loc": {"page": "406B", "column": 1, "line": -1},
     "lc-img": "3330.png",
     "bhq-comment": [
-        "$BHQ noted that here μL disagrees with μA and μY,",
+        "$BHQ notes that here μL disagrees with μA and μY,",
         " which have the consensus pointing.",
     ],
     "noted-by": "BHQ-BHL-DM",
@@ -1043,7 +1052,6 @@ _RECORD_3612 = {
     "lc-img": "3612.png",
     "bhq-comment": _BHQ_COMMENT_3612,
     "noted-by": "BHQ-xBHL-DM-WLC",
-    "wlc-422-note": "]1",
     "aleppo-page-url": "https://www.mgketer.org/mikra/29/36/1/mg/106",
     "aleppo-img": "Aleppo-3612.png",
     "cam1753-page-url": f"{_CAM1753_PAGE_URL_BASE}/n87/mode/1up",
@@ -1079,7 +1087,6 @@ _RECORD_3706 = {
     "lc-loc": {"page": "407B", "column": 2, "line": 7},
     "lc-img": "3706.png",
     "noted-by": "tBHQ-BHL-xDM-WLC",
-    "wlc-422-note": "]1",
 }
 _RECORD_3812 = {
     "bhla-i": 45,
@@ -1092,11 +1099,10 @@ _RECORD_3812 = {
     "lc-loc": {"page": "408A", "column": 1, "line": -12},
     "lc-img": "3812.png",
     "bhq-comment": [
-        "$BHQ noted that here μL disagrees with μA and μY,",
+        "$BHQ notes that here μL disagrees with μA and μY,",
         " which have the consensus pointing.",
     ],
     "noted-by": "BHQ-BHL-DM-WLC",
-    "wlc-422-note": "]1",
 }
 _RECORD_3817 = {
     "cv": "38:17",
@@ -1173,7 +1179,7 @@ _RECORD_3913 = {
         "$BHQ seems to split the mark(s) in question",
         " into a רביע on ר and a masorah circle on ב.",
         " This is a reasonable (though somewhat charitable) interpretation of μL,",
-        " but as is so often the case, $BHQ should have had a note about this quirk.",
+        " but as is so often the case, $BHQ should have noted this quirk.",
     ],
     "noted-by": "tBHQ-BHL-xDM",
 }
@@ -1201,7 +1207,6 @@ _RECORD_4010 = {
     "lc-loc": {"page": "408B", "column": 2, "line": -11},
     "lc-img": "4010.png",
     "noted-by": "tBHQ-BHL-xDM-WLC",
-    "wlc-422-note": "]1",
 }
 _RECORD_4026 = {
     "bhla-i": 51,
@@ -1292,6 +1297,7 @@ QUIRKRECS = [
     _RECORD_2421,
     _RECORD_2702,
     _RECORD_2808,
+    _RECORD_2826,
     _RECORD_2911,
     _RECORD_2919,
     _RECORD_3105,

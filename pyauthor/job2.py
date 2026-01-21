@@ -105,11 +105,6 @@ def _para_and_table(para_func, ov_and_de, group_of_quirkrecs):
     ]
 
 
-def _noted_by(quirkrec):
-    full = quirkrec["noted-by"]
-    return full.removesuffix("-WLC")
-
-
 def _table_of_quirks(ov_and_de, group_of_quirkrecs):
     rows = [_overview(ov_and_de, rec) for rec in group_of_quirkrecs]
     return author.table_c(rows)
@@ -246,8 +241,8 @@ _CPARA17B = [
     "Unsurprisingly, all of these contributions",
     " are new, i.e. not present in $BHS.",
     #
-    " I find some of these proposed transcriptions far-fetched, i.e. unlikely to have been",
-    " the scribe’s intention.",
+    " I find some of these proposed transcriptions",
+    " far-fetched, i.e. unlikely to have been the scribe’s intention.",
     #
     " Nonetheless, I consider even those ones to be valuable contributions",
     " to the documentation of μL.",
@@ -258,7 +253,7 @@ def _cpara18(the_len):
     return [
         ["It is also good news that the Job volume of $BHQ notes ", str(the_len)],
         [" quirks in μL that ",my_html.bold("are")," noted"],
-        " in one or more of the other three editions.",
+        [" in one or more of the other three editions."],
         #
         " I.e. these are places where $BHQ reiterates something available",
         " in one or more of the other three editions.",
@@ -280,9 +275,16 @@ def _cpara18(the_len):
 def _cpara19(the_len):
     return [
         f"Now for some bad news:",
-        f" the Job volume of $BHQ fails to accurately transcribe {str(the_len)}",
+        f" the Job volume of $BHQ does not transcribe {str(the_len)}",
         f" quirks in μL that are noted in one or more of the other three editions.",
-        f" In all but one of these cases, a note is also lacking.",
+        #
+        f" Not all such missing transcriptions are a bad thing,",
+        f" as the other editions may occasionally propose transcriptions that are",
+        f" far-fetched, i.e. unlikely to have been the scribe’s intention.",
+        #
+        f" But overall these missing transcriptions reflect poorly on $BHQ Job.",
+        #
+        f" In all but one case, a note is also lacking.",
         f" (The one with a note is the one regarding 31:7 מאום,",
         f" although the note, too, is inaccurate.)",
     ]
@@ -291,8 +293,9 @@ def _cpara19(the_len):
 def _cpara20(the_len):
     return [
         f"Now for some mixed news:",
-        f" the Job volume of $BHQ accurately transcribes but does not note {str(the_len)}",
+        f" the Job volume of $BHQ transcribes but does not note {str(the_len)}",
         f" quirks in μL that are noted in one or more of the other three editions.",
+        #
         f" Those transcriptions without notes are as follows:",
     ]
 
@@ -306,8 +309,8 @@ def _clist21(the_lens):
     return [
         f"$BHQ contributes notes on {str(the_lens[0])} quirks not found in those editions.",
         f"$BHQ reiterates notes on {str(the_lens[1])} quirks found in those editions.",
-        f"$BHQ fails to accurately transcribe {str(the_lens[2])} quirks found in those editions.",
-        f"$BHQ accurately transcribes but does not note {str(the_lens[3])} quirks found in those editions.",
+        f"$BHQ does not transcribe {str(the_lens[2])} quirks found in those editions.",
+        f"$BHQ transcribes but does not note {str(the_lens[3])} quirks found in those editions.",
     ]
 
 

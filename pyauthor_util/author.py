@@ -428,6 +428,7 @@ _ROMANIZED = {
     "$legarmeh_leg": "leg.",
     "$yod": "yod",
     "$shin": "shin",
+    "$sin": "sin",
     "$pe": "pe",
     "$resh": "resh",
     "$lamed": "lamed",
