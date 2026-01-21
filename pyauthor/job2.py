@@ -41,38 +41,38 @@ def _make_cbody(ov_and_de, quirkrecs):
     return cbody
 
 
+def _startswith_n(part):
+    return part.startswith("n")
+
+
 def _startswith_x(part):
     return part.startswith("x")
-
-
-def _not_startswith_x(part):
-    return not part.startswith("x")
 
 
 def _bhq_and_others(quirkrec):
     parts = quirkrec["noted-by"].split("-")
     bhq, bhl, dm = parts[0], parts[1], parts[2]
     wlc = "xWLC" if len(parts) == 3 else parts[3]
-    assert bhq in ("BHQ", "xBHQ", "tBHQ")
-    assert bhl in ("BHL", "xBHL")
-    assert dm in ("DM", "xDM")
-    assert wlc in ("WLC", "xWLC", "zWLC")
+    assert bhq in ("nBHQ", "xBHQ", "tBHQ")
+    assert bhl in ("nBHL", "xBHL")
+    assert dm in ("nDM", "xDM")
+    assert wlc in ("nWLC", "xWLC", "zWLC")
     others = bhl, dm, wlc
     return bhq, others
 
 
 def _nbhq_and_xe(quirkrec):
     bhq, others = _bhq_and_others(quirkrec)
-    return bhq == "BHQ" and all(_startswith_x(part) for part in others)
+    return bhq == "nBHQ" and all(_startswith_x(part) for part in others)
 
 
 def _foobhq_and_ne(foobhq, quirkrec):
     bhq, others = _bhq_and_others(quirkrec)
-    return bhq == foobhq and any(_not_startswith_x(part) for part in others)
+    return bhq == foobhq and any(_startswith_n(part) for part in others)
 
 
 def _nbhq_and_ne(quirkrec):
-    return _foobhq_and_ne("BHQ", quirkrec)
+    return _foobhq_and_ne("nBHQ", quirkrec)
 
 
 def _xbhq_and_ne(quirkrec):
@@ -207,9 +207,7 @@ _CLIST14 = [
         " So it is particularly puzzling that his $BHL, in particular its monumental Appendix A,"
         " was not used (or was not thoroughly used) in $BHQ.",
     ],
-    [
-        "WLC has had various releases over its decades, many predating $BHQ Megilloth."
-    ],
+    ["WLC has had various releases over its decades, many predating $BHQ Megilloth."],
 ]
 _CPARA15 = [
     "Although it may already be clear, I should explicitly state that",
@@ -264,7 +262,7 @@ _CPARA17B = [
 def _cpara18(the_len):
     return [
         ["It is also good news that the Job volume of $BHQ notes ", str(the_len)],
-        [" quirks in μL that ",my_html.bold("are")," noted"],
+        [" quirks in μL that ", my_html.bold("are"), " noted"],
         [" in one or more of the other three editions."],
         #
         " I.e. these are places where $BHQ reiterates something available",

@@ -73,7 +73,7 @@ _RECORD_0121 = {
         " I.e. μA=μY=x, μL=w, and w≠x."
         " So what we boldly call the consensus, $BHQ merely calls the matching contents of μA and μY.",
     ],
-    "noted-by": "BHQ-BHL-DM-WLC",
+    "noted-by": "nBHQ-nBHL-nDM-nWLC",
 }
 _BHQ_COMMENT_CMN_0409_AND_SIMILAR = [
     "This is one of seven similar cases in Job in μL.",
@@ -103,7 +103,7 @@ _RECORD_0409 = {
     "lc-loc": {"page": "398A", "column": 1, "line": -2},
     "lc-img": "0409.png",
     "bhq-comment": _BHQ_COMMENT_0409,
-    "noted-by": "BHQ-BHL-DM",
+    "noted-by": "nBHQ-nBHL-nDM",
 }
 _BHQ_COMMENT_0417 = [
     *_BHQ_COMMENT_CMN_0409_AND_SIMILAR,
@@ -121,7 +121,7 @@ _RECORD_0417 = {
     "lc-loc": {"page": "398A", "column": 2, "line": 10},
     "lc-img": "0417.png",
     "bhq-comment": _BHQ_COMMENT_0417,
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _RECORD_0701 = {
     "bhla-i": 4,
@@ -134,7 +134,7 @@ _RECORD_0701 = {
     "lc-loc": {"page": "399A", "column": 1, "line": 4},
     "lc-img": "0701.png",
     "bhq-comment": "$BHQ silently ignores the possible רביע.",
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _RECORD_0709 = {
     "bhla-i": 5,
@@ -146,7 +146,7 @@ _RECORD_0709 = {
     "highlight": 3,
     "lc-loc": {"page": "399A", "column": 1, "line": 14},
     "lc-img": "0709.png",
-    "noted-by": "tBHQ-BHL-xDM",
+    "noted-by": "tBHQ-nBHL-xDM",
 }
 _RECORD_0721 = {
     "bhla-i": 6,
@@ -158,7 +158,7 @@ _RECORD_0721 = {
     "highlight": 3,
     "lc-loc": {"page": "399A", "column": 2, "line": 3},
     "lc-img": "0721.png",
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _RECORD_0801 = {
     "bhla-i": 7,
@@ -171,7 +171,7 @@ _RECORD_0801 = {
     "lc-loc": {"page": "399A", "column": 2, "line": 5, "including-blank-lines": 1},
     "lc-img": "0801.png",
     "bhq-comment": "This quirk is noted in $BHQ.",
-    "noted-by": "BHQ-BHL-xDM-WLC",
+    "noted-by": "nBHQ-nBHL-xDM-nWLC",
 }
 _RECORD_0807 = {
     "bhla-i": 8,
@@ -184,7 +184,7 @@ _RECORD_0807 = {
     "lc-loc": {"page": "399A", "column": 2, "line": 13, "including-blank-lines": 1},
     "lc-img": "0807.png",
     "bhq-comment": "$BHQ silently ignores the possible שורוק dot.",
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _RECORD_0906 = {
     "cv": "9:6",
@@ -195,7 +195,7 @@ _RECORD_0906 = {
     "highlight": 3,
     "lc-loc": {"page": "399B", "column": 1, "line": 12, "including-blank-lines": 1},
     "lc-img": "0906.png",
-    "noted-by": "tBHQ-xBHL-xDM-WLC",
+    "noted-by": "tBHQ-xBHL-xDM-nWLC",
 }
 _BHQ_COMMENT_0914_AND_0930 = [
     "$BHQ silently supplies the סילוק that is the consensus expectation,",
@@ -213,7 +213,7 @@ _RECORD_0914 = {
     "lc-loc": {"page": "399B", "column": 1, "line": 22, "including-blank-lines": 1},
     "lc-img": "0914.png",
     "bhq-comment": _BHQ_COMMENT_0914_AND_0930,
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _RECORD_0930 = {
     "bhla-i": 10,
@@ -227,7 +227,7 @@ _RECORD_0930 = {
     "lc-loc": {"page": "399B", "column": 2, "line": 15},
     "lc-img": "0930.png",
     "bhq-comment": _BHQ_COMMENT_0914_AND_0930,
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _RECORD_0935 = {
     "bhla-i": 11,
@@ -239,7 +239,7 @@ _RECORD_0935 = {
     "highlight": 1,
     "lc-loc": {"page": "399B", "column": 2, "line": -8},
     "lc-img": "0935.png",
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _RECORD_1001 = {
     "bhla-i": 12,
@@ -252,7 +252,7 @@ _RECORD_1001 = {
     "highlight-mam": 4,
     "lc-loc": {"page": "399B", "column": 2, "line": -6},
     "lc-img": "1001.png",
-    "noted-by": "tBHQ-BHL-xDM",
+    "noted-by": "tBHQ-nBHL-xDM",
 }
 _RECORD_1015 = {
     "bhla-i": 13,
@@ -264,7 +264,7 @@ _RECORD_1015 = {
     "highlight": 3,
     "lc-loc": {"page": "400A", "column": 1, "line": 14},
     "lc-img": "1015.png",
-    "noted-by": "tBHQ-BHL-xDM",
+    "noted-by": "tBHQ-nBHL-xDM",
 }
 _RECORD_1103 = {
     "bhla-i": 14,
@@ -276,7 +276,7 @@ _RECORD_1103 = {
     "highlight": 6,
     "lc-loc": {"page": "400A", "column": 1, "line": -1},
     "lc-img": "1103.png",
-    "noted-by": "tBHQ-BHL-xDM-WLC",
+    "noted-by": "tBHQ-nBHL-xDM-nWLC",
 }
 _RECORD_1106 = {
     "bhla-i": 15,
@@ -289,7 +289,7 @@ _RECORD_1106 = {
     "lc-loc": {"page": "400A", "column": 2, "line": 5},
     "lc-img": "1106.png",
     "bhq-comment": _BHQ_COMMENT_LIKE_0409,
-    "noted-by": "BHQ-BHL-DM",
+    "noted-by": "nBHQ-nBHL-nDM",
     # Above, note BHQ-... not tBHQ-...
     # I.e. note that BHQ not only transcribed this right,
     # but also noted it in the (bottom-of-page) critical apparatus.
@@ -305,7 +305,7 @@ _RECORD_1107 = {
     "lc-loc": {"page": "400A", "column": 2, "line": 6},
     "lc-img": "1107.png",
     "bhq-comment": _BHQ_COMMENT_LIKE_0409,
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _RECORD_1113 = {
     "cv": "11:13",
@@ -316,7 +316,7 @@ _RECORD_1113 = {
     "highlight": 2,
     "lc-loc": {"page": "400A", "column": 2, "line": 13},
     "lc-img": "1113.png",
-    "noted-by": "tBHQ-xBHL-xDM-WLC",
+    "noted-by": "tBHQ-xBHL-xDM-nWLC",
     "noted-by-mam": True,
     "noted-by-uxlc": True,
 }
@@ -340,7 +340,7 @@ _RECORD_1216 = {
     "highlight": 2,
     "lc-loc": {"page": "400B", "column": 1, "line": 11},
     "lc-img": "1216.png",
-    "noted-by": "tBHQ-xBHL-xDM-WLC",
+    "noted-by": "tBHQ-xBHL-xDM-nWLC",
 }
 _BHQ_COMMENT_1203 = [
     "$BHQ silently supplies the מקף that is the consensus expectation,",
@@ -357,7 +357,7 @@ _RECORD_1203 = {
     "lc-loc": {"page": "400A", "column": 2, "line": -1},
     "lc-img": "1203.png",
     "bhq-comment": _BHQ_COMMENT_1203,
-    "noted-by": "xBHQ-BHL-DM",
+    "noted-by": "xBHQ-nBHL-nDM",
 }
 _RECORD_1409 = {
     "bhla-i": 18,
@@ -370,7 +370,7 @@ _RECORD_1409 = {
     "lc-loc": {"page": "401A", "column": 1, "line": -9},
     "lc-img": "1409.png",
     "bhq-comment": "$BHQ silently ignores the possible דגש.",
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _RECORD_1508 = {
     "bhla-i": 19,
@@ -383,7 +383,7 @@ _RECORD_1508 = {
     "lc-loc": {"page": "401A", "column": 2, "line": -7},
     "lc-img": "1508.png",
     "bhq-comment": _BHQ_COMMENT_LIKE_0409,
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _RECORD_1534 = {
     "bhla-i": 20,
@@ -396,7 +396,7 @@ _RECORD_1534 = {
     "lc-loc": {"page": "401B", "column": 1, "line": -3},
     "lc-img": "1534.png",
     "bhq-comment": "$BHQ silently ignores the possible מרכא.",
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _COMMENT_1604 = [
     "Though it is not relevant to the point at hand, which is the presence of a מקף,",
@@ -418,7 +418,7 @@ _RECORD_1604 = {
     "lc-loc": {"page": "401B", "column": 2, "line": 3},
     "lc-img": "1604.png",
     "bhq-comment": _BHQ_COMMENT_1604,
-    "noted-by": "tBHQ-BHL-xDM",
+    "noted-by": "tBHQ-nBHL-xDM",
 }
 _RECORD_1613 = {
     "bhla-i": 22,
@@ -431,7 +431,7 @@ _RECORD_1613 = {
     "highlight-mam": 4,
     "lc-loc": {"page": "401B", "column": 2, "line": -10},
     "lc-img": "1613.png",
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _RECORD_1620 = {
     "bhla-i": 23,
@@ -444,7 +444,7 @@ _RECORD_1620 = {
     "lc-loc": {"page": "401B", "column": 2, "line": -2},
     "lc-img": "1620.png",
     "bhq-comment": _BHQ_COMMENT_LIKE_0409,
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _RECORD_1704 = {
     "cv": "17:4",
@@ -460,11 +460,11 @@ _RECORD_1704 = {
     "lc-loc": {"page": "402A", "column": 1, "line": 5},
     "lc-img": "1704.png",
     "bhq-comment": _correctly_ignores("דגש", "17:4"),
-    "noted-by": "xBHQ-xBHL-xDM-WLC",
+    "noted-by": "xBHQ-xBHL-xDM-nWLC",
     "uxlc-needs-fix": [
         "UXLC should do one of the following.",
         "(1) Remove the דגש from מ and note the uncertainty in transcription.",
-        "(2) Leave the דגש and note the divergence from consensus as well as the uncertainty in transcription."
+        "(2) Leave the דגש and note the divergence from consensus as well as the uncertainty in transcription.",
     ],
 }
 _RECORD_1706 = {
@@ -480,7 +480,7 @@ _RECORD_1706 = {
     "lc-loc": {"page": "402A", "column": 1, "line": 7},
     "lc-img": "1706.png",
     "bhq-comment": _BHQ_COMMENT_XELSEWHERE,
-    "noted-by": "BHQ-xBHL-xDM",
+    "noted-by": "nBHQ-xBHL-xDM",
     "uxlc-needs-fix": True,
 }
 _RECORD_1711 = {
@@ -493,7 +493,7 @@ _RECORD_1711 = {
     "lc-loc": {"page": "402A", "column": 1, "line": 13},
     "lc-img": "1711.png",
     "bhq-comment": _BHQ_COMMENT_XELSEWHERE,
-    "noted-by": "BHQ-xBHL-xDM",
+    "noted-by": "nBHQ-xBHL-xDM",
     "uxlc-needs-fix": True,
 }
 _BHQ_COMMENT_1804_A = [
@@ -522,7 +522,7 @@ _RECORD_1804_A = {
     "aleppo-page-url": "https://www.mgketer.org/mikra/29/18/1/mg/106",
     "aleppo-img": "Aleppo-1804.png",
     "bhq": "הַ֭לְמַּעַנְךָ",
-    "noted-by": "xBHQ-BHL-DM",
+    "noted-by": "xBHQ-nBHL-nDM",
 }
 _BHQ_COMMENT_1804_B = [
     "$BHQ notes that the דגש on the מ in μL disagrees with μA and μY.",
@@ -542,7 +542,7 @@ _RECORD_1804_B = {
     ],
     "highlight": 3,
     "bhq-comment": _BHQ_COMMENT_1804_B,
-    "noted-by": "BHQ-BHL-DM",
+    "noted-by": "nBHQ-nBHL-nDM",
 }
 _BHQ_COMMENT_1806 = [
     "$BHQ positions the mark ambiguously.",
@@ -562,7 +562,7 @@ _RECORD_1806 = {
     "lc-loc": {"page": "402A", "column": 1, "line": -2},
     "lc-img": "1806.png",
     "bhq-comment": _BHQ_COMMENT_1806,
-    "noted-by": "tBHQ-BHL-xDM",
+    "noted-by": "tBHQ-nBHL-xDM",
 }
 _RECORD_1809 = {
     "cv": "18:9",
@@ -579,7 +579,7 @@ _RECORD_1809 = {
     "lc-loc": {"page": "402A", "column": 2, "line": 2},
     "lc-img": "1809.png",
     "bhq-comment": _BHQ_COMMENT_XELSEWHERE,
-    "noted-by": "BHQ-xBHL-xDM",
+    "noted-by": "nBHQ-xBHL-xDM",
     "uxlc-needs-fix": True,
 }
 _RECORD_1905 = {
@@ -604,7 +604,7 @@ _RECORD_1905 = {
         " Thus I consider $BHQ to have not accurately transcribed μL here."
         " Also, $BHQ should have had a note.",
     ],
-    "noted-by": "xBHQ-BHL-xDM-WLC",
+    "noted-by": "xBHQ-nBHL-xDM-nWLC",
 }
 _RECORD_1916 = {
     "bhla-i": 27,
@@ -618,7 +618,7 @@ _RECORD_1916 = {
     "lc-loc": {"page": "402B", "column": 1, "line": 8},
     "lc-img": "1916.png",
     "bhq-comment": "$BHQ notes that the דגש on the ק in μL disagrees with μA and μY.",
-    "noted-by": "tBHQ-BHL-xDM",
+    "noted-by": "tBHQ-nBHL-xDM",
 }
 _COMMENT_2125 = [
     "The dot is suspiciously brown rather than black,",
@@ -639,7 +639,7 @@ _RECORD_2125 = {
     "lc-loc": {"page": "403A", "column": 2, "line": 13},
     "lc-img": "2125.png",
     "bhq-comment": _BHQ_COMMENT_2125,
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _COMMENT_2221_A = [
     "A dot under the מ of עמו is fairly clear.",
@@ -679,7 +679,7 @@ _RECORD_2221_A = {
     "lc-loc": {"page": "403B", "column": 1, "line": -6},
     "lc-img": "2221.png",
     "bhq-comment": _BHQ_COMMENT_2221_A,
-    "noted-by": "tBHQ-BHL-xDM-WLC",
+    "noted-by": "tBHQ-nBHL-xDM-nWLC",
     "aleppo-page-url": "https://www.mgketer.org/mikra/29/22/1/mg/106",
     "aleppo-img": "Aleppo-2221.png",
     "cam1753-page-url": f"{_CAM1753_PAGE_URL_BASE}/n83/mode/1up",
@@ -697,7 +697,7 @@ _RECORD_2221_B = {
     "lc-loc": {"page": "403B", "column": 1, "line": -6},
     "lc-img": "2221.png",
     "bhq-comment": _BHQ_COMMENT_2221_B,
-    "noted-by": "BHQ-xBHL-xDM-WLC",
+    "noted-by": "nBHQ-xBHL-xDM-nWLC",
 }
 del _RECORD_2221_B["bhla-i"]
 del _RECORD_2221_B["lc-q"]
@@ -722,7 +722,7 @@ _RECORD_2228 = {
     "lc-loc": {"page": "403B", "column": 2, "line": 2},
     "lc-img": "2228.png",
     "bhq-comment": _BHQ_COMMENT_2228,
-    "noted-by": "tBHQ-BHL-xDM",
+    "noted-by": "tBHQ-nBHL-xDM",
 }
 _RECORD_2230_A = {
     "cv": "22:30",
@@ -749,7 +749,7 @@ _RECORD_2230_A = {
         " געיה with שווא would be expected (or at least an expected option).",
     ],
     # XXX add Aleppo image and update comments accordingly
-    "noted-by": "tBHQ-xBHL-xDM-WLC",
+    "noted-by": "tBHQ-xBHL-xDM-nWLC",
     "uxlc-needs-fix": "add t-note (transcription uncertain)",
 }
 _RECORD_2230_B = {
@@ -764,7 +764,7 @@ _RECORD_2230_B = {
     "lc-loc": {"page": "403B", "column": 2, "line": 4},
     "lc-img": "2230.png",
     "bhq-comment": _BHQ_COMMENT_XELSEWHERE,
-    "noted-by": "BHQ-xBHL-xDM",
+    "noted-by": "nBHQ-xBHL-xDM",
     "uxlc-needs-fix": True,
 }
 _RECORD_2416 = {
@@ -782,7 +782,7 @@ _RECORD_2416 = {
     "lc-loc": {"page": "404A", "column": 1, "line": -12},
     "lc-img": "2416.png",
     "bhq-comment": _BHQ_COMMENT_XELSEWHERE,
-    "noted-by": "BHQ-xBHL-xDM",
+    "noted-by": "nBHQ-xBHL-xDM",
     "uxlc-needs-fix": True,
 }
 _COMMENT_2421 = [
@@ -808,7 +808,7 @@ _RECORD_2421 = {
     "lc-loc": {"page": "404A", "column": 2, "line": -2},
     "lc-img": "2421.png",
     "bhq-comment": _BHQ_COMMENT_2421,
-    "noted-by": "xBHQ-BHL-DM",
+    "noted-by": "xBHQ-nBHL-nDM",
 }
 _COMMENT_2702 = [
     "Perhaps there is some super-faint evidence of a מקף that was ignored during re-inking.",
@@ -829,7 +829,7 @@ _RECORD_2702 = {
     "lc-loc": {"page": "404A", "column": 2, "line": -2},
     "lc-img": "2702.png",
     "bhq-comment": _BHQ_COMMENT_2702,
-    "noted-by": "xBHQ-BHL-DM",
+    "noted-by": "xBHQ-nBHL-nDM",
 }
 _BHQ_COMMENT_2808_AND_2911 = [
     "$BHQ silently supplies the חיריק that is the consensus expectation,",
@@ -846,7 +846,7 @@ _RECORD_2808 = {
     "lc-loc": {"page": "404B", "column": 2, "line": 5},
     "lc-img": "2808.png",
     "bhq-comment": _BHQ_COMMENT_2808_AND_2911,
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _RECORD_2826 = {
     "cv": "28:26",
@@ -855,7 +855,7 @@ _RECORD_2826 = {
     "mam": "בַּעֲשֹׂת֣וֹ",
     "comment": [
         "The proposed transcription is mistaken.",
-        " Here μL clearly has both a $sin dot and a חולם dot."
+        " Here μL clearly has both a $sin dot and a חולם dot.",
     ],
     "highlight": 3,
     "lc-loc": {"page": "404B", "column": 2, "line": -1},
@@ -877,7 +877,7 @@ _RECORD_2911 = {
     "lc-loc": {"page": "405A", "column": 1, "line": -12},
     "lc-img": "2911.png",
     "bhq-comment": _BHQ_COMMENT_2808_AND_2911,
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _COMMENT_2919 = [
     "Probably the ascender of the ל on the line below",
@@ -893,7 +893,7 @@ _RECORD_2919 = {
     "highlight": 5,
     "lc-loc": {"page": "405A", "column": 1, "line": -4},
     "lc-img": "2919.png",
-    "noted-by": "tBHQ-BHL-xDM",
+    "noted-by": "tBHQ-nBHL-xDM",
 }
 _BHQ_COMMENT_CMN_3105_3206 = [
     "$BHQ silently supplies the marks in the vowel-then-accent order that is",
@@ -921,7 +921,7 @@ _RECORD_3105 = {
     "lc-loc": {"page": "405B", "column": 1, "line": -9, "including-blank-lines": 1},
     "lc-img": "3105.png",
     "bhq-comment": _BHQ_COMMENT_3105,
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _BHQ_COMMENT_3107 = [
     "$BHQ reflects neither μL nor the consensus expectation here.",
@@ -949,7 +949,7 @@ _RECORD_3107 = {
     "lc-img": "3107.png",
     "bhq-comment": _BHQ_COMMENT_3107,
     "bhq": "מֻאֽוּם׃",
-    "noted-by": "xBHQ-BHL-DM-WLC",
+    "noted-by": "xBHQ-nBHL-nDM-nWLC",
     # Above we consider this xBHQ because:
     #    Though it attempts to transcribe the quirk, it does so inaccurately.
     #    Though it notes the quirk, it does so inaccurately.
@@ -965,7 +965,7 @@ _RECORD_3133 = {
     "highlight-mam": 3,
     "lc-loc": {"page": "405B", "column": 2, "line": -3},
     "lc-img": "3133.png",
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _BHQ_COMMENT_3206 = [
     *_BHQ_COMMENT_CMN_3105_3206,
@@ -982,7 +982,7 @@ _RECORD_3206 = {
     "lc-loc": {"page": "406A", "column": 1, "line": -6},
     "lc-img": "3206.png",
     "bhq-comment": _BHQ_COMMENT_3206,
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _RECORD_3312 = {
     "bhla-i": 40,
@@ -995,7 +995,7 @@ _RECORD_3312 = {
     "lc-loc": {"page": "406B", "column": 1, "line": 2},
     "lc-img": "3312.png",
     "bhq-comment": _BHQ_COMMENT_LIKE_0409,
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _RECORD_3330 = {
     "bhla-i": 41,
@@ -1012,7 +1012,7 @@ _RECORD_3330 = {
         "$BHQ notes that here μL disagrees with μA and μY,",
         " which have the consensus pointing.",
     ],
-    "noted-by": "BHQ-BHL-DM",
+    "noted-by": "nBHQ-nBHL-nDM",
 }
 _RECORD_3419 = {
     "bhla-i": 42,
@@ -1025,7 +1025,7 @@ _RECORD_3419 = {
     "lc-loc": {"page": "406B", "column": 2, "line": -2},
     "lc-img": "3419.png",
     "bhq-comment": _correctly_ignores("דגש", "34:19"),
-    "noted-by": "xBHQ-BHL-DM",
+    "noted-by": "xBHQ-nBHL-nDM",
 }
 _BHQ_COMMENT_3612 = [
     "Here $BHQ has a typo:",
@@ -1055,7 +1055,7 @@ _RECORD_3612 = {
     "lc-loc": {"page": "407B", "column": 1, "line": 4},
     "lc-img": "3612.png",
     "bhq-comment": _BHQ_COMMENT_3612,
-    "noted-by": "BHQ-xBHL-DM-WLC",
+    "noted-by": "nBHQ-xBHL-nDM-nWLC",
     "aleppo-page-url": "https://www.mgketer.org/mikra/29/36/1/mg/106",
     "aleppo-img": "Aleppo-3612.png",
     "cam1753-page-url": f"{_CAM1753_PAGE_URL_BASE}/n87/mode/1up",
@@ -1078,7 +1078,7 @@ _RECORD_3629 = {
     "lc-loc": {"page": "407B", "column": 1, "line": -5},
     "lc-img": "3629.png",
     "bhq-comment": _correctly_ignores("געיה", "36:29", "large"),
-    "noted-by": "tBHQ-BHL-xDM",
+    "noted-by": "tBHQ-nBHL-xDM",
 }
 _RECORD_3706 = {
     "bhla-i": 44,
@@ -1090,7 +1090,7 @@ _RECORD_3706 = {
     "highlight": 3,
     "lc-loc": {"page": "407B", "column": 2, "line": 7},
     "lc-img": "3706.png",
-    "noted-by": "tBHQ-BHL-xDM-WLC",
+    "noted-by": "tBHQ-nBHL-xDM-nWLC",
 }
 _RECORD_3812 = {
     "bhla-i": 45,
@@ -1106,7 +1106,7 @@ _RECORD_3812 = {
         "$BHQ notes that here μL disagrees with μA and μY,",
         " which have the consensus pointing.",
     ],
-    "noted-by": "BHQ-BHL-DM-WLC",
+    "noted-by": "nBHQ-nBHL-nDM-nWLC",
 }
 _RECORD_3817 = {
     "cv": "38:17",
@@ -1118,7 +1118,7 @@ _RECORD_3817 = {
     "lc-loc": {"page": "408A", "column": 1, "line": -5},
     "lc-img": "3817.png",
     "bhq-comment": _BHQ_COMMENT_XELSEWHERE,
-    "noted-by": "BHQ-xBHL-xDM",
+    "noted-by": "nBHQ-xBHL-xDM",
     "uxlc-needs-fix": True,
 }
 _COMMENT_3902 = [
@@ -1142,7 +1142,7 @@ _RECORD_3902 = {
     "lc-loc": {"page": "408A", "column": 2, "line": -3},
     "lc-img": "3902.png",
     "bhq-comment": "$BHQ silently supplies the רביע that is the consensus expectation.",
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
     # Perhaps I should have been charitable to BHQ and said tBHQ instead of xBHQ,
     # since BHQ’s transcription of רביע is somewhat reasonable if it were accompanied by a note.
     # But it is not accompanied by a note, and without a note, BHQ needs to make weird things in μL
@@ -1160,7 +1160,7 @@ _RECORD_3906 = {
     "highlight-mam": 3,
     "lc-loc": {"page": "408B", "column": 1, "line": 3},
     "lc-img": "3906.png",
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _COMMENT_3913 = [
     "A more charitable interpretation of the image is that the רביע is present",
@@ -1185,7 +1185,7 @@ _RECORD_3913 = {
         " This is a reasonable (though somewhat charitable) interpretation of μL,",
         " but as is so often the case, $BHQ should have noted this quirk.",
     ],
-    "noted-by": "tBHQ-BHL-xDM",
+    "noted-by": "tBHQ-nBHL-xDM",
 }
 _RECORD_3920 = {
     "bhla-i": 49,
@@ -1197,7 +1197,7 @@ _RECORD_3920 = {
     "highlight": 1,
     "lc-loc": {"page": "408B", "column": 1, "line": -10},
     "lc-img": "3920.png",
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _RECORD_4010 = {
     "bhla-i": 50,
@@ -1210,7 +1210,7 @@ _RECORD_4010 = {
     "highlight": 1,
     "lc-loc": {"page": "408B", "column": 2, "line": -11},
     "lc-img": "4010.png",
-    "noted-by": "tBHQ-BHL-xDM-WLC",
+    "noted-by": "tBHQ-nBHL-xDM-nWLC",
 }
 _RECORD_4026 = {
     "bhla-i": 51,
@@ -1223,7 +1223,7 @@ _RECORD_4026 = {
     "highlight-mam": 3,
     "lc-loc": {"page": "409A", "column": 1, "line": 8},
     "lc-img": "4026.png",
-    "noted-by": "tBHQ-BHL-DM",
+    "noted-by": "tBHQ-nBHL-nDM",
 }
 _BHQ_COMMENT_4125 = [
     "$BHQ silently supplies the סילוק that is the consensus expectation,",
@@ -1240,7 +1240,7 @@ _RECORD_4125 = {
     "lc-loc": {"page": "409A", "column": 2, "line": 14},
     "lc-img": "4125.png",
     "bhq-comment": _BHQ_COMMENT_4125,
-    "noted-by": "xBHQ-BHL-xDM",
+    "noted-by": "xBHQ-nBHL-xDM",
 }
 _RECORD_4213 = {
     "cv": "42:13",
@@ -1252,7 +1252,7 @@ _RECORD_4213 = {
     "lc-loc": {"page": "409B", "column": 1, "line": -9, "including-blank-lines": 1},
     "lc-img": "4213.png",
     "bhq-comment": _BHQ_COMMENT_XELSEWHERE,
-    "noted-by": "BHQ-xBHL-xDM",
+    "noted-by": "nBHQ-xBHL-xDM",
     "uxlc-needs-fix": True,
 }
 QUIRKRECS = [
