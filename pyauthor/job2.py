@@ -1,7 +1,6 @@
 """ Exports gen_html_file and anchor """
 
 from py import my_html
-from pycmn.my_utils import my_groupby
 from pyauthor_util import author
 from pyauthor.common import D2_TITLE
 from pyauthor.common import D2_H1_CONTENTS
@@ -49,7 +48,7 @@ def _not_startswith_x(part):
     return not part.startswith("x")
 
 
-def _bhq_and_nbhq(quirkrec):
+def _bhq_and_others(quirkrec):
     parts = quirkrec["noted-by"].split("-")
     bhq, bhl, dm = parts[0], parts[1], parts[2]
     wlc = "xWLC" if len(parts) == 3 else parts[3]
@@ -57,41 +56,44 @@ def _bhq_and_nbhq(quirkrec):
     assert bhl in ("BHL", "xBHL")
     assert dm in ("DM", "xDM")
     assert wlc in ("WLC", "xWLC")
-    nbhq = bhl, dm, wlc
-    return bhq, nbhq
+    others = bhl, dm, wlc
+    return bhq, others
 
 
-def _only_niq(quirkrec):
-    bhq, nbhq = _bhq_and_nbhq(quirkrec)
-    return bhq == "BHQ" and all(_startswith_x(part) for part in nbhq)
+def _nbhq_and_xe(quirkrec):
+    bhq, others = _bhq_and_others(quirkrec)
+    return bhq == "BHQ" and all(_startswith_x(part) for part in others)
 
 
-def _niq_and_elsewhere(quirkrec):
-    bhq, nbhq = _bhq_and_nbhq(quirkrec)
-    return bhq == "BHQ" and any(_not_startswith_x(part) for part in nbhq)
+def _foobhq_and_ne(foobhq, quirkrec):
+    bhq, others = _bhq_and_others(quirkrec)
+    return bhq == foobhq and any(_not_startswith_x(part) for part in others)
+
+
+def _nbhq_and_ne(quirkrec):
+    return _foobhq_and_ne("BHQ", quirkrec)
+
+
+def _xbhq_and_ne(quirkrec):
+    return _foobhq_and_ne("xBHQ", quirkrec)
+
+
+def _tbhq_and_ne(quirkrec):
+    return _foobhq_and_ne("tBHQ", quirkrec)
 
 
 def _get_groups(quirkrecs):
-    qr_by_perf = my_groupby(quirkrecs, _noted_by)
-    q_only_noted_in_bhq = list(filter(_only_niq, quirkrecs))
-    q_noted_in_bhq_and_elsewhere = list(filter(_niq_and_elsewhere, quirkrecs))
-    q_not_transcribed_in_bhq = [
-        *(qr_by_perf.get("xBHQ-xBHL-DM") or []),
-        *(qr_by_perf.get("xBHQ-BHL-xDM") or []),
-        *(qr_by_perf.get("xBHQ-BHL-DM") or []),
-    ]
-    q_not_transcribed_in_bhq.sort(key=sort_key)
-    q_tbnn_in_bhq = [  # transcribed but not noted
-        *(qr_by_perf.get("tBHQ-xBHL-DM") or []),
-        *(qr_by_perf.get("tBHQ-BHL-xDM") or []),
-        *(qr_by_perf.get("tBHQ-BHL-DM") or []),
-    ]
-    q_tbnn_in_bhq.sort(key=sort_key)
+    # nbhq, xbhq: noted in BHQ, not noted in BHQ
+    # ne, xe: noted elsewhere, not noted elsewhere
+    q_nbhq_and_xe = list(filter(_nbhq_and_xe, quirkrecs))
+    q_nbhq_and_ne = list(filter(_nbhq_and_ne, quirkrecs))
+    q_xbhq_and_ne = list(filter(_xbhq_and_ne, quirkrecs))
+    q_tbhq_and_ne = list(filter(_tbhq_and_ne, quirkrecs))
     groups = [
-        q_only_noted_in_bhq,
-        q_noted_in_bhq_and_elsewhere,
-        q_not_transcribed_in_bhq,
-        q_tbnn_in_bhq,
+        q_nbhq_and_xe,
+        q_nbhq_and_ne,
+        q_xbhq_and_ne,
+        q_tbhq_and_ne,
     ]
     return groups
 
