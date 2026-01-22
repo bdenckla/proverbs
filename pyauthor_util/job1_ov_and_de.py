@@ -141,16 +141,16 @@ def _bhq_comment(record):
 def _make_details_row(record):
     cv = record["cv"]
     uxlc_href = f"https://tanach.us/Tanach.xml?Job{cv}"
-    uxlc_anc = my_html.anchor_h("UXLC", uxlc_href)
+    uxlc_anc = my_html.anchor_h("U", uxlc_href)
     cn_v_vn = "c" + cv.replace(":", "v")
     mwd_href = f"https://bdenckla.github.io/MAM-with-doc/D3-Job.html#{cn_v_vn}"
-    mwd_anc = my_html.anchor_h("MwD", mwd_href)
+    mwd_anc = my_html.anchor_h("M", mwd_href)
     dpe1 = [
+        *_maybe_comment(record),
+        *_bhq_comment(record),
         uxlc_anc,
         mwd_anc,
         lcloc(record.get("lc-loc")),
-        *_maybe_comment(record),
-        *_bhq_comment(record),
     ]
     dpe2 = my_utils.intersperse(_SEP, dpe1)
     return [

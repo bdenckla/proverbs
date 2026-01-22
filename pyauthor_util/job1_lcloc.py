@@ -18,7 +18,7 @@ def lcloc(lcloc):
 def _lc_full_page_anc(page):
     # E.g. page == "397B"
     href = f"https://manuscripts.sefaria.org/leningrad-color/BIB_LENCDX_F{page}.jpg"
-    return my_html.anchor_h(f"LC page {page}", href)
+    return my_html.anchor_h(f"μL {page}", href)
 
 
 def _maybe_sp_ibl(lcloc):

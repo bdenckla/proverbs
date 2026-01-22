@@ -357,13 +357,13 @@ def _cpara23(the_len_of_the_2nd_group):
     foo = the_len_of_the_2nd_group - 1
     bar = the_len_of_the_2nd_group
     return [
-        "Nonetheless, the high quantity and high average quality",
-        " of the quirks in the last two groups above",
-        " strongly suggest that $BHQ’s editors were either",
+        "Nonetheless, the quirks not transcribed and/or noted by $BHQ",
+        " are of high quantity and high average quality.",
+        " This strongly suggest that $BHQ’s editors were either",
         " unaware of or uninterested in",
         " the other three editions.",
         #
-        " I.e. it is unlikely that these quirks were considered but rejected:",
+        " I.e. it is unlikely that all these quirks were considered but rejected:",
         " it is more likely that they were simply not considered at all.",
         #
         f" This conclusion is strengthened by the fact that {foo} of the {bar}",

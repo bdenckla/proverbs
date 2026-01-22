@@ -129,7 +129,7 @@ _RECORD_0629 = {
     "what-is-weird": "געיה not מרכא",
     "mam": "וְשׁ֥וּבוּ",
     "comment": [
-        "In contradiction of the transcription shown above,",
+        "Contrary to the transcription shown above,",
         " the most likely scribal intent was מרכא."
     ],
     "highlight": 2,
@@ -872,7 +872,7 @@ _RECORD_2826 = {
     "what-is-weird": "ש lacks חולם dot",
     "mam": "בַּעֲשֹׂת֣וֹ",
     "comment": [
-        "In contradiction of the transcription shown above,",
+        "Contrary to the transcription shown above,",
         " the image of μL clearly shows μL to have both a $sin dot and a חולם dot.",
     ],
     "highlight": 3,
