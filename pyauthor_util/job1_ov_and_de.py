@@ -119,7 +119,7 @@ def _maybe_bhq(bhq):
     if bhq is None:
         return []
     cont_p = ["BHQ: ", author.hbo(bhq)]
-    return [my_html.para(cont_p)]
+    return [author.para_cc(cont_p)]
 
 
 _DEFAULT_BHQ_COMMENT = "$BHQ agrees with μL here, but $BHQ makes no note of μL’s divergence from consensus."

@@ -277,7 +277,7 @@ def _cpara18(the_len):
         " Unsurprisingly, all but one of the $BHQ reiterations",
         " are not new, i.e. they were already present in $BHS.",
         #
-        " (The one that is new is the one regarding 18:4 הלמענך.)",
+        " (The one that is new is the one regarding the דגש in the מ of הלמענך in 18:4.)",
         " The reiterations made by $BHQ are as follows:",
     ]
 
@@ -295,7 +295,7 @@ def _cpara19(the_len):
         f" But overall these missing transcriptions reflect poorly on $BHQ Job.",
         #
         f" In all but one case, a note is also lacking.",
-        f" (The one with a note is the one regarding 31:7 מאום,",
+        f" (The one with a note is the one regarding מאום in 31:7,",
         f" although the note, too, is inaccurate.)",
     ]
 

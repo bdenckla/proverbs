@@ -126,7 +126,7 @@ _RECORD_0417 = {
 _RECORD_0629 = {
     "cv": "6:29",
     "lc": "וְשֽׁוּבוּ",
-    "what-is-weird": "word has no טעם, only געיה",
+    "what-is-weird": "געיה not מרכא",
     "mam": "וְשׁ֥וּבוּ",
     "comment": [
         "In contradiction of the transcription shown above,",
@@ -537,8 +537,6 @@ _RECORD_1804_A = {
     "lc-loc": {"page": "402A", "column": 1, "line": -4},
     "lc-img": "1804.png",
     "bhq-comment": _BHQ_COMMENT_1804_A,
-    "aleppo-page-url": "https://www.mgketer.org/mikra/29/18/1/mg/106",
-    "aleppo-img": "Aleppo-1804.png",
     "bhq": "הַ֭לְמַּעַנְךָ",
     "noted-by": "xBHQ-nBHL-nDM",
 }
@@ -560,6 +558,8 @@ _RECORD_1804_B = {
     ],
     "highlight": 3,
     "bhq-comment": _BHQ_COMMENT_1804_B,
+    "aleppo-page-url": "https://www.mgketer.org/mikra/29/18/1/mg/106",
+    "aleppo-img": "Aleppo-1804.png",
     "noted-by": "nBHQ-nBHL-nDM",
 }
 _BHQ_COMMENT_1806 = [
@@ -650,7 +650,7 @@ _RECORD_2125 = {
     "bhla-i": 28,
     "cv": "21:25",
     "lc": "וִלֹֽא־",
-    "what-is-weird": "ו has חיריק not שווא",
+    "what-is-weird": "חיריק not שווא",
     "mam": "וְלֹֽא־",
     "comment": _COMMENT_2125,
     "highlight": 1,
@@ -670,7 +670,7 @@ _COMMENT_2221_B = [
     " See my entry for 22:21 עמי for μA and μY images.",
 ]
 _BHQ_COMMENT_2221_A = [
-    "$BHQ fails to note that the אתנח it transcribed on עמו",
+    "$BHQ fails to note that the אתנח it transcribes on עמו",
     " disagrees with μA and μY.",
 ]
 _BHQ_COMMENT_2221_B = [
@@ -819,7 +819,7 @@ _RECORD_2421 = {
     "cv": "24:21",
     "lc-q": "(?)",
     "lc": "רֹעֵ֣ה",
-    "what-is-weird": "ע may have צירה not סגול",
+    "what-is-weird": "maybe צירה not סגול",
     "mam": "רֹעֶ֣ה",
     "comment": _COMMENT_2421,
     "highlight": 2,
