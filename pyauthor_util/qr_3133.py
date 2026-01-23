@@ -1,4 +1,4 @@
-from pyauthor_util.job1_common import BHQ_COMMENT_TBHQ_NELSWHERE
+from pyauthor_util.job1_common import BHQ_COMMENT_TBHQ_NELSEWHERE
 
 
 RECORD_3133 = {
@@ -12,6 +12,6 @@ RECORD_3133 = {
     "highlight-mam": 3,
     "lc-loc": {"page": "405B", "column": 2, "line": -3},
     "lc-img": "3133.png",
-    "bhq-comment": BHQ_COMMENT_TBHQ_NELSWHERE,
+    "bhq-comment": BHQ_COMMENT_TBHQ_NELSEWHERE,
     "noted-by": "tBHQ-nBHL-nDM",
 }

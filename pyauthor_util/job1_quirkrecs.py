@@ -38,7 +38,7 @@ from pyauthor_util.qr_4213 import RECORD_4213
 from pyauthor_util.job1_common import (
     CAM1753_PAGE_URL_BASE,
     correctly_ignores,
-    BHQ_COMMENT_TBHQ_NELSWHERE,
+    BHQ_COMMENT_TBHQ_NELSEWHERE,
     BHQ_COMMENT_CMN_0409_AND_SIMILAR,
 )
 from pyauthor_util.qr_0121 import RECORD_0121
@@ -429,7 +429,7 @@ _RECORD_2919 = {
     "highlight": 5,
     "lc-loc": {"page": "405A", "column": 1, "line": -4},
     "lc-img": "2919.png",
-    "bhq-comment": BHQ_COMMENT_TBHQ_NELSWHERE,
+    "bhq-comment": BHQ_COMMENT_TBHQ_NELSEWHERE,
     "noted-by": "tBHQ-nBHL-xDM",
 }
 _BHQ_COMMENT_CMN_3105_3206 = [
@@ -624,7 +624,7 @@ _RECORD_3920 = {
     "highlight": 1,
     "lc-loc": {"page": "408B", "column": 1, "line": -10},
     "lc-img": "3920.png",
-    "bhq-comment": BHQ_COMMENT_TBHQ_NELSWHERE,
+    "bhq-comment": BHQ_COMMENT_TBHQ_NELSEWHERE,
     "noted-by": "tBHQ-nBHL-nDM",
 }
 _BHQ_COMMENT_4125 = [

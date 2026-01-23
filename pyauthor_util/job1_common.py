@@ -48,7 +48,7 @@ def correctly_ignores(what, cv, adjective=""):
     return "".join(out_parts)
 
 
-BHQ_COMMENT_TBHQ_NELSWHERE = [
+BHQ_COMMENT_TBHQ_NELSEWHERE = [
     "$BHQ transcribes μL as shown above,",
     " but $BHQ does not note that this transcription diverges from consensus."
 ]
