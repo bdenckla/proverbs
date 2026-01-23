@@ -45,6 +45,14 @@ RECORD_0816 = {
     ],
     "noted-by": "tBHQ-xBHL-xDM-zWLC",
 }
+_COS_CMN = "https://www.chorev.co.il/%D7%98%D7%A2%D7%9E%D7%99-%D7%94%D7%9E%D7%A7%D7%A8%D7%90"
+_COS_ENG_REST = "%D7%91%D7%90%D7%A0%D7%92%D7%9C%D7%99%D7%AA-THE-CANTILLATION-OF-SCRIPTURE"
+_COS_ENG = author._anc_h("English translation of CoS", f"{_COS_CMN}-{_COS_ENG_REST}.htm")
+_COS_HEB = author._anc_h("the original", f"{_COS_CMN}.htm")
+_FOI_H2 = "foi-sec-star-breuer-cos.html#intro-11.66.rn1"
+_FOI_H1 = "https://bdenckla.github.io/MAM-with-doc/foi/"
+_FOI_H = f"{_FOI_H1}{_FOI_H2}"
+_FOI_ANC = author._anc_h("here", _FOI_H)
 _COMMENT_1413 = [
     "$WLC is the source of this (flawed) transcription.",
     #
@@ -65,11 +73,14 @@ _COMMENT_1413 = [
     " and indeed that is the way that word is written (albeit with the מקף colored gray)"
     " in some editions of $MAM (מקרא על פי המסורה).",
     #
+    "This and a handful of analogous cases are listed",
+    [" ",_FOI_ANC, ", with the implicit מקף represented as a tilde (~)."],
+    #
     " See Breuer CoS sections 11.66.rn1 and 11.79.",
     " (CoS = The Cantillation of Scripture; rn = Roman numeral.)",
-    " (Note that an English translation of CoS is now available,",
+    [" (Note that an ", _COS_ENG, " of CoS is now available,"],
     " a great boon to students of cantillation who cannot easily read",
-    " the original in its modern Hebrew.)",
+    [" ", _COS_HEB, " in its modern Hebrew.)"],
 ]
 RECORD_1413 = {
     "cv": "14:13",
@@ -77,6 +88,7 @@ RECORD_1413 = {
     "lc-q": "(?)",
     "what-is-weird": "maybe מרכא not געיה",
     "mam": "תָּ֤שִֽׁית",
+    "comment-is-html": True,
     "comment": _COMMENT_1413,
     "highlight": 2,
     "lc-loc": {"page": "40XY", "column": 0, "line": 0},
