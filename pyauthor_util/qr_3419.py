@@ -16,6 +16,6 @@ RECORD_3419 = {
     "lc-loc": {"page": "406B", "column": 2, "line": -2},
     "lc-img": "3419.png",
     "bhq-comment": correctly_ignores("דגש", "34:19"),
-    "bhq-comment-is-long": True,
+    "use-stretched-format": True,
     "noted-by": "xBHQ-nBHL-nDM",
 }

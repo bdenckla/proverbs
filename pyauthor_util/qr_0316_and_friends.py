@@ -82,18 +82,19 @@ _COMMENT_1413 = [
     " a great boon to students of cantillation who cannot easily read",
     [" ", _COS_HEB, " in its modern Hebrew.)"],
 ]
+_COMMENT_1413 = author.para(_COMMENT_1413)
 RECORD_1413 = {
     "cv": "14:13",
     "lc": "תָּ֤שִׁ֥ית",
     "lc-q": "(?)",
     "what-is-weird": "maybe מרכא not געיה",
     "mam": "תָּ֤שִֽׁית",
-    "comment-is-html": True,
+    "comment-should-not-be-para-wrapped": True,
     "comment": _COMMENT_1413,
     "highlight": 2,
     "lc-loc": {"page": "40XY", "column": 0, "line": 0},
     "lc-img": ".png",
-    "bhq-comment-is-long": True,
+    "use-stretched-format": True,
     "bhq-comment": [
         "$BHQ benefits from ignoring $WLC here,",
         " though $BHQ likely ignored $WLC as a whole",

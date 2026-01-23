@@ -13,6 +13,9 @@ from pycmn import my_utils
 from pycmn.my_utils import sl_map
 
 
+_CSNBPR = "comment-should-not-be-para-wrapped"
+
+
 def make_ov_and_de_for_all_quirkrecs(quirkrecs):
     ids = sl_map(row_id, quirkrecs)
     assert _unique(ids)
@@ -134,6 +137,8 @@ def _maybe_comment(record):
 
 def _maybe_para_comment(record):
     if comment := record.get("comment"):
+        if record.get(_CSNBPR):
+            return [comment]
         return [author.para(comment)]
     return []
 
@@ -148,8 +153,12 @@ def _ancs(record):
     return uxlc_anc, mwd_anc
 
 
+def _use_stretched(record):
+    return record.get("use-stretched-format") or record.get(_CSNBPR)
+
+
 def _dpe(record):
-    fn = _dpe_stretched if record.get("bhq-comment-is-long") else _dpe_inline
+    fn = _dpe_stretched if record.get("use-stretched-format") else _dpe_inline
     return fn(record)
 
 
