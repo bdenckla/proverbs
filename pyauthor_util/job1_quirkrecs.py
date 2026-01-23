@@ -3,6 +3,14 @@
 # XXX review quirks-Daat-Miqra.txt
 # XXX review quirks-BHQ.txt
 
+from pyauthor_util.qr_0316_and_friends import (
+    RECORD_0316,
+    RECORD_0816,
+    RECORD_1413,
+    RECORD_1535,
+    RECORD_2212,
+    RECORD_3410,
+)
 from pyauthor_util.qr_2228 import RECORD_2228
 from pyauthor_util.qr_3105 import RECORD_3105
 from pyauthor_util.qr_3107 import RECORD_3107
@@ -76,6 +84,7 @@ from pyauthor_util.qr_3812_A import RECORD_3812_A
 from pyauthor_util.qr_0409 import RECORD_0409
 QUIRKRECS = [
     RECORD_0121,
+    RECORD_0316,
     RECORD_0409,
     RECORD_0417,
     RECORD_0629,
@@ -84,6 +93,7 @@ QUIRKRECS = [
     RECORD_0721,
     RECORD_0801,
     RECORD_0807,
+    RECORD_0816,
     RECORD_0906,
     RECORD_0914,
     RECORD_0930,
@@ -97,8 +107,10 @@ QUIRKRECS = [
     RECORD_1203,
     RECORD_1216,
     RECORD_1409,
+    RECORD_1413,
     RECORD_1508,
     RECORD_1534,
+    RECORD_1535,
     RECORD_1604,
     RECORD_1613,
     RECORD_1620,
@@ -112,6 +124,7 @@ QUIRKRECS = [
     RECORD_1905,
     RECORD_1916,
     RECORD_2125,
+    RECORD_2212,
     RECORD_2221_A,
     RECORD_2221_B,
     RECORD_2228,
@@ -131,6 +144,7 @@ QUIRKRECS = [
     RECORD_3206,
     RECORD_3312,
     RECORD_3330,
+    RECORD_3410,
     RECORD_3419,
     RECORD_3612,
     RECORD_3629,

@@ -26,6 +26,7 @@ def main():
     tdm_ch = jobn_rel_top, css_href
     #
     qrs = sorted(QUIRKRECS, key=sort_key)
+    assert qrs == QUIRKRECS  # assert that the sort was not needed
     ov_and_de = make_ov_and_de_for_all_quirkrecs(qrs)
     job1_overview.gen_html_file(tdm_ch, ov_and_de)
     job1_details.gen_html_file(tdm_ch, ov_and_de)
