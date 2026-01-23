@@ -53,8 +53,8 @@ def _correctly_ignores(what, cv, adjective=""):
 
 
 _BHQ_COMMENT_TBHQ_NELSWHERE = [
-    "$BHQ agrees with μL here,",
-    " but $BHQ makes no note of μL’s divergence from consensus."
+    "$BHQ transcribes μL as shown above,",
+    " but $BHQ does not note that this transcription diverges from consensus."
 ]
 _BHQ_COMMENT_XELSEWHERE = [
     "$BHQ notes this, whereas this is not noted in the other editions under consideration."
@@ -179,7 +179,11 @@ _RECORD_0721 = {
     "lc": "וְשִׁ֖חֲרְתַּ֣נִי",
     "what-is-weird": "פתח on ח is חטף",
     "mam": "וְשִׁ֖חַרְתַּ֣נִי",
-    "comment": "It doesn’t make sense to have a חטף vowel (aka a חטף שווא) followed by a simple שווא.",
+    "comment": [
+        "It doesn’t make sense to have a חטף vowel (aka a חטף שווא)",
+        " followed by a simple שווא.",
+        " Yet, the manuscript image clearly shows this."
+    ],
     "highlight": 3,
     "lc-loc": {"page": "399A", "column": 2, "line": 3},
     "lc-img": "0721.png",
