@@ -7,7 +7,8 @@ RECORD_1706 = {
     "what-is-weird": "final ת has דגש",
     "mam": "וְתֹ֖פֶת",
     "comment": [
-        "A דגש in a final ת doesn’t make sense without a קמץ or a שווא נח below.",
+        "A דגש in a final ת doesn’t make sense",
+        " without a קמץ or a שווא נח below.",
         " But the dot is convincing.",
     ],
     "highlight": 4,

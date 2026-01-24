@@ -18,7 +18,8 @@ RECORD_3913 = {
     "bhq-comment": [
         "$BHQ seems to split the mark(s) in question",
         " into a רביע on ר and a masorah circle on ב.",
-        " This is a reasonable (though somewhat charitable) interpretation of μL,",
+        " This is a reasonable (though somewhat charitable)",
+        " interpretation of μL,",
         " but as is so often the case, $BHQ should have noted this quirk.",
     ],
     "noted-by": "tBHQ-nBHL-xDM",

@@ -104,17 +104,18 @@ def _each(each):
     return [f"{each} takes the following form:"]
 
 
+_WHERE_LIST = [
+    "# (hash sign) (number sign) is a link to more details on this quirk",
+    "μL-proposed is a proposed transcription of the Leningrad Codex",
+    "consensus is the Masoretic consensus reading (or a good guess of it)",
+    "c:v is the chapter and verse of the book of Job",
+]
+
+
 def _where():
     return [
         author.para("Where:"),
-        author.unordered_list(
-            [
-                "# (hash sign) (number sign) is a link to more details on this quirk",
-                "μL-proposed is a proposed transcription of the Leningrad Codex",
-                "consensus is the Masoretic consensus reading (or a good guess of it)",
-                "c:v is the chapter and verse of the book of Job",
-            ]
-        ),
+        author.unordered_list(_WHERE_LIST),
     ]
 
 

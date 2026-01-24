@@ -13,7 +13,8 @@ RECORD_1804_B = {
     "n_of_m_for_this_word": (2, 2),  # this is record 2 of 2 for this word
     "what-is-weird": "מ has דגש.",
     "comment": [
-        "The quirk that the פתח on ה is חטף is discussed in a separate entry of mine.",
+        "The quirk that the פתח on ה",
+        " is חטף is discussed in a separate entry of mine.",
         " The געיה difference is not important to us here.",
     ],
     "highlight": 3,

@@ -268,6 +268,8 @@ def _cpara18_part1(the_len):
         [" quirks in μL that ", my_html.bold("are"), " noted"],
         [" in one or more of the other three editions."],
     ]
+
+
 _CPARA18_PART2 = [
     " I.e. these are places where $BHQ reiterates something available",
     " in one or more of the other three editions.",
@@ -284,6 +286,8 @@ _CPARA18_PART2 = [
     " (The one that is new is the one regarding the דגש in the מ of הלמענך in 18:4.)",
     " The reiterations made by $BHQ are as follows:",
 ]
+
+
 def _cpara18(the_len):
     return _cpara18_part1(the_len) + _CPARA18_PART2
 
