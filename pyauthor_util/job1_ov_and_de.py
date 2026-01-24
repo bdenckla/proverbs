@@ -63,7 +63,7 @@ def _unique(seq):
 
 
 def _make_one_ov_and_de(uxlc, pbi, record):
-    std_bcvp_quad = _std_bcvp_quad(record["cv"])
+    std_bcvp_quad = _std_bcvp_quad(record)
     pg_dict = my_uxlc_location.page_and_guesses(uxlc, pbi, std_bcvp_quad)
     pg_diff = _pg_diff(pg_dict, record["lc-loc"])
     if pg_diff is not None:
@@ -88,17 +88,21 @@ def _pg_diff(pg_dict, lc_loc):
         pline = lcl
     fline = pline + 27 * (lc_loc["column"] - 1)
     flg = float(pg_dict["fline-guess"])
-    if abs(flg - fline) > 4:
+    balm = 3  # biggest acceptable line mismatch
+    if abs(flg - fline) > balm:
         return f"fline mismatch: pg_dict fline-guess {pg_dict['fline-guess']} vs lc_loc fline {fline}"
     return None
 
 
-def _std_bcvp_quad(cn_colon_vn):
+def _std_bcvp_quad(record):
+    cn_colon_vn = record["cv"]
+    upwv = record.get("uxlc-position-within-verse")
+    pwv = upwv or 1  # use the position within verse if available, else 1
     bkid = py_uxlc_loc_tbn.BK_JOB
     chnu_str, vrnu_str = cn_colon_vn.split(":")
     chnu = int(chnu_str)
     vrnu = int(vrnu_str)
-    atnu = 1  # always atom 1 for our purposes
+    atnu = pwv  # atom number within verse
     return bkid, chnu, vrnu, atnu
 
 

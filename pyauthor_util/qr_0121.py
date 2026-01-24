@@ -7,6 +7,7 @@ RECORD_0121 = {
     "comment": "",
     "highlight": 2,
     "lc-loc": {"page": "397B", "column": 1, "line": 1},
+    "uxlc-position-within-verse": 8,
     "lc-img": "0121.png",
     "bhq-comment": [
         "$BHQ notes this quirk.",

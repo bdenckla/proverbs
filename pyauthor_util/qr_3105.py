@@ -21,6 +21,7 @@ RECORD_3105 = {
     "comment": "",
     "highlight": 3,
     "lc-loc": {"page": "405B", "column": 1, "line": -9, "including-blank-lines": 1},
+    "uxlc-position-within-verse": 8,
     "lc-img": "3105.png",
     "bhq-comment": _BHQ_COMMENT_3105,
     "noted-by": "xBHQ-nBHL-xDM",

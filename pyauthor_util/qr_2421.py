@@ -18,7 +18,7 @@ RECORD_2421 = {
     "mam": "רֹעֶ֣ה",
     "comment": _COMMENT_2421,
     "highlight": 2,
-    "lc-loc": {"page": "404A", "column": 2, "line": -2},
+    "lc-loc": {"page": "404A", "column": 1, "line": -6},
     "lc-img": "2421.png",
     "bhq-comment": _BHQ_COMMENT_2421,
     "noted-by": "xBHQ-nBHL-nDM",

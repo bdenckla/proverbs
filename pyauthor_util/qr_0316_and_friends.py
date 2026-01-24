@@ -4,10 +4,10 @@ from pyauthor_util.job1_common import num_range
 RECORD_0316 = {
     "cv": "3:16",
     "lc": "א֚וֹ",
-    "what-is-weird": "יתוב not מהפך",
+    "what-is-weird": "יתיב not מהפך",
     "mam": "א֤וֹ",
     "comment": [
-        "יתוב doesn’t make sense here because"
+        "יתיב doesn’t make sense here because"
         " this is in the poetic rather than prose section of Job",
         [" ", author.paren(num_range("3:2", "42:6")), "."],
     ],

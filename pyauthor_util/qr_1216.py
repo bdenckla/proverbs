@@ -16,7 +16,7 @@ RECORD_1216 = {
         " I wish $BHQ had left well enough alone.",
     ],
     "highlight": 2,
-    "lc-loc": {"page": "400B", "column": 1, "line": 11},
+    "lc-loc": {"page": "400B", "column": 1, "line": -11},
     "lc-img": "1216.png",
     "noted-by": "tBHQ-xBHL-xDM-nWLC",
 }
