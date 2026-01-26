@@ -1,7 +1,7 @@
 # XXX study UXLC changes in Job
 # XXX review quirks-Daat-Miqra.txt
 # XXX review quirks-BHQ.txt
-# XXX auto-generate image basenames (and switch A/B suffixes to -NofMftv)
+# XXX auto-generate Aleppo image basenames
 # XXX add other parts of compounds, in gray
 
 from pyauthor_util.qr_z_wlc_dexi import RECORDS_Z_WLC_DEXI
