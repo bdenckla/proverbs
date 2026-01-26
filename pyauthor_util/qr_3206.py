@@ -8,7 +8,7 @@ _BHQ_COMMENT_3206 = [
 RECORD_3206 = {
     "bhla-i": 39,
     "cv": "32:6",
-    "lc": "יְשִׁישׁ֑‍ִים",
+    "lc": "יְשִׁישׁ֑͏ִים",
     "what-is-weird": "אתנח precedes חיריק",
     "mam": "יְשִׁישִׁ֑ים",
     "comment": "",
