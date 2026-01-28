@@ -1,12 +1,14 @@
 def _bhq_and_others(quirkrec):
     parts = quirkrec["noted-by"].split("-")
     bhq, bhl, dm = parts[0], parts[1], parts[2]
-    wlc = "xWLC" if len(parts) == 3 else parts[3]
+    wlc = "xWLC" if len(parts) <= 3 else parts[3]
+    uxlc = "xUXLC" if len(parts) <= 4 else parts[4]
     assert bhq in ("nBHQ", "xBHQ", "tBHQ")
     assert bhl in ("nBHL", "xBHL")
     assert dm in ("nDM", "xDM")
     assert wlc in ("nWLC", "xWLC", "zWLCmisc", "zWLCdexi")
-    others = bhl, dm, wlc
+    assert uxlc in ("xUXLC", "zUXLC")
+    others = bhl, dm, wlc, uxlc
     return bhq, others
 
 
@@ -33,12 +35,12 @@ def _tbhq_and_ne(quirkrec):
 
 def _tbhq_and_zwd(quirkrec):
     bhq, others = _bhq_and_others(quirkrec)
-    return bhq == "tBHQ" and others == ("xBHL", "xDM", "zWLCdexi")
+    return bhq == "tBHQ" and others[:3] == ("xBHL", "xDM", "zWLCdexi")
 
 
 def _tbhq_and_zwm(quirkrec):
     bhq, others = _bhq_and_others(quirkrec)
-    return bhq == "tBHQ" and others == ("xBHL", "xDM", "zWLCmisc")
+    return bhq == "tBHQ" and others[:3] == ("xBHL", "xDM", "zWLCmisc")
 
 
 def _startswith_x(part):
