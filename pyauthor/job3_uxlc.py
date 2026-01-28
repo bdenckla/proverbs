@@ -42,7 +42,7 @@ def _coi_to_quirkrec(coi):
 
 def gen_html_file(tdm_ch, ov_and_de, quirkrecs):
     quirkrecs = sl_map(_coi_to_quirkrec, COI_LIST)
-_write_quirkrecs_to_file(quirkrecs, "output_quirkrecs.py")
+    _write_quirkrecs_to_file(quirkrecs, "output_quirkrecs.py")
     author.assert_stem_eq(__file__, D3_FNAME)
     cbody = _make_cbody(ov_and_de, quirkrecs)
     author.help_gen_html_file(tdm_ch, D3_FNAME, D3_TITLE, cbody)
