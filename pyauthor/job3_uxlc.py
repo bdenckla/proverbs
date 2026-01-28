@@ -9,40 +9,7 @@ from pyauthor.uxlc_changes_of_interest import COI_LIST
 from pycmn.my_utils import sl_map
 
 
-def _coi_to_quirkrec(coi):
-    # Convert a change of interest to a quirk record
-    # Implementation depends on the structure of COI_LIST items
-    cn_colon_vn, _wn = coi["citation"].removeprefix("Job ").split(".")
-    (page, column_colon_line) = coi["lc"].removeprefix("Folio_F").split(" ")
-    column, line = column_colon_line.split(":")
-    release = coi["release"]
-    changeset = coi["changeset"]
-    changeset_index = coi["n"]
-    uxlc_change_url = (
-        f"https://tanach.us/Changes/{release}%20-%20Changes/"
-        f"{release}%20-%20Changes.xml?"
-        f"{changeset}-{changeset_index}"
-    )
-    out = {
-        "cv": cn_colon_vn,
-        "lc": coi["reftext"],
-        "what-is-weird": coi["description"],
-        "mam": coi["changetext"],
-        "comment": coi["notes"],
-        "highlight": 1,
-        "lc-loc": {"page": page, "column": int(column), "line": int(line)},
-        "bhq-comment": [
-            "$BHQ is the source of this (flawed) transcription.",
-        ],
-        "noted-by": "tBHQ-xBHL-xDM-xWLC-zUXLC",
-        "uxlc-change-url": uxlc_change_url,
-    }
-    return out
-
-
 def gen_html_file(tdm_ch, ov_and_de, quirkrecs):
-    quirkrecs = sl_map(_coi_to_quirkrec, COI_LIST)
-    _write_quirkrecs_to_file(quirkrecs, "output_quirkrecs.py")
     author.assert_stem_eq(__file__, D3_FNAME)
     cbody = _make_cbody(ov_and_de, quirkrecs)
     author.help_gen_html_file(tdm_ch, D3_FNAME, D3_TITLE, cbody)
@@ -85,15 +52,3 @@ _CPARA18_PART2 = [
 
 def _cpara18(the_len):
     return _cpara18_part1(the_len) + _CPARA18_PART2
-
-
-def _write_quirkrecs_to_file(quirkrecs, filepath):
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write("# Auto-generated quirkrecs\n\n")
-        f.write("QUIRKRECS = [\n")
-        for rec in quirkrecs:
-            f.write("    {\n")
-            for key, value in rec.items():
-                f.write(f"        {key!r}: {value!r},\n")
-            f.write("    },\n")
-        f.write("]\n")
